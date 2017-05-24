@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" 
+		  content="text/html; charset=UTF-8" />
+
+	<title>EaselJS + Aviary</title>
+
+	<!-- import CreateJS libraries  -->
+	<script src="lib/easeljs-NEXT.min.js"></script> 
+	<script src="http://code.createjs.com/tweenjs-0.3.0.min.js"></script>
+	
+	<script>	
+
+	// Image to load
+	var url = "http://static.ddmcdn.com/gif/urban-landscape-design-1.jpg";
+
+	var stage;
+	var canvas;
+	var canvasImg;
+	var aviaryImgPlaceHolder ;
+	
+
+	function init() {
+
+		canvas = document.getElementById("mycanvas");
+		stage = new createjs.Stage(canvas);
+
+		// Enable Mouse and Touch support
+		if (createjs.Touch.isSupported()) { createjs.Touch.enable(stage); }
+		stage.enableMouseOver (20)
+
+		// Set Framerate and Ticker listener
+		createjs.Ticker.setFPS(45);		
+		createjs.Ticker.addListener(this);
+
+		// Load the default image at startup
+		loadImage(url)
+	}
+
+	/**
+	 * Load the image using a PHP Proxy
+	 * It's a necessary step in order to avoid security restrictions 
+	 */
+	function loadImage(path) {
+		// Load the image into the aviary <img> placeholder 
+		aviaryImgPlaceHolder = document.getElementById("aviaryImgPlaceHolder")
+		aviaryImgPlaceHolder.onload = onLoadImage;
+        aviaryImgPlaceHolder.src =  "php/proxy.php?url=" + path; 
+	}
+
+
+	/**
+	 * Image Loaded event handler
+	 * It's used to load the default image and to load the 
+	 * generated image from Aviary service
+	 */
+	function onLoadImage(event) {
+
+		// Remove the previous EaselJS Bitmap from stage
+		if (stage.contains(canvasImg))
+			stage.removeChild(canvasImg)
+
+		// Create a new EaselJS Bitmap from the loaded bitmap
+		canvasImg = new createjs.Bitmap(event.target)
+		canvasImg.cursor = "pointer"
+		canvasImg.regX = canvasImg.image.width/2;
+		canvasImg.regY = canvasImg.image.height/2;
+		//canvasImg.suppressCrossDomainErrors = true;
+		canvasImg.x = canvas.width/2;
+		canvasImg.y = canvas.height/2;
+
+		// Enable Press event handler 
+		canvasImg.addEventListener("press", function (event)
+		{	
+			// Open the Aviary Editor
+			return launchEditor('aviaryImgPlaceHolder', url)
+		})
+
+		// Add the image to Stage
+		stage.addChild(canvasImg)
+
+	}
+
+
+	/**
+	 * Aviary panel SAVE event handler
+	 * Invoked when the user SAVES the image from  Aviary panel
+	 */
+	function onAviarySaveHandler(imageID, newURL) {
+		url = newURL;
+		loadImage(newURL)
+	}
+
+
+	/**
+	 * Aviary panel CLOSE event handler
+	 * Invoked when the user CLOSES the  Aviary panel
+	 */
+	function onAviaryClose() {	
+
+		// rotate the generated image using TweenJS
+		createjs.Tween.get(canvasImg)
+						  .to({rotation: 360, scaleX: 0.5}, 
+						  	   1000,createjs.Ease.cubicInOut)
+						  .wait(200)
+						  .to({rotation: 0, scaleX: 1}, 
+						  	   1000,createjs.Ease.cubicInOut)
+	}
+	
+
+	 /**
+	 * Tick event handler
+	 */
+	function tick()
+	{
+		// Update stage
+		stage.update()	
+	}
+
+
+	</script>
+</head>
+	
+
+<!-- 
+	Most part of following code is generated from Aviary.
+	Subscribe the service and create an App from the panel to get it.
+	
+	Website: http://www.aviary.com.
+	Documentation: http://www.aviary.com/web/documentation
+-->
+
+<!-- Load Feather code -->
+<script type="text/javascript" 
+		src="http://feather.aviary.com/js/feather.js"></script>
+
+<!-- Instantiate Feather -->
+<script type='text/javascript'>
+   var featherEditor = new Aviary.Feather({
+       apiKey: '[YOUR API KEY]',
+       apiVersion: 2,
+       tools: 'enhance,effects,stickers,orientation,resize,warmth,crop,brightness,contrast,saturation,sharpness,draw,text,redeye,whiten,blemish',
+       appendTo: '',
+       onSave: onAviarySaveHandler,
+       onClose: onAviaryClose,
+       onError: function(errorObj) {
+           alert(errorObj.message);
+       }
+   });
+   function launchEditor(id, src) {
+       featherEditor.launch({
+           image: id,
+           url: src
+       });
+      return false;
+   }
+</script>
+
+
+
+<body onload="init();">	
+
+	<canvas id="mycanvas" width="960" height="450" 
+			style="background-color: #cccccc"></canvas>
+
+	<img id='aviaryImgPlaceHolder' style="display: none"/>
+</body>
+</html>
+
+

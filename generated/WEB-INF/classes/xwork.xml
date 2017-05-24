@@ -1,0 +1,128 @@
+<!DOCTYPE xwork PUBLIC
+    "-//OpenSymphony Group//XWork 1.1.1//EN"
+    "http://www.opensymphony.com/xwork/xwork-1.1.1.dtd">
+
+<xwork>
+    <include file="webwork-default.xml" />
+
+    <package name="default" extends="webwork-default">
+        <interceptors>
+            <interceptor-stack name="defaultStack">
+                <interceptor-ref name="exception" />
+                <interceptor-ref name="alias" />
+                <interceptor-ref name="servlet-config" />
+                <interceptor-ref name="prepare" />
+                <interceptor-ref name="i18n" />
+                <interceptor-ref name="chain" />
+                <interceptor-ref name="model-driven" />
+                <interceptor-ref name="fileUpload" />
+                <interceptor-ref name="static-params" />
+                <interceptor-ref name="params" />
+                <interceptor-ref name="conversionError" />
+                <interceptor-ref name="validation">
+                    <param name="excludeMethods">execute,delete,edit,list,copy</param>
+                </interceptor-ref>
+                <interceptor-ref name="workflow">
+                    <param name="excludeMethods">input,back</param>
+                </interceptor-ref>
+            </interceptor-stack>
+        </interceptors>
+
+        <global-results>
+            <result name="dataAccessFailure" type="tiles">dataAccessFailure</result>
+        </global-results>
+
+        <global-exception-mappings>
+            <exception-mapping exception="org.springframework.dao.DataAccessException"
+                result="dataAccessFailure"/>
+        </global-exception-mappings>
+
+        <!-- Login -->
+        <action name="login" class="loginAction">
+            <result name="input">index.jsp</result>
+            <result name="success" type="tiles">blank</result>
+        </action>
+
+        <action name="logout" class="loginAction" method="logout">
+            <result name="success">index.jsp</result>
+            <result name="input">index.jsp</result>
+        </action>
+
+    <!-- AppProperty -->
+        <action name="appPropertyList" class="appPropertyAction" method="list">
+            <result name="success" type="tiles">appPropertyList</result>
+            <result name="input" type="tiles">appPropertyList</result>
+        </action>
+
+        <action name="editAppProperty" class="appPropertyAction" method="edit">
+            <result name="success" type="tiles">appPropertyForm</result>
+            <result name="input" type="tiles">appPropertyList</result>
+        </action>
+
+        <action name="saveAppProperty" class="appPropertyAction">
+            <result name="delete" type="redirect">appPropertyList.html</result>
+            <result name="input" type="tiles">appPropertyForm</result>
+            <result name="success" type="chain">saveAppPropertyWithValidation</result>
+        </action>
+
+        <action name="saveAppPropertyWithValidation" class="appPropertyAction" method="save">
+            <result name="input" type="tiles">appPropertyForm</result>
+            <result name="success">/common/backback.jsp</result>
+        </action>
+
+<!-- ********************************************* -->
+
+    <!-- ProductType -->
+        <action name="productTypeList" class="productTypeAction" method="list">
+            <result name="success" type="tiles">productTypeList</result>
+            <result name="input" type="tiles">productTypeList</result>
+        </action>
+
+        <action name="editProductType" class="productTypeAction" method="edit">
+            <result name="success" type="tiles">productTypeForm</result>
+            <result name="input" type="tiles">productTypeList</result>
+        </action>
+
+        <action name="copyProductType" class="productTypeAction" method="copy">
+            <result name="success" type="tiles">productTypeForm</result>
+            <result name="input" type="tiles">productTypeList</result>
+        </action>
+
+        <action name="saveProductType" class="productTypeAction">
+            <result name="delete" type="redirect">productTypeList.html</result>
+            <result name="input" type="tiles">productTypeForm</result>
+            <result name="success" type="chain">saveProductTypeWithValidation</result>
+        </action>
+
+        <action name="saveProductTypeWithValidation" class="productTypeAction" method="save">
+            <result name="input" type="tiles">productTypeForm</result>
+            <result name="success">/common/backback.jsp</result>
+        </action>
+
+    <!-- Product -->
+        <action name="productList" class="productAction" method="list">
+            <result name="success" type="tiles">productList</result>
+            <result name="input" type="tiles">productList</result>
+        </action>
+
+        <action name="editProduct" class="productAction" method="edit">
+            <result name="success" type="tiles">productForm</result>
+            <result name="input" type="tiles">productList</result>
+        </action>
+
+        <action name="copyProduct" class="productAction" method="copy">
+            <result name="success" type="tiles">productForm</result>
+            <result name="input" type="tiles">productList</result>
+        </action>
+
+        <action name="saveProduct" class="productAction">
+            <result name="delete" type="redirect">productList.html</result>
+            <result name="input" type="tiles">productForm</result>
+            <result name="success" type="chain">saveProductWithValidation</result>
+        </action>
+
+        <action name="saveProductWithValidation" class="productAction" method="save">
+            <result name="input" type="tiles">productForm</result>
+            <result name="success">/common/backback.jsp</result>
+        </action>
+

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<tiles-definitions>
+    <definition name="default" path="/layout/template.jsp">
+        <put name="title" value="Information System"/>
+        <put name="menu" value="/layout/menu.jsp"/>
+    </definition>
+
+    <definition name="dataAccessFailure" extends="default">
+        <put name="title" value="Data Access Error"/>
+        <put name="content" value="/common/dataAccessFailure.jsp"/>
+    </definition>
+
+    <definition name="blank" extends="default">
+        <put name="title" value=""/>
+        <put name="content" value="/common/blank.jsp"/>
+    </definition>
+
+    <!-- 
+    ************************ 
+    * AppProperty 
+    ************************
+    -->
+    <definition name="appPropertyList" extends="default">
+        <put name="content" value="/common/appPropertyList.jsp"/>
+    </definition>
+
+    <definition name="appPropertyForm" extends="default">
+        <put name="content" value="/common/appPropertyForm.jsp"/>
+    </definition>
+
+<!-- ********************************************* -->
+
+    <!-- 
+    ************************ 
+    * ProductType 
+    ************************
+    -->
+    <definition name="productTypeList" extends="default">
+        <put name="content" value="/productTypeList.jsp"/>
+    </definition>
+
+    <definition name="productTypeForm" extends="default">
+        <put name="content" value="/productTypeForm.jsp"/>
+    </definition>
+
+    <!-- 
+    ************************ 
+    * Product 
+    ************************
+    -->
+    <definition name="productList" extends="default">
+        <put name="content" value="/productList.jsp"/>
+    </definition>
+
+    <definition name="productForm" extends="default">
+        <put name="content" value="/productForm.jsp"/>
+    </definition>
+
