@@ -10,7 +10,7 @@ import com.common.service.impl.CommonManagerImpl;
  WebWork Application Generator V 1.0
 
     Copyright 2006 Chih-Shyang Chang
-    Created Date: Tue May 23 23:36:27 CST 2017
+    Created Date: Wed May 24 22:56:29 CST 2017
 */
 
 public class ProductManagerImpl extends CommonManagerImpl implements ProductManager
@@ -64,34 +64,154 @@ public class ProductManagerImpl extends CommonManagerImpl implements ProductMana
         return getGenericDAO().findLogoList();
     }
 
-    public Long[] getIdsFromUploadedFileList(List<UploadedFile> lst)
+    public List<UploadedFile> getProductPhoto1List()
     {
-        return getGenericDAO().getIdsFromUploadedFileList(lst);
+        return getGenericDAO().findProductPhoto1List();
     }
 
-    public List<UploadedFile> getUploadedFileListByIds(Long[] ids)
+    public List<UploadedFile> getProductPhoto2List()
     {
-        return getGenericDAO().getUploadedFileListByIds(ids);
+        return getGenericDAO().findProductPhoto2List();
     }
 
-    public Long[] getIdsFromUploadedFileList(List<UploadedFile> lst)
+    public List<UploadedFile> getProductPhoto3List()
     {
-        return getGenericDAO().getIdsFromUploadedFileList(lst);
+        return getGenericDAO().findProductPhoto3List();
     }
 
-    public List<UploadedFile> getUploadedFileListByIds(Long[] ids)
+    public List<UploadedFile> getProductPhoto4List()
     {
-        return getGenericDAO().getUploadedFileListByIds(ids);
+        return getGenericDAO().findProductPhoto4List();
     }
 
-    public Long[] getIdsFromUploadedFileList(List<UploadedFile> lst)
+    public List<UploadedFile> getProductPhoto5List()
     {
-        return getGenericDAO().getIdsFromUploadedFileList(lst);
+        return getGenericDAO().findProductPhoto5List();
     }
 
-    public List<UploadedFile> getUploadedFileListByIds(Long[] ids)
+    public List<UploadedFile> getProductPhoto6List()
     {
-        return getGenericDAO().getUploadedFileListByIds(ids);
+        return getGenericDAO().findProductPhoto6List();
+    }
+
+    public List<UploadedFile> getProductPhoto7List()
+    {
+        return getGenericDAO().findProductPhoto7List();
+    }
+
+    public List<UploadedFile> getProductPhoto8List()
+    {
+        return getGenericDAO().findProductPhoto8List();
+    }
+
+    public List<UploadedFile> getProductPhoto9List()
+    {
+        return getGenericDAO().findProductPhoto9List();
+    }
+
+    public List<UploadedFile> getProductPhoto10List()
+    {
+        return getGenericDAO().findProductPhoto10List();
+    }
+
+    public List<UploadedFile> getDownload1List()
+    {
+        return getGenericDAO().findDownload1List();
+    }
+
+    public List<UploadedFile> getDownload2List()
+    {
+        return getGenericDAO().findDownload2List();
+    }
+
+    public List<UploadedFile> getDownload3List()
+    {
+        return getGenericDAO().findDownload3List();
+    }
+
+    public List<UploadedFile> getDownload4List()
+    {
+        return getGenericDAO().findDownload4List();
+    }
+
+    public List<UploadedFile> getDownload5List()
+    {
+        return getGenericDAO().findDownload5List();
+    }
+
+    public List<UploadedFile> getDownload6List()
+    {
+        return getGenericDAO().findDownload6List();
+    }
+
+    public List<UploadedFile> getDownload7List()
+    {
+        return getGenericDAO().findDownload7List();
+    }
+
+    public List<UploadedFile> getDownload8List()
+    {
+        return getGenericDAO().findDownload8List();
+    }
+
+    public List<UploadedFile> getDownload9List()
+    {
+        return getGenericDAO().findDownload9List();
+    }
+
+    public List<UploadedFile> getDownload10List()
+    {
+        return getGenericDAO().findDownload10List();
+    }
+
+    public List<UploadedFile> getDiagram1List()
+    {
+        return getGenericDAO().findDiagram1List();
+    }
+
+    public List<UploadedFile> getDiagram2List()
+    {
+        return getGenericDAO().findDiagram2List();
+    }
+
+    public List<UploadedFile> getDiagram3List()
+    {
+        return getGenericDAO().findDiagram3List();
+    }
+
+    public List<UploadedFile> getDiagram4List()
+    {
+        return getGenericDAO().findDiagram4List();
+    }
+
+    public List<UploadedFile> getDiagram5List()
+    {
+        return getGenericDAO().findDiagram5List();
+    }
+
+    public List<UploadedFile> getDiagram6List()
+    {
+        return getGenericDAO().findDiagram6List();
+    }
+
+    public List<UploadedFile> getDiagram7List()
+    {
+        return getGenericDAO().findDiagram7List();
+    }
+
+    public List<UploadedFile> getDiagram8List()
+    {
+        return getGenericDAO().findDiagram8List();
+    }
+
+    public List<UploadedFile> getDiagram9List()
+    {
+        return getGenericDAO().findDiagram9List();
+    }
+
+    public List<UploadedFile> getDiagram10List()
+    {
+        return getGenericDAO().findDiagram10List();
     }
 
 }

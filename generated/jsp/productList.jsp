@@ -32,9 +32,36 @@
     <display:column property="specification" sortable="true" titleKey="product.specification" style="text-align:left" />
     <display:column property="productType.caption_" sortable="true" titleKey="product.productType" style="text-align:left"/>
     <display:column property="logo.caption_" sortable="true" titleKey="product.logo" style="text-align:left"/>
-    <display:column property="photos" sortable="true" titleKey="product.photos" style="text-align:left" />
-    <display:column property="downloads" sortable="true" titleKey="product.downloads" style="text-align:left" />
-    <display:column property="diagrams" sortable="true" titleKey="product.diagrams" style="text-align:left" />
+    <display:column property="productPhoto1.caption_" sortable="true" titleKey="product.productPhoto1" style="text-align:left"/>
+    <display:column property="productPhoto2.caption_" sortable="true" titleKey="product.productPhoto2" style="text-align:left"/>
+    <display:column property="productPhoto3.caption_" sortable="true" titleKey="product.productPhoto3" style="text-align:left"/>
+    <display:column property="productPhoto4.caption_" sortable="true" titleKey="product.productPhoto4" style="text-align:left"/>
+    <display:column property="productPhoto5.caption_" sortable="true" titleKey="product.productPhoto5" style="text-align:left"/>
+    <display:column property="productPhoto6.caption_" sortable="true" titleKey="product.productPhoto6" style="text-align:left"/>
+    <display:column property="productPhoto7.caption_" sortable="true" titleKey="product.productPhoto7" style="text-align:left"/>
+    <display:column property="productPhoto8.caption_" sortable="true" titleKey="product.productPhoto8" style="text-align:left"/>
+    <display:column property="productPhoto9.caption_" sortable="true" titleKey="product.productPhoto9" style="text-align:left"/>
+    <display:column property="productPhoto10.caption_" sortable="true" titleKey="product.productPhoto10" style="text-align:left"/>
+    <display:column property="download1.caption_" sortable="true" titleKey="product.download1" style="text-align:left"/>
+    <display:column property="download2.caption_" sortable="true" titleKey="product.download2" style="text-align:left"/>
+    <display:column property="download3.caption_" sortable="true" titleKey="product.download3" style="text-align:left"/>
+    <display:column property="download4.caption_" sortable="true" titleKey="product.download4" style="text-align:left"/>
+    <display:column property="download5.caption_" sortable="true" titleKey="product.download5" style="text-align:left"/>
+    <display:column property="download6.caption_" sortable="true" titleKey="product.download6" style="text-align:left"/>
+    <display:column property="download7.caption_" sortable="true" titleKey="product.download7" style="text-align:left"/>
+    <display:column property="download8.caption_" sortable="true" titleKey="product.download8" style="text-align:left"/>
+    <display:column property="download9.caption_" sortable="true" titleKey="product.download9" style="text-align:left"/>
+    <display:column property="download10.caption_" sortable="true" titleKey="product.download10" style="text-align:left"/>
+    <display:column property="diagram1.caption_" sortable="true" titleKey="product.diagram1" style="text-align:left"/>
+    <display:column property="diagram2.caption_" sortable="true" titleKey="product.diagram2" style="text-align:left"/>
+    <display:column property="diagram3.caption_" sortable="true" titleKey="product.diagram3" style="text-align:left"/>
+    <display:column property="diagram4.caption_" sortable="true" titleKey="product.diagram4" style="text-align:left"/>
+    <display:column property="diagram5.caption_" sortable="true" titleKey="product.diagram5" style="text-align:left"/>
+    <display:column property="diagram6.caption_" sortable="true" titleKey="product.diagram6" style="text-align:left"/>
+    <display:column property="diagram7.caption_" sortable="true" titleKey="product.diagram7" style="text-align:left"/>
+    <display:column property="diagram8.caption_" sortable="true" titleKey="product.diagram8" style="text-align:left"/>
+    <display:column property="diagram9.caption_" sortable="true" titleKey="product.diagram9" style="text-align:left"/>
+    <display:column property="diagram10.caption_" sortable="true" titleKey="product.diagram10" style="text-align:left"/>
     <display:column titleKey="common.action">
         <ww:if test="recordEditable == true">
             <a href="editProduct.html?product.id=<c:out value="${row.id}"/>"><fmt:message key="common.edit"/></a>&nbsp;&nbsp;

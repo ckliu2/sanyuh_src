@@ -10,7 +10,7 @@ import com.common.dao.hibernate.CommonDAOHibernate;
  WebWork Application Generator V 1.0
 
     Copyright 2006 Chih-Shyang Chang
-    Created Date: Tue May 23 23:36:27 CST 2017
+    Created Date: Wed May 24 22:56:29 CST 2017
 */
 
 public class ProductDAOHibernate extends CommonDAOHibernate implements ProductDAO
@@ -61,89 +61,155 @@ public class ProductDAOHibernate extends CommonDAOHibernate implements ProductDA
         return new ArrayList<UploadedFile>(); // TODO
     }
 
-    public Long[] getIdsFromUploadedFileList(List tlist)
+    public List<UploadedFile> findProductPhoto1List()
     {
-        ArrayList<Long> al = new ArrayList<Long>();
-        if (tlist != null) {
-            for (int i = 0; i < tlist.size(); i++) {
-                UploadedFile t = (UploadedFile) tlist.get(i);
-                if (t != null)
-                    al.add(t.getId());
-            }
-        }
-        Long lng[] = new Long[al.size()];
-        al.toArray(lng);
-        
-        return lng;
+        return new ArrayList<UploadedFile>(); // TODO
     }
 
-    public List getUploadedFileListByIds(Long[] ids)
+    public List<UploadedFile> findProductPhoto2List()
     {
-        ArrayList<UploadedFile> al = new ArrayList<UploadedFile>();
-        if (ids != null) {
-            for (int i = 0; i < ids.length; i++) {
-                UploadedFile t = (UploadedFile) findUploadedFileById(ids[i]);
-                if (t != null)
-                    al.add(t);
-            }
-        }
-        return al;
-    }
-    public Long[] getIdsFromUploadedFileList(List tlist)
-    {
-        ArrayList<Long> al = new ArrayList<Long>();
-        if (tlist != null) {
-            for (int i = 0; i < tlist.size(); i++) {
-                UploadedFile t = (UploadedFile) tlist.get(i);
-                if (t != null)
-                    al.add(t.getId());
-            }
-        }
-        Long lng[] = new Long[al.size()];
-        al.toArray(lng);
-        
-        return lng;
+        return new ArrayList<UploadedFile>(); // TODO
     }
 
-    public List getUploadedFileListByIds(Long[] ids)
+    public List<UploadedFile> findProductPhoto3List()
     {
-        ArrayList<UploadedFile> al = new ArrayList<UploadedFile>();
-        if (ids != null) {
-            for (int i = 0; i < ids.length; i++) {
-                UploadedFile t = (UploadedFile) findUploadedFileById(ids[i]);
-                if (t != null)
-                    al.add(t);
-            }
-        }
-        return al;
-    }
-    public Long[] getIdsFromUploadedFileList(List tlist)
-    {
-        ArrayList<Long> al = new ArrayList<Long>();
-        if (tlist != null) {
-            for (int i = 0; i < tlist.size(); i++) {
-                UploadedFile t = (UploadedFile) tlist.get(i);
-                if (t != null)
-                    al.add(t.getId());
-            }
-        }
-        Long lng[] = new Long[al.size()];
-        al.toArray(lng);
-        
-        return lng;
+        return new ArrayList<UploadedFile>(); // TODO
     }
 
-    public List getUploadedFileListByIds(Long[] ids)
+    public List<UploadedFile> findProductPhoto4List()
     {
-        ArrayList<UploadedFile> al = new ArrayList<UploadedFile>();
-        if (ids != null) {
-            for (int i = 0; i < ids.length; i++) {
-                UploadedFile t = (UploadedFile) findUploadedFileById(ids[i]);
-                if (t != null)
-                    al.add(t);
-            }
-        }
-        return al;
+        return new ArrayList<UploadedFile>(); // TODO
     }
+
+    public List<UploadedFile> findProductPhoto5List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findProductPhoto6List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findProductPhoto7List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findProductPhoto8List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findProductPhoto9List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findProductPhoto10List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findDownload1List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findDownload2List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findDownload3List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findDownload4List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findDownload5List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findDownload6List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findDownload7List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findDownload8List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findDownload9List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findDownload10List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findDiagram1List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findDiagram2List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findDiagram3List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findDiagram4List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findDiagram5List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findDiagram6List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findDiagram7List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findDiagram8List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findDiagram9List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findDiagram10List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
 }
 
