@@ -47,6 +47,372 @@
         </td>
     </tr>
 
+    <tr><td class="cInputCaption"><fmt:message key="product.link1"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link1" value="%{product.link1}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName1"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName1" value="%{product.linkName1}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.link2"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link2" value="%{product.link2}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName2"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName2" value="%{product.linkName2}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.link3"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link3" value="%{product.link3}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName3"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName3" value="%{product.linkName3}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.link4"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link4" value="%{product.link4}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName4"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName4" value="%{product.linkName4}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.link5"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link5" value="%{product.link5}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName5"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName5" value="%{product.linkName5}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.link6"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link6" value="%{product.link6}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName6"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName6" value="%{product.linkName6}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.link7"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link7" value="%{product.link7}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName7"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName7" value="%{product.linkName7}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.link8"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link8" value="%{product.link8}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName8"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName8" value="%{product.linkName8}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.link9"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link9" value="%{product.link9}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName9"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName9" value="%{product.linkName9}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.link10"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link10" value="%{product.link10}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName10"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName10" value="%{product.linkName10}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.link11"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link11" value="%{product.link11}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName11"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName11" value="%{product.linkName11}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.link12"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link12" value="%{product.link12}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName12"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName12" value="%{product.linkName12}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.link13"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link13" value="%{product.link13}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName13"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName13" value="%{product.linkName13}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.link14"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link14" value="%{product.link14}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName14"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName14" value="%{product.linkName14}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.link15"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link15" value="%{product.link15}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName15"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName15" value="%{product.linkName15}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.link16"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link16" value="%{product.link16}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName16"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName16" value="%{product.linkName16}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.link17"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link17" value="%{product.link17}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName17"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName17" value="%{product.linkName17}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.link18"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link18" value="%{product.link18}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName18"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName18" value="%{product.linkName18}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.link19"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link19" value="%{product.link19}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName19"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName19" value="%{product.linkName19}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.link20"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link20" value="%{product.link20}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName20"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName20" value="%{product.linkName20}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.link21"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link21" value="%{product.link21}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName21"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName21" value="%{product.linkName21}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.link22"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link22" value="%{product.link22}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName22"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName22" value="%{product.linkName22}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.link23"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link23" value="%{product.link23}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName23"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName23" value="%{product.linkName23}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.link24"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link24" value="%{product.link24}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName24"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName24" value="%{product.linkName24}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.link25"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link25" value="%{product.link25}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName25"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName25" value="%{product.linkName25}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.link26"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link26" value="%{product.link26}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName26"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName26" value="%{product.linkName26}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.link27"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link27" value="%{product.link27}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName27"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName27" value="%{product.linkName27}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.link28"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link28" value="%{product.link28}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName28"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName28" value="%{product.linkName28}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.link29"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link29" value="%{product.link29}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName29"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName29" value="%{product.linkName29}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.link30"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.link30" value="%{product.link30}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.linkName30"/></td>
+        <td class="cInputColumn">
+            <ww:textfield name="product.linkName30" value="%{product.linkName30}" maxlength="0" cssClass="cInputTextField" />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.disabled"/></td>
+        <td class="cInputColumn">
+            <ww:checkbox name="product.disabled" cssClass="cCheckboxField" />
+        </td>
+    </tr>
+
     <tr><td class="cInputCaption"><fmt:message key="product.productType"/></td>
         <td class="cInputColumn">
             <ww:select name="product.productTypeId" 
@@ -60,18 +426,90 @@
         </td>
     </tr>
 
-    <tr><td class="cInputCaption"><fmt:message key="product.logo"/></td>
+    <tr><td class="cInputCaption"><fmt:message key="product.logo1"/></td>
         <td class="cInputColumn">
-        <ww:if test="product.logo != null">
-            <input type="checkbox" name="removeLogo" onclick="if (this.checked == true) document.productForm.fileLogo.style.display='inline'; else document.productForm.fileLogo.style.display='none';" value="<ww:property value="product.logo.fileName"/>"><fmt:message key="common.delete"/>
-            <a href="${ctx}/<fmt:message key="product.uploadLogo.relativeUrl"/>/<ww:property value="product.id"/>/<ww:property value="product.logo.fileName"/>"><ww:property value="product.logo.fileName" /> (<ww:property value="product.logo.size" /> bytes)</a><br>
-            <ww:file cssClass="cInputTextFieldLong" cssStyle="height:20px;display:none" name="fileLogo" accept="application/pdf,application/msword,application/vnd.ms-excel,application/vnd.ms-powerpoint,image/gif,image/jpeg,image/bmp,image/png,image/tiff" />
-            <ww:hidden name="product.logoId" value="${product.logo.id}"/>
-            <ww:hidden name="product.logoFileName" value="${product.logo.fileName}"/>
+        <ww:if test="product.logo1 != null">
+            <input type="checkbox" name="removeLogo1" onclick="if (this.checked == true) document.productForm.fileLogo1.style.display='inline'; else document.productForm.fileLogo1.style.display='none';" value="<ww:property value="product.logo1.fileName"/>"><fmt:message key="common.delete"/>
+            <a href="${ctx}/<fmt:message key="product.uploadLogo1.relativeUrl"/>/<ww:property value="product.id"/>/<ww:property value="product.logo1.fileName"/>"><ww:property value="product.logo1.fileName" /> (<ww:property value="product.logo1.size" /> bytes)</a><br>
+            <ww:file cssClass="cInputTextFieldLong" cssStyle="height:20px;display:none" name="fileLogo1" accept="application/pdf,application/msword,application/vnd.ms-excel,application/vnd.ms-powerpoint,image/gif,image/jpeg,image/bmp,image/png,image/tiff" />
+            <ww:hidden name="product.logo1Id" value="${product.logo1.id}"/>
+            <ww:hidden name="product.logo1FileName" value="${product.logo1.fileName}"/>
         </ww:if>
         <ww:else>
-            <ww:file cssClass="cInputTextFieldLong" cssStyle="height:20px" name="fileLogo" accept="application/pdf,application/msword,application/vnd.ms-excel,application/vnd.ms-powerpoint,image/gif,image/jpeg,image/bmp,image/png,image/tiff" /><br>
+            <ww:file cssClass="cInputTextFieldLong" cssStyle="height:20px" name="fileLogo1" accept="application/pdf,application/msword,application/vnd.ms-excel,application/vnd.ms-powerpoint,image/gif,image/jpeg,image/bmp,image/png,image/tiff" /><br>
         </ww:else>
+
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.logo2"/></td>
+        <td class="cInputColumn">
+        <ww:if test="product.logo2 != null">
+            <input type="checkbox" name="removeLogo2" onclick="if (this.checked == true) document.productForm.fileLogo2.style.display='inline'; else document.productForm.fileLogo2.style.display='none';" value="<ww:property value="product.logo2.fileName"/>"><fmt:message key="common.delete"/>
+            <a href="${ctx}/<fmt:message key="product.uploadLogo2.relativeUrl"/>/<ww:property value="product.id"/>/<ww:property value="product.logo2.fileName"/>"><ww:property value="product.logo2.fileName" /> (<ww:property value="product.logo2.size" /> bytes)</a><br>
+            <ww:file cssClass="cInputTextFieldLong" cssStyle="height:20px;display:none" name="fileLogo2" accept="application/pdf,application/msword,application/vnd.ms-excel,application/vnd.ms-powerpoint,image/gif,image/jpeg,image/bmp,image/png,image/tiff" />
+            <ww:hidden name="product.logo2Id" value="${product.logo2.id}"/>
+            <ww:hidden name="product.logo2FileName" value="${product.logo2.fileName}"/>
+        </ww:if>
+        <ww:else>
+            <ww:file cssClass="cInputTextFieldLong" cssStyle="height:20px" name="fileLogo2" accept="application/pdf,application/msword,application/vnd.ms-excel,application/vnd.ms-powerpoint,image/gif,image/jpeg,image/bmp,image/png,image/tiff" /><br>
+        </ww:else>
+
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.logo3"/></td>
+        <td class="cInputColumn">
+
+
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.logo4"/></td>
+        <td class="cInputColumn">
+
+
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.logo5"/></td>
+        <td class="cInputColumn">
+
+
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.logo6"/></td>
+        <td class="cInputColumn">
+
+
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.logo7"/></td>
+        <td class="cInputColumn">
+        
+
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.logo8"/></td>
+        <td class="cInputColumn">
+        
+
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.logo9"/></td>
+        <td class="cInputColumn">
+
+
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.logo10"/></td>
+        <td class="cInputColumn">
+
 
         </td>
     </tr>
@@ -553,6 +991,396 @@
             <ww:file cssClass="cInputTextFieldLong" cssStyle="height:20px" name="fileDiagram10" accept="application/pdf,application/msword,application/vnd.ms-excel,application/vnd.ms-powerpoint,image/gif,image/jpeg,image/bmp,image/png,image/tiff" /><br>
         </ww:else>
 
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target1"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target1Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="target1List"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target2"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target2Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="target2List"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target3"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target3Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="target3List"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target4"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target4Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="target4List"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target5"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target5Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="target5List"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target6"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target6Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="target6List"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target7"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target7Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="target7List"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target8"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target8Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="target8List"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target9"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target9Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="target9List"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target10"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target10Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="target10List"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target11"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target11Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="target11List"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target12"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target12Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="target12List"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target13"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target13Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="target13List"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target14"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target14Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="target14List"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target15"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target15Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="target15List"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target16"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target16Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="target16List"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target17"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target17Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="target17List"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target18"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target18Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="target18List"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target19"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target19Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="target19List"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target20"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target20Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="target20List"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target21"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target21Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="target21List"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target22"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target22Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="target22List"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target23"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target23Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="target23List"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target24"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target24Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="target24List"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target25"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target25Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="target25List"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target26"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target26Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="target26List"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target27"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target27Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="hrefTarget"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target28"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target28Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="target28List"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target29"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target29Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="target29List"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
+        </td>
+    </tr>
+
+    <tr><td class="cInputCaption"><fmt:message key="product.target30"/></td>
+        <td class="cInputColumn">
+            <ww:select name="product.target30Id" 
+               headerKey=""
+               headerValue="%{getText('common.pleaseSelect')}..."
+               list="target30List"
+               listKey="id"
+               listValue="caption_"
+               cssClass="cInputListField"
+            />
         </td>
     </tr>
 

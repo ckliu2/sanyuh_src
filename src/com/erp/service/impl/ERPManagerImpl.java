@@ -72,9 +72,9 @@ public class ERPManagerImpl extends CommonManagerImpl implements ERPManager
          return getGenericDAO().findProductById(id);
     }
 
-    public List<Product> getProductList()
+    public List<Product> getProductList(ProductType type)
     {
-        return getGenericDAO().findAllProduct();
+        return getGenericDAO().findAllProduct(type);
     }
 }
 

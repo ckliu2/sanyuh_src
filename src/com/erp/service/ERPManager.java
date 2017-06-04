@@ -28,6 +28,6 @@ public interface ERPManager extends CommonManager
 
     public abstract Product getProductById(Long id);
 
-    public abstract List<Product> getProductList();
+    public abstract List<Product> getProductList(ProductType type);
 }
 

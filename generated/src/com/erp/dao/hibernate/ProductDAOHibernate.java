@@ -10,7 +10,7 @@ import com.common.dao.hibernate.CommonDAOHibernate;
  WebWork Application Generator V 1.0
 
     Copyright 2006 Chih-Shyang Chang
-    Created Date: Wed May 24 22:56:29 CST 2017
+    Created Date: Fri Jun 02 22:23:01 CST 2017
 */
 
 public class ProductDAOHibernate extends CommonDAOHibernate implements ProductDAO
@@ -56,7 +56,52 @@ public class ProductDAOHibernate extends CommonDAOHibernate implements ProductDA
         return new ArrayList<ProductType>(); // TODO
     }
 
-    public List<UploadedFile> findLogoList()
+    public List<UploadedFile> findLogo1List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findLogo2List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findLogo3List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findLogo4List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findLogo5List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findLogo6List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findLogo7List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findLogo8List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findLogo9List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findLogo10List()
     {
         return new ArrayList<UploadedFile>(); // TODO
     }

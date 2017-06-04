@@ -1,5 +1,6 @@
 package com.erp.value;
 
+import com.base.value.AppProperty;
 import com.base.value.UploadedFile;
 import java.io.Serializable;
 import org.apache.commons.lang.builder.ToStringBuilder;
@@ -23,13 +24,241 @@ public class Product extends BaseObject implements Serializable {
     private String specification;
 
     /** nullable persistent field */
+    private String link1;
+
+    /** nullable persistent field */
+    private String linkName1;
+
+    /** nullable persistent field */
+    private String link2;
+
+    /** nullable persistent field */
+    private String linkName2;
+
+    /** nullable persistent field */
+    private String link3;
+
+    /** nullable persistent field */
+    private String linkName3;
+
+    /** nullable persistent field */
+    private String link4;
+
+    /** nullable persistent field */
+    private String linkName4;
+
+    /** nullable persistent field */
+    private String link5;
+
+    /** nullable persistent field */
+    private String linkName5;
+
+    /** nullable persistent field */
+    private String link6;
+
+    /** nullable persistent field */
+    private String linkName6;
+
+    /** nullable persistent field */
+    private String link7;
+
+    /** nullable persistent field */
+    private String linkName7;
+
+    /** nullable persistent field */
+    private String link8;
+
+    /** nullable persistent field */
+    private String linkName8;
+
+    /** nullable persistent field */
+    private String link9;
+
+    /** nullable persistent field */
+    private String linkName9;
+
+    /** nullable persistent field */
+    private String link10;
+
+    /** nullable persistent field */
+    private String linkName10;
+
+    /** nullable persistent field */
+    private String link11;
+
+    /** nullable persistent field */
+    private String linkName11;
+
+    /** nullable persistent field */
+    private String link12;
+
+    /** nullable persistent field */
+    private String linkName12;
+
+    /** nullable persistent field */
+    private String link13;
+
+    /** nullable persistent field */
+    private String linkName13;
+
+    /** nullable persistent field */
+    private String link14;
+
+    /** nullable persistent field */
+    private String linkName14;
+
+    /** nullable persistent field */
+    private String link15;
+
+    /** nullable persistent field */
+    private String linkName15;
+
+    /** nullable persistent field */
+    private String link16;
+
+    /** nullable persistent field */
+    private String linkName16;
+
+    /** nullable persistent field */
+    private String link17;
+
+    /** nullable persistent field */
+    private String linkName17;
+
+    /** nullable persistent field */
+    private String link18;
+
+    /** nullable persistent field */
+    private String linkName18;
+
+    /** nullable persistent field */
+    private String link19;
+
+    /** nullable persistent field */
+    private String linkName19;
+
+    /** nullable persistent field */
+    private String link20;
+
+    /** nullable persistent field */
+    private String linkName20;
+
+    /** nullable persistent field */
+    private String link21;
+
+    /** nullable persistent field */
+    private String linkName21;
+
+    /** nullable persistent field */
+    private String link22;
+
+    /** nullable persistent field */
+    private String linkName22;
+
+    /** nullable persistent field */
+    private String link23;
+
+    /** nullable persistent field */
+    private String linkName23;
+
+    /** nullable persistent field */
+    private String link24;
+
+    /** nullable persistent field */
+    private String linkName24;
+
+    /** nullable persistent field */
+    private String link25;
+
+    /** nullable persistent field */
+    private String linkName25;
+
+    /** nullable persistent field */
+    private String link26;
+
+    /** nullable persistent field */
+    private String linkName26;
+
+    /** nullable persistent field */
+    private String link27;
+
+    /** nullable persistent field */
+    private String linkName27;
+
+    /** nullable persistent field */
+    private String link28;
+
+    /** nullable persistent field */
+    private String linkName28;
+
+    /** nullable persistent field */
+    private String link29;
+
+    /** nullable persistent field */
+    private String linkName29;
+
+    /** nullable persistent field */
+    private String link30;
+
+    /** nullable persistent field */
+    private String linkName30;
+
+    /** nullable persistent field */
+    private Boolean disabled;
+
+    /** nullable persistent field */
     private com.erp.value.ProductType productType;
     private Long productTypeId;
 
     /** nullable persistent field */
-    private UploadedFile logo;
-    private String logoFileName;
-    private Long logoId;
+    private UploadedFile logo1;
+    private String logo1FileName;
+    private Long logo1Id;
+
+    /** nullable persistent field */
+    private UploadedFile logo2;
+    private String logo2FileName;
+    private Long logo2Id;
+
+    /** nullable persistent field */
+    private UploadedFile logo3;
+    private String logo3FileName;
+    private Long logo3Id;
+
+    /** nullable persistent field */
+    private UploadedFile logo4;
+    private String logo4FileName;
+    private Long logo4Id;
+
+    /** nullable persistent field */
+    private UploadedFile logo5;
+    private String logo5FileName;
+    private Long logo5Id;
+
+    /** nullable persistent field */
+    private UploadedFile logo6;
+    private String logo6FileName;
+    private Long logo6Id;
+
+    /** nullable persistent field */
+    private UploadedFile logo7;
+    private String logo7FileName;
+    private Long logo7Id;
+
+    /** nullable persistent field */
+    private UploadedFile logo8;
+    private String logo8FileName;
+    private Long logo8Id;
+
+    /** nullable persistent field */
+    private UploadedFile logo9;
+    private String logo9FileName;
+    private Long logo9Id;
+
+    /** nullable persistent field */
+    private UploadedFile logo10;
+    private String logo10FileName;
+    private Long logo10Id;
 
     /** nullable persistent field */
     private UploadedFile productPhoto1;
@@ -181,14 +410,204 @@ public class Product extends BaseObject implements Serializable {
     private String diagram10FileName;
     private Long diagram10Id;
 
+    /** nullable persistent field */
+    private AppProperty target1;
+    private Long target1Id;
+
+    /** nullable persistent field */
+    private AppProperty target2;
+    private Long target2Id;
+
+    /** nullable persistent field */
+    private AppProperty target3;
+    private Long target3Id;
+
+    /** nullable persistent field */
+    private AppProperty target4;
+    private Long target4Id;
+
+    /** nullable persistent field */
+    private AppProperty target5;
+    private Long target5Id;
+
+    /** nullable persistent field */
+    private AppProperty target6;
+    private Long target6Id;
+
+    /** nullable persistent field */
+    private AppProperty target7;
+    private Long target7Id;
+
+    /** nullable persistent field */
+    private AppProperty target8;
+    private Long target8Id;
+
+    /** nullable persistent field */
+    private AppProperty target9;
+    private Long target9Id;
+
+    /** nullable persistent field */
+    private AppProperty target10;
+    private Long target10Id;
+
+    /** nullable persistent field */
+    private AppProperty target11;
+    private Long target11Id;
+
+    /** nullable persistent field */
+    private AppProperty target12;
+    private Long target12Id;
+
+    /** nullable persistent field */
+    private AppProperty target13;
+    private Long target13Id;
+
+    /** nullable persistent field */
+    private AppProperty target14;
+    private Long target14Id;
+
+    /** nullable persistent field */
+    private AppProperty target15;
+    private Long target15Id;
+
+    /** nullable persistent field */
+    private AppProperty target16;
+    private Long target16Id;
+
+    /** nullable persistent field */
+    private AppProperty target17;
+    private Long target17Id;
+
+    /** nullable persistent field */
+    private AppProperty target18;
+    private Long target18Id;
+
+    /** nullable persistent field */
+    private AppProperty target19;
+    private Long target19Id;
+
+    /** nullable persistent field */
+    private AppProperty target20;
+    private Long target20Id;
+
+    /** nullable persistent field */
+    private AppProperty target21;
+    private Long target21Id;
+
+    /** nullable persistent field */
+    private AppProperty target22;
+    private Long target22Id;
+
+    /** nullable persistent field */
+    private AppProperty target23;
+    private Long target23Id;
+
+    /** nullable persistent field */
+    private AppProperty target24;
+    private Long target24Id;
+
+    /** nullable persistent field */
+    private AppProperty target25;
+    private Long target25Id;
+
+    /** nullable persistent field */
+    private AppProperty target26;
+    private Long target26Id;
+
+    /** nullable persistent field */
+    private AppProperty target27;
+    private Long target27Id;
+
+    /** nullable persistent field */
+    private AppProperty target28;
+    private Long target28Id;
+
+    /** nullable persistent field */
+    private AppProperty target29;
+    private Long target29Id;
+
+    /** nullable persistent field */
+    private AppProperty target30;
+    private Long target30Id;
+
     /** full constructor */
-    public Product(String no, String name, String overview, String specification, com.erp.value.ProductType productType, UploadedFile logo, UploadedFile productPhoto1, UploadedFile productPhoto2, UploadedFile productPhoto3, UploadedFile productPhoto4, UploadedFile productPhoto5, UploadedFile productPhoto6, UploadedFile productPhoto7, UploadedFile productPhoto8, UploadedFile productPhoto9, UploadedFile productPhoto10, UploadedFile download1, UploadedFile download2, UploadedFile download3, UploadedFile download4, UploadedFile download5, UploadedFile download6, UploadedFile download7, UploadedFile download8, UploadedFile download9, UploadedFile download10, UploadedFile diagram1, UploadedFile diagram2, UploadedFile diagram3, UploadedFile diagram4, UploadedFile diagram5, UploadedFile diagram6, UploadedFile diagram7, UploadedFile diagram8, UploadedFile diagram9, UploadedFile diagram10) {
+    public Product(String no, String name, String overview, String specification, String link1, String linkName1, String link2, String linkName2, String link3, String linkName3, String link4, String linkName4, String link5, String linkName5, String link6, String linkName6, String link7, String linkName7, String link8, String linkName8, String link9, String linkName9, String link10, String linkName10, String link11, String linkName11, String link12, String linkName12, String link13, String linkName13, String link14, String linkName14, String link15, String linkName15, String link16, String linkName16, String link17, String linkName17, String link18, String linkName18, String link19, String linkName19, String link20, String linkName20, String link21, String linkName21, String link22, String linkName22, String link23, String linkName23, String link24, String linkName24, String link25, String linkName25, String link26, String linkName26, String link27, String linkName27, String link28, String linkName28, String link29, String linkName29, String link30, String linkName30, Boolean disabled, com.erp.value.ProductType productType, UploadedFile logo1, UploadedFile logo2, UploadedFile logo3, UploadedFile logo4, UploadedFile logo5, UploadedFile logo6, UploadedFile logo7, UploadedFile logo8, UploadedFile logo9, UploadedFile logo10, UploadedFile productPhoto1, UploadedFile productPhoto2, UploadedFile productPhoto3, UploadedFile productPhoto4, UploadedFile productPhoto5, UploadedFile productPhoto6, UploadedFile productPhoto7, UploadedFile productPhoto8, UploadedFile productPhoto9, UploadedFile productPhoto10, UploadedFile download1, UploadedFile download2, UploadedFile download3, UploadedFile download4, UploadedFile download5, UploadedFile download6, UploadedFile download7, UploadedFile download8, UploadedFile download9, UploadedFile download10, UploadedFile diagram1, UploadedFile diagram2, UploadedFile diagram3, UploadedFile diagram4, UploadedFile diagram5, UploadedFile diagram6, UploadedFile diagram7, UploadedFile diagram8, UploadedFile diagram9, UploadedFile diagram10, AppProperty target1, AppProperty target2, AppProperty target3, AppProperty target4, AppProperty target5, AppProperty target6, AppProperty target7, AppProperty target8, AppProperty target9, AppProperty target10, AppProperty target11, AppProperty target12, AppProperty target13, AppProperty target14, AppProperty target15, AppProperty target16, AppProperty target17, AppProperty target18, AppProperty target19, AppProperty target20, AppProperty target21, AppProperty target22, AppProperty target23, AppProperty target24, AppProperty target25, AppProperty target26, AppProperty target27, AppProperty target28, AppProperty target29, AppProperty target30) {
         this.no = no;
         this.name = name;
         this.overview = overview;
         this.specification = specification;
+        this.link1 = link1;
+        this.linkName1 = linkName1;
+        this.link2 = link2;
+        this.linkName2 = linkName2;
+        this.link3 = link3;
+        this.linkName3 = linkName3;
+        this.link4 = link4;
+        this.linkName4 = linkName4;
+        this.link5 = link5;
+        this.linkName5 = linkName5;
+        this.link6 = link6;
+        this.linkName6 = linkName6;
+        this.link7 = link7;
+        this.linkName7 = linkName7;
+        this.link8 = link8;
+        this.linkName8 = linkName8;
+        this.link9 = link9;
+        this.linkName9 = linkName9;
+        this.link10 = link10;
+        this.linkName10 = linkName10;
+        this.link11 = link11;
+        this.linkName11 = linkName11;
+        this.link12 = link12;
+        this.linkName12 = linkName12;
+        this.link13 = link13;
+        this.linkName13 = linkName13;
+        this.link14 = link14;
+        this.linkName14 = linkName14;
+        this.link15 = link15;
+        this.linkName15 = linkName15;
+        this.link16 = link16;
+        this.linkName16 = linkName16;
+        this.link17 = link17;
+        this.linkName17 = linkName17;
+        this.link18 = link18;
+        this.linkName18 = linkName18;
+        this.link19 = link19;
+        this.linkName19 = linkName19;
+        this.link20 = link20;
+        this.linkName20 = linkName20;
+        this.link21 = link21;
+        this.linkName21 = linkName21;
+        this.link22 = link22;
+        this.linkName22 = linkName22;
+        this.link23 = link23;
+        this.linkName23 = linkName23;
+        this.link24 = link24;
+        this.linkName24 = linkName24;
+        this.link25 = link25;
+        this.linkName25 = linkName25;
+        this.link26 = link26;
+        this.linkName26 = linkName26;
+        this.link27 = link27;
+        this.linkName27 = linkName27;
+        this.link28 = link28;
+        this.linkName28 = linkName28;
+        this.link29 = link29;
+        this.linkName29 = linkName29;
+        this.link30 = link30;
+        this.linkName30 = linkName30;
+        this.disabled = disabled;
         this.productType = productType;
-        this.logo = logo;
+        this.logo1 = logo1;
+        this.logo2 = logo2;
+        this.logo3 = logo3;
+        this.logo4 = logo4;
+        this.logo5 = logo5;
+        this.logo6 = logo6;
+        this.logo7 = logo7;
+        this.logo8 = logo8;
+        this.logo9 = logo9;
+        this.logo10 = logo10;
         this.productPhoto1 = productPhoto1;
         this.productPhoto2 = productPhoto2;
         this.productPhoto3 = productPhoto3;
@@ -219,6 +638,36 @@ public class Product extends BaseObject implements Serializable {
         this.diagram8 = diagram8;
         this.diagram9 = diagram9;
         this.diagram10 = diagram10;
+        this.target1 = target1;
+        this.target2 = target2;
+        this.target3 = target3;
+        this.target4 = target4;
+        this.target5 = target5;
+        this.target6 = target6;
+        this.target7 = target7;
+        this.target8 = target8;
+        this.target9 = target9;
+        this.target10 = target10;
+        this.target11 = target11;
+        this.target12 = target12;
+        this.target13 = target13;
+        this.target14 = target14;
+        this.target15 = target15;
+        this.target16 = target16;
+        this.target17 = target17;
+        this.target18 = target18;
+        this.target19 = target19;
+        this.target20 = target20;
+        this.target21 = target21;
+        this.target22 = target22;
+        this.target23 = target23;
+        this.target24 = target24;
+        this.target25 = target25;
+        this.target26 = target26;
+        this.target27 = target27;
+        this.target28 = target28;
+        this.target29 = target29;
+        this.target30 = target30;
     }
 
     /** default constructor */
@@ -263,6 +712,494 @@ public class Product extends BaseObject implements Serializable {
         this.specification = specification;
     }
 
+    public String getLink1() {
+        return this.link1;
+    }
+
+    public void setLink1(String link1) {
+        this.link1 = link1;
+    }
+
+    public String getLinkName1() {
+        return this.linkName1;
+    }
+
+    public void setLinkName1(String linkName1) {
+        this.linkName1 = linkName1;
+    }
+
+    public String getLink2() {
+        return this.link2;
+    }
+
+    public void setLink2(String link2) {
+        this.link2 = link2;
+    }
+
+    public String getLinkName2() {
+        return this.linkName2;
+    }
+
+    public void setLinkName2(String linkName2) {
+        this.linkName2 = linkName2;
+    }
+
+    public String getLink3() {
+        return this.link3;
+    }
+
+    public void setLink3(String link3) {
+        this.link3 = link3;
+    }
+
+    public String getLinkName3() {
+        return this.linkName3;
+    }
+
+    public void setLinkName3(String linkName3) {
+        this.linkName3 = linkName3;
+    }
+
+    public String getLink4() {
+        return this.link4;
+    }
+
+    public void setLink4(String link4) {
+        this.link4 = link4;
+    }
+
+    public String getLinkName4() {
+        return this.linkName4;
+    }
+
+    public void setLinkName4(String linkName4) {
+        this.linkName4 = linkName4;
+    }
+
+    public String getLink5() {
+        return this.link5;
+    }
+
+    public void setLink5(String link5) {
+        this.link5 = link5;
+    }
+
+    public String getLinkName5() {
+        return this.linkName5;
+    }
+
+    public void setLinkName5(String linkName5) {
+        this.linkName5 = linkName5;
+    }
+
+    public String getLink6() {
+        return this.link6;
+    }
+
+    public void setLink6(String link6) {
+        this.link6 = link6;
+    }
+
+    public String getLinkName6() {
+        return this.linkName6;
+    }
+
+    public void setLinkName6(String linkName6) {
+        this.linkName6 = linkName6;
+    }
+
+    public String getLink7() {
+        return this.link7;
+    }
+
+    public void setLink7(String link7) {
+        this.link7 = link7;
+    }
+
+    public String getLinkName7() {
+        return this.linkName7;
+    }
+
+    public void setLinkName7(String linkName7) {
+        this.linkName7 = linkName7;
+    }
+
+    public String getLink8() {
+        return this.link8;
+    }
+
+    public void setLink8(String link8) {
+        this.link8 = link8;
+    }
+
+    public String getLinkName8() {
+        return this.linkName8;
+    }
+
+    public void setLinkName8(String linkName8) {
+        this.linkName8 = linkName8;
+    }
+
+    public String getLink9() {
+        return this.link9;
+    }
+
+    public void setLink9(String link9) {
+        this.link9 = link9;
+    }
+
+    public String getLinkName9() {
+        return this.linkName9;
+    }
+
+    public void setLinkName9(String linkName9) {
+        this.linkName9 = linkName9;
+    }
+
+    public String getLink10() {
+        return this.link10;
+    }
+
+    public void setLink10(String link10) {
+        this.link10 = link10;
+    }
+
+    public String getLinkName10() {
+        return this.linkName10;
+    }
+
+    public void setLinkName10(String linkName10) {
+        this.linkName10 = linkName10;
+    }
+
+    public String getLink11() {
+        return this.link11;
+    }
+
+    public void setLink11(String link11) {
+        this.link11 = link11;
+    }
+
+    public String getLinkName11() {
+        return this.linkName11;
+    }
+
+    public void setLinkName11(String linkName11) {
+        this.linkName11 = linkName11;
+    }
+
+    public String getLink12() {
+        return this.link12;
+    }
+
+    public void setLink12(String link12) {
+        this.link12 = link12;
+    }
+
+    public String getLinkName12() {
+        return this.linkName12;
+    }
+
+    public void setLinkName12(String linkName12) {
+        this.linkName12 = linkName12;
+    }
+
+    public String getLink13() {
+        return this.link13;
+    }
+
+    public void setLink13(String link13) {
+        this.link13 = link13;
+    }
+
+    public String getLinkName13() {
+        return this.linkName13;
+    }
+
+    public void setLinkName13(String linkName13) {
+        this.linkName13 = linkName13;
+    }
+
+    public String getLink14() {
+        return this.link14;
+    }
+
+    public void setLink14(String link14) {
+        this.link14 = link14;
+    }
+
+    public String getLinkName14() {
+        return this.linkName14;
+    }
+
+    public void setLinkName14(String linkName14) {
+        this.linkName14 = linkName14;
+    }
+
+    public String getLink15() {
+        return this.link15;
+    }
+
+    public void setLink15(String link15) {
+        this.link15 = link15;
+    }
+
+    public String getLinkName15() {
+        return this.linkName15;
+    }
+
+    public void setLinkName15(String linkName15) {
+        this.linkName15 = linkName15;
+    }
+
+    public String getLink16() {
+        return this.link16;
+    }
+
+    public void setLink16(String link16) {
+        this.link16 = link16;
+    }
+
+    public String getLinkName16() {
+        return this.linkName16;
+    }
+
+    public void setLinkName16(String linkName16) {
+        this.linkName16 = linkName16;
+    }
+
+    public String getLink17() {
+        return this.link17;
+    }
+
+    public void setLink17(String link17) {
+        this.link17 = link17;
+    }
+
+    public String getLinkName17() {
+        return this.linkName17;
+    }
+
+    public void setLinkName17(String linkName17) {
+        this.linkName17 = linkName17;
+    }
+
+    public String getLink18() {
+        return this.link18;
+    }
+
+    public void setLink18(String link18) {
+        this.link18 = link18;
+    }
+
+    public String getLinkName18() {
+        return this.linkName18;
+    }
+
+    public void setLinkName18(String linkName18) {
+        this.linkName18 = linkName18;
+    }
+
+    public String getLink19() {
+        return this.link19;
+    }
+
+    public void setLink19(String link19) {
+        this.link19 = link19;
+    }
+
+    public String getLinkName19() {
+        return this.linkName19;
+    }
+
+    public void setLinkName19(String linkName19) {
+        this.linkName19 = linkName19;
+    }
+
+    public String getLink20() {
+        return this.link20;
+    }
+
+    public void setLink20(String link20) {
+        this.link20 = link20;
+    }
+
+    public String getLinkName20() {
+        return this.linkName20;
+    }
+
+    public void setLinkName20(String linkName20) {
+        this.linkName20 = linkName20;
+    }
+
+    public String getLink21() {
+        return this.link21;
+    }
+
+    public void setLink21(String link21) {
+        this.link21 = link21;
+    }
+
+    public String getLinkName21() {
+        return this.linkName21;
+    }
+
+    public void setLinkName21(String linkName21) {
+        this.linkName21 = linkName21;
+    }
+
+    public String getLink22() {
+        return this.link22;
+    }
+
+    public void setLink22(String link22) {
+        this.link22 = link22;
+    }
+
+    public String getLinkName22() {
+        return this.linkName22;
+    }
+
+    public void setLinkName22(String linkName22) {
+        this.linkName22 = linkName22;
+    }
+
+    public String getLink23() {
+        return this.link23;
+    }
+
+    public void setLink23(String link23) {
+        this.link23 = link23;
+    }
+
+    public String getLinkName23() {
+        return this.linkName23;
+    }
+
+    public void setLinkName23(String linkName23) {
+        this.linkName23 = linkName23;
+    }
+
+    public String getLink24() {
+        return this.link24;
+    }
+
+    public void setLink24(String link24) {
+        this.link24 = link24;
+    }
+
+    public String getLinkName24() {
+        return this.linkName24;
+    }
+
+    public void setLinkName24(String linkName24) {
+        this.linkName24 = linkName24;
+    }
+
+    public String getLink25() {
+        return this.link25;
+    }
+
+    public void setLink25(String link25) {
+        this.link25 = link25;
+    }
+
+    public String getLinkName25() {
+        return this.linkName25;
+    }
+
+    public void setLinkName25(String linkName25) {
+        this.linkName25 = linkName25;
+    }
+
+    public String getLink26() {
+        return this.link26;
+    }
+
+    public void setLink26(String link26) {
+        this.link26 = link26;
+    }
+
+    public String getLinkName26() {
+        return this.linkName26;
+    }
+
+    public void setLinkName26(String linkName26) {
+        this.linkName26 = linkName26;
+    }
+
+    public String getLink27() {
+        return this.link27;
+    }
+
+    public void setLink27(String link27) {
+        this.link27 = link27;
+    }
+
+    public String getLinkName27() {
+        return this.linkName27;
+    }
+
+    public void setLinkName27(String linkName27) {
+        this.linkName27 = linkName27;
+    }
+
+    public String getLink28() {
+        return this.link28;
+    }
+
+    public void setLink28(String link28) {
+        this.link28 = link28;
+    }
+
+    public String getLinkName28() {
+        return this.linkName28;
+    }
+
+    public void setLinkName28(String linkName28) {
+        this.linkName28 = linkName28;
+    }
+
+    public String getLink29() {
+        return this.link29;
+    }
+
+    public void setLink29(String link29) {
+        this.link29 = link29;
+    }
+
+    public String getLinkName29() {
+        return this.linkName29;
+    }
+
+    public void setLinkName29(String linkName29) {
+        this.linkName29 = linkName29;
+    }
+
+    public String getLink30() {
+        return this.link30;
+    }
+
+    public void setLink30(String link30) {
+        this.link30 = link30;
+    }
+
+    public String getLinkName30() {
+        return this.linkName30;
+    }
+
+    public void setLinkName30(String linkName30) {
+        this.linkName30 = linkName30;
+    }
+
+    public Boolean getDisabled() {
+        return this.disabled;
+    }
+
+    public void setDisabled(Boolean disabled) {
+        this.disabled = disabled;
+    }
+
     public com.erp.value.ProductType getProductType() {
         return this.productType;
     }
@@ -281,30 +1218,264 @@ public class Product extends BaseObject implements Serializable {
         this.productTypeId = id;
     }
 
-    public UploadedFile getLogo() {
-        return this.logo;
+    public UploadedFile getLogo1() {
+        return this.logo1;
     }
 
-    public void setLogo(UploadedFile logo) {
-        this.logo = logo;
+    public void setLogo1(UploadedFile logo1) {
+        this.logo1 = logo1;
     }
 
-    public String getLogoFileName() {
-        return this.logoFileName;
+    public String getLogo1FileName() {
+        return this.logo1FileName;
     }
 
-    public void setLogoFileName(String val) {
-        this.logoFileName = val;
+    public void setLogo1FileName(String val) {
+        this.logo1FileName = val;
     }
 
-    public Long getLogoId() {
-        if (this.logo != null && this.logo.getId() != null)
-            return logo.getId();
-        return this.logoId;
+    public Long getLogo1Id() {
+        if (this.logo1 != null && this.logo1.getId() != null)
+            return logo1.getId();
+        return this.logo1Id;
     }
 
-    public void setLogoId(Long id) {
-        this.logoId = id;
+    public void setLogo1Id(Long id) {
+        this.logo1Id = id;
+    }
+
+    public UploadedFile getLogo2() {
+        return this.logo2;
+    }
+
+    public void setLogo2(UploadedFile logo2) {
+        this.logo2 = logo2;
+    }
+
+    public String getLogo2FileName() {
+        return this.logo2FileName;
+    }
+
+    public void setLogo2FileName(String val) {
+        this.logo2FileName = val;
+    }
+
+    public Long getLogo2Id() {
+        if (this.logo2 != null && this.logo2.getId() != null)
+            return logo2.getId();
+        return this.logo2Id;
+    }
+
+    public void setLogo2Id(Long id) {
+        this.logo2Id = id;
+    }
+
+    public UploadedFile getLogo3() {
+        return this.logo3;
+    }
+
+    public void setLogo3(UploadedFile logo3) {
+        this.logo3 = logo3;
+    }
+
+    public String getLogo3FileName() {
+        return this.logo3FileName;
+    }
+
+    public void setLogo3FileName(String val) {
+        this.logo3FileName = val;
+    }
+
+    public Long getLogo3Id() {
+        if (this.logo3 != null && this.logo3.getId() != null)
+            return logo3.getId();
+        return this.logo3Id;
+    }
+
+    public void setLogo3Id(Long id) {
+        this.logo3Id = id;
+    }
+
+    public UploadedFile getLogo4() {
+        return this.logo4;
+    }
+
+    public void setLogo4(UploadedFile logo4) {
+        this.logo4 = logo4;
+    }
+
+    public String getLogo4FileName() {
+        return this.logo4FileName;
+    }
+
+    public void setLogo4FileName(String val) {
+        this.logo4FileName = val;
+    }
+
+    public Long getLogo4Id() {
+        if (this.logo4 != null && this.logo4.getId() != null)
+            return logo4.getId();
+        return this.logo4Id;
+    }
+
+    public void setLogo4Id(Long id) {
+        this.logo4Id = id;
+    }
+
+    public UploadedFile getLogo5() {
+        return this.logo5;
+    }
+
+    public void setLogo5(UploadedFile logo5) {
+        this.logo5 = logo5;
+    }
+
+    public String getLogo5FileName() {
+        return this.logo5FileName;
+    }
+
+    public void setLogo5FileName(String val) {
+        this.logo5FileName = val;
+    }
+
+    public Long getLogo5Id() {
+        if (this.logo5 != null && this.logo5.getId() != null)
+            return logo5.getId();
+        return this.logo5Id;
+    }
+
+    public void setLogo5Id(Long id) {
+        this.logo5Id = id;
+    }
+
+    public UploadedFile getLogo6() {
+        return this.logo6;
+    }
+
+    public void setLogo6(UploadedFile logo6) {
+        this.logo6 = logo6;
+    }
+
+    public String getLogo6FileName() {
+        return this.logo6FileName;
+    }
+
+    public void setLogo6FileName(String val) {
+        this.logo6FileName = val;
+    }
+
+    public Long getLogo6Id() {
+        if (this.logo6 != null && this.logo6.getId() != null)
+            return logo6.getId();
+        return this.logo6Id;
+    }
+
+    public void setLogo6Id(Long id) {
+        this.logo6Id = id;
+    }
+
+    public UploadedFile getLogo7() {
+        return this.logo7;
+    }
+
+    public void setLogo7(UploadedFile logo7) {
+        this.logo7 = logo7;
+    }
+
+    public String getLogo7FileName() {
+        return this.logo7FileName;
+    }
+
+    public void setLogo7FileName(String val) {
+        this.logo7FileName = val;
+    }
+
+    public Long getLogo7Id() {
+        if (this.logo7 != null && this.logo7.getId() != null)
+            return logo7.getId();
+        return this.logo7Id;
+    }
+
+    public void setLogo7Id(Long id) {
+        this.logo7Id = id;
+    }
+
+    public UploadedFile getLogo8() {
+        return this.logo8;
+    }
+
+    public void setLogo8(UploadedFile logo8) {
+        this.logo8 = logo8;
+    }
+
+    public String getLogo8FileName() {
+        return this.logo8FileName;
+    }
+
+    public void setLogo8FileName(String val) {
+        this.logo8FileName = val;
+    }
+
+    public Long getLogo8Id() {
+        if (this.logo8 != null && this.logo8.getId() != null)
+            return logo8.getId();
+        return this.logo8Id;
+    }
+
+    public void setLogo8Id(Long id) {
+        this.logo8Id = id;
+    }
+
+    public UploadedFile getLogo9() {
+        return this.logo9;
+    }
+
+    public void setLogo9(UploadedFile logo9) {
+        this.logo9 = logo9;
+    }
+
+    public String getLogo9FileName() {
+        return this.logo9FileName;
+    }
+
+    public void setLogo9FileName(String val) {
+        this.logo9FileName = val;
+    }
+
+    public Long getLogo9Id() {
+        if (this.logo9 != null && this.logo9.getId() != null)
+            return logo9.getId();
+        return this.logo9Id;
+    }
+
+    public void setLogo9Id(Long id) {
+        this.logo9Id = id;
+    }
+
+    public UploadedFile getLogo10() {
+        return this.logo10;
+    }
+
+    public void setLogo10(UploadedFile logo10) {
+        this.logo10 = logo10;
+    }
+
+    public String getLogo10FileName() {
+        return this.logo10FileName;
+    }
+
+    public void setLogo10FileName(String val) {
+        this.logo10FileName = val;
+    }
+
+    public Long getLogo10Id() {
+        if (this.logo10 != null && this.logo10.getId() != null)
+            return logo10.getId();
+        return this.logo10Id;
+    }
+
+    public void setLogo10Id(Long id) {
+        this.logo10Id = id;
     }
 
     public UploadedFile getProductPhoto1() {
@@ -1087,14 +2258,624 @@ public class Product extends BaseObject implements Serializable {
         this.diagram10Id = id;
     }
 
+    public AppProperty getTarget1() {
+        return this.target1;
+    }
+
+    public void setTarget1(AppProperty target1) {
+        this.target1 = target1;
+    }
+
+    public Long getTarget1Id() {
+        if (this.target1 != null && this.target1.getId() != null)
+            return target1.getId();
+        return this.target1Id;
+    }
+
+    public void setTarget1Id(Long id) {
+        this.target1Id = id;
+    }
+
+    public AppProperty getTarget2() {
+        return this.target2;
+    }
+
+    public void setTarget2(AppProperty target2) {
+        this.target2 = target2;
+    }
+
+    public Long getTarget2Id() {
+        if (this.target2 != null && this.target2.getId() != null)
+            return target2.getId();
+        return this.target2Id;
+    }
+
+    public void setTarget2Id(Long id) {
+        this.target2Id = id;
+    }
+
+    public AppProperty getTarget3() {
+        return this.target3;
+    }
+
+    public void setTarget3(AppProperty target3) {
+        this.target3 = target3;
+    }
+
+    public Long getTarget3Id() {
+        if (this.target3 != null && this.target3.getId() != null)
+            return target3.getId();
+        return this.target3Id;
+    }
+
+    public void setTarget3Id(Long id) {
+        this.target3Id = id;
+    }
+
+    public AppProperty getTarget4() {
+        return this.target4;
+    }
+
+    public void setTarget4(AppProperty target4) {
+        this.target4 = target4;
+    }
+
+    public Long getTarget4Id() {
+        if (this.target4 != null && this.target4.getId() != null)
+            return target4.getId();
+        return this.target4Id;
+    }
+
+    public void setTarget4Id(Long id) {
+        this.target4Id = id;
+    }
+
+    public AppProperty getTarget5() {
+        return this.target5;
+    }
+
+    public void setTarget5(AppProperty target5) {
+        this.target5 = target5;
+    }
+
+    public Long getTarget5Id() {
+        if (this.target5 != null && this.target5.getId() != null)
+            return target5.getId();
+        return this.target5Id;
+    }
+
+    public void setTarget5Id(Long id) {
+        this.target5Id = id;
+    }
+
+    public AppProperty getTarget6() {
+        return this.target6;
+    }
+
+    public void setTarget6(AppProperty target6) {
+        this.target6 = target6;
+    }
+
+    public Long getTarget6Id() {
+        if (this.target6 != null && this.target6.getId() != null)
+            return target6.getId();
+        return this.target6Id;
+    }
+
+    public void setTarget6Id(Long id) {
+        this.target6Id = id;
+    }
+
+    public AppProperty getTarget7() {
+        return this.target7;
+    }
+
+    public void setTarget7(AppProperty target7) {
+        this.target7 = target7;
+    }
+
+    public Long getTarget7Id() {
+        if (this.target7 != null && this.target7.getId() != null)
+            return target7.getId();
+        return this.target7Id;
+    }
+
+    public void setTarget7Id(Long id) {
+        this.target7Id = id;
+    }
+
+    public AppProperty getTarget8() {
+        return this.target8;
+    }
+
+    public void setTarget8(AppProperty target8) {
+        this.target8 = target8;
+    }
+
+    public Long getTarget8Id() {
+        if (this.target8 != null && this.target8.getId() != null)
+            return target8.getId();
+        return this.target8Id;
+    }
+
+    public void setTarget8Id(Long id) {
+        this.target8Id = id;
+    }
+
+    public AppProperty getTarget9() {
+        return this.target9;
+    }
+
+    public void setTarget9(AppProperty target9) {
+        this.target9 = target9;
+    }
+
+    public Long getTarget9Id() {
+        if (this.target9 != null && this.target9.getId() != null)
+            return target9.getId();
+        return this.target9Id;
+    }
+
+    public void setTarget9Id(Long id) {
+        this.target9Id = id;
+    }
+
+    public AppProperty getTarget10() {
+        return this.target10;
+    }
+
+    public void setTarget10(AppProperty target10) {
+        this.target10 = target10;
+    }
+
+    public Long getTarget10Id() {
+        if (this.target10 != null && this.target10.getId() != null)
+            return target10.getId();
+        return this.target10Id;
+    }
+
+    public void setTarget10Id(Long id) {
+        this.target10Id = id;
+    }
+
+    public AppProperty getTarget11() {
+        return this.target11;
+    }
+
+    public void setTarget11(AppProperty target11) {
+        this.target11 = target11;
+    }
+
+    public Long getTarget11Id() {
+        if (this.target11 != null && this.target11.getId() != null)
+            return target11.getId();
+        return this.target11Id;
+    }
+
+    public void setTarget11Id(Long id) {
+        this.target11Id = id;
+    }
+
+    public AppProperty getTarget12() {
+        return this.target12;
+    }
+
+    public void setTarget12(AppProperty target12) {
+        this.target12 = target12;
+    }
+
+    public Long getTarget12Id() {
+        if (this.target12 != null && this.target12.getId() != null)
+            return target12.getId();
+        return this.target12Id;
+    }
+
+    public void setTarget12Id(Long id) {
+        this.target12Id = id;
+    }
+
+    public AppProperty getTarget13() {
+        return this.target13;
+    }
+
+    public void setTarget13(AppProperty target13) {
+        this.target13 = target13;
+    }
+
+    public Long getTarget13Id() {
+        if (this.target13 != null && this.target13.getId() != null)
+            return target13.getId();
+        return this.target13Id;
+    }
+
+    public void setTarget13Id(Long id) {
+        this.target13Id = id;
+    }
+
+    public AppProperty getTarget14() {
+        return this.target14;
+    }
+
+    public void setTarget14(AppProperty target14) {
+        this.target14 = target14;
+    }
+
+    public Long getTarget14Id() {
+        if (this.target14 != null && this.target14.getId() != null)
+            return target14.getId();
+        return this.target14Id;
+    }
+
+    public void setTarget14Id(Long id) {
+        this.target14Id = id;
+    }
+
+    public AppProperty getTarget15() {
+        return this.target15;
+    }
+
+    public void setTarget15(AppProperty target15) {
+        this.target15 = target15;
+    }
+
+    public Long getTarget15Id() {
+        if (this.target15 != null && this.target15.getId() != null)
+            return target15.getId();
+        return this.target15Id;
+    }
+
+    public void setTarget15Id(Long id) {
+        this.target15Id = id;
+    }
+
+    public AppProperty getTarget16() {
+        return this.target16;
+    }
+
+    public void setTarget16(AppProperty target16) {
+        this.target16 = target16;
+    }
+
+    public Long getTarget16Id() {
+        if (this.target16 != null && this.target16.getId() != null)
+            return target16.getId();
+        return this.target16Id;
+    }
+
+    public void setTarget16Id(Long id) {
+        this.target16Id = id;
+    }
+
+    public AppProperty getTarget17() {
+        return this.target17;
+    }
+
+    public void setTarget17(AppProperty target17) {
+        this.target17 = target17;
+    }
+
+    public Long getTarget17Id() {
+        if (this.target17 != null && this.target17.getId() != null)
+            return target17.getId();
+        return this.target17Id;
+    }
+
+    public void setTarget17Id(Long id) {
+        this.target17Id = id;
+    }
+
+    public AppProperty getTarget18() {
+        return this.target18;
+    }
+
+    public void setTarget18(AppProperty target18) {
+        this.target18 = target18;
+    }
+
+    public Long getTarget18Id() {
+        if (this.target18 != null && this.target18.getId() != null)
+            return target18.getId();
+        return this.target18Id;
+    }
+
+    public void setTarget18Id(Long id) {
+        this.target18Id = id;
+    }
+
+    public AppProperty getTarget19() {
+        return this.target19;
+    }
+
+    public void setTarget19(AppProperty target19) {
+        this.target19 = target19;
+    }
+
+    public Long getTarget19Id() {
+        if (this.target19 != null && this.target19.getId() != null)
+            return target19.getId();
+        return this.target19Id;
+    }
+
+    public void setTarget19Id(Long id) {
+        this.target19Id = id;
+    }
+
+    public AppProperty getTarget20() {
+        return this.target20;
+    }
+
+    public void setTarget20(AppProperty target20) {
+        this.target20 = target20;
+    }
+
+    public Long getTarget20Id() {
+        if (this.target20 != null && this.target20.getId() != null)
+            return target20.getId();
+        return this.target20Id;
+    }
+
+    public void setTarget20Id(Long id) {
+        this.target20Id = id;
+    }
+
+    public AppProperty getTarget21() {
+        return this.target21;
+    }
+
+    public void setTarget21(AppProperty target21) {
+        this.target21 = target21;
+    }
+
+    public Long getTarget21Id() {
+        if (this.target21 != null && this.target21.getId() != null)
+            return target21.getId();
+        return this.target21Id;
+    }
+
+    public void setTarget21Id(Long id) {
+        this.target21Id = id;
+    }
+
+    public AppProperty getTarget22() {
+        return this.target22;
+    }
+
+    public void setTarget22(AppProperty target22) {
+        this.target22 = target22;
+    }
+
+    public Long getTarget22Id() {
+        if (this.target22 != null && this.target22.getId() != null)
+            return target22.getId();
+        return this.target22Id;
+    }
+
+    public void setTarget22Id(Long id) {
+        this.target22Id = id;
+    }
+
+    public AppProperty getTarget23() {
+        return this.target23;
+    }
+
+    public void setTarget23(AppProperty target23) {
+        this.target23 = target23;
+    }
+
+    public Long getTarget23Id() {
+        if (this.target23 != null && this.target23.getId() != null)
+            return target23.getId();
+        return this.target23Id;
+    }
+
+    public void setTarget23Id(Long id) {
+        this.target23Id = id;
+    }
+
+    public AppProperty getTarget24() {
+        return this.target24;
+    }
+
+    public void setTarget24(AppProperty target24) {
+        this.target24 = target24;
+    }
+
+    public Long getTarget24Id() {
+        if (this.target24 != null && this.target24.getId() != null)
+            return target24.getId();
+        return this.target24Id;
+    }
+
+    public void setTarget24Id(Long id) {
+        this.target24Id = id;
+    }
+
+    public AppProperty getTarget25() {
+        return this.target25;
+    }
+
+    public void setTarget25(AppProperty target25) {
+        this.target25 = target25;
+    }
+
+    public Long getTarget25Id() {
+        if (this.target25 != null && this.target25.getId() != null)
+            return target25.getId();
+        return this.target25Id;
+    }
+
+    public void setTarget25Id(Long id) {
+        this.target25Id = id;
+    }
+
+    public AppProperty getTarget26() {
+        return this.target26;
+    }
+
+    public void setTarget26(AppProperty target26) {
+        this.target26 = target26;
+    }
+
+    public Long getTarget26Id() {
+        if (this.target26 != null && this.target26.getId() != null)
+            return target26.getId();
+        return this.target26Id;
+    }
+
+    public void setTarget26Id(Long id) {
+        this.target26Id = id;
+    }
+
+    public AppProperty getTarget27() {
+        return this.target27;
+    }
+
+    public void setTarget27(AppProperty target27) {
+        this.target27 = target27;
+    }
+
+    public Long getTarget27Id() {
+        if (this.target27 != null && this.target27.getId() != null)
+            return target27.getId();
+        return this.target27Id;
+    }
+
+    public void setTarget27Id(Long id) {
+        this.target27Id = id;
+    }
+
+    public AppProperty getTarget28() {
+        return this.target28;
+    }
+
+    public void setTarget28(AppProperty target28) {
+        this.target28 = target28;
+    }
+
+    public Long getTarget28Id() {
+        if (this.target28 != null && this.target28.getId() != null)
+            return target28.getId();
+        return this.target28Id;
+    }
+
+    public void setTarget28Id(Long id) {
+        this.target28Id = id;
+    }
+
+    public AppProperty getTarget29() {
+        return this.target29;
+    }
+
+    public void setTarget29(AppProperty target29) {
+        this.target29 = target29;
+    }
+
+    public Long getTarget29Id() {
+        if (this.target29 != null && this.target29.getId() != null)
+            return target29.getId();
+        return this.target29Id;
+    }
+
+    public void setTarget29Id(Long id) {
+        this.target29Id = id;
+    }
+
+    public AppProperty getTarget30() {
+        return this.target30;
+    }
+
+    public void setTarget30(AppProperty target30) {
+        this.target30 = target30;
+    }
+
+    public Long getTarget30Id() {
+        if (this.target30 != null && this.target30.getId() != null)
+            return target30.getId();
+        return this.target30Id;
+    }
+
+    public void setTarget30Id(Long id) {
+        this.target30Id = id;
+    }
+
     public String toString() {
         return new ToStringBuilder(this)
             .append("no", getNo())
             .append("name", getName())
             .append("overview", getOverview())
             .append("specification", getSpecification())
+            .append("link1", getLink1())
+            .append("linkName1", getLinkName1())
+            .append("link2", getLink2())
+            .append("linkName2", getLinkName2())
+            .append("link3", getLink3())
+            .append("linkName3", getLinkName3())
+            .append("link4", getLink4())
+            .append("linkName4", getLinkName4())
+            .append("link5", getLink5())
+            .append("linkName5", getLinkName5())
+            .append("link6", getLink6())
+            .append("linkName6", getLinkName6())
+            .append("link7", getLink7())
+            .append("linkName7", getLinkName7())
+            .append("link8", getLink8())
+            .append("linkName8", getLinkName8())
+            .append("link9", getLink9())
+            .append("linkName9", getLinkName9())
+            .append("link10", getLink10())
+            .append("linkName10", getLinkName10())
+            .append("link11", getLink11())
+            .append("linkName11", getLinkName11())
+            .append("link12", getLink12())
+            .append("linkName12", getLinkName12())
+            .append("link13", getLink13())
+            .append("linkName13", getLinkName13())
+            .append("link14", getLink14())
+            .append("linkName14", getLinkName14())
+            .append("link15", getLink15())
+            .append("linkName15", getLinkName15())
+            .append("link16", getLink16())
+            .append("linkName16", getLinkName16())
+            .append("link17", getLink17())
+            .append("linkName17", getLinkName17())
+            .append("link18", getLink18())
+            .append("linkName18", getLinkName18())
+            .append("link19", getLink19())
+            .append("linkName19", getLinkName19())
+            .append("link20", getLink20())
+            .append("linkName20", getLinkName20())
+            .append("link21", getLink21())
+            .append("linkName21", getLinkName21())
+            .append("link22", getLink22())
+            .append("linkName22", getLinkName22())
+            .append("link23", getLink23())
+            .append("linkName23", getLinkName23())
+            .append("link24", getLink24())
+            .append("linkName24", getLinkName24())
+            .append("link25", getLink25())
+            .append("linkName25", getLinkName25())
+            .append("link26", getLink26())
+            .append("linkName26", getLinkName26())
+            .append("link27", getLink27())
+            .append("linkName27", getLinkName27())
+            .append("link28", getLink28())
+            .append("linkName28", getLinkName28())
+            .append("link29", getLink29())
+            .append("linkName29", getLinkName29())
+            .append("link30", getLink30())
+            .append("linkName30", getLinkName30())
+            .append("disabled", getDisabled())
             .append("productType", getProductType())
-            .append("logo", getLogo())
+            .append("logo1", getLogo1())
+            .append("logo2", getLogo2())
+            .append("logo3", getLogo3())
+            .append("logo4", getLogo4())
+            .append("logo5", getLogo5())
+            .append("logo6", getLogo6())
+            .append("logo7", getLogo7())
+            .append("logo8", getLogo8())
+            .append("logo9", getLogo9())
+            .append("logo10", getLogo10())
             .append("productPhoto1", getProductPhoto1())
             .append("productPhoto2", getProductPhoto2())
             .append("productPhoto3", getProductPhoto3())
@@ -1125,6 +2906,36 @@ public class Product extends BaseObject implements Serializable {
             .append("diagram8", getDiagram8())
             .append("diagram9", getDiagram9())
             .append("diagram10", getDiagram10())
+            .append("target1", getTarget1())
+            .append("target2", getTarget2())
+            .append("target3", getTarget3())
+            .append("target4", getTarget4())
+            .append("target5", getTarget5())
+            .append("target6", getTarget6())
+            .append("target7", getTarget7())
+            .append("target8", getTarget8())
+            .append("target9", getTarget9())
+            .append("target10", getTarget10())
+            .append("target11", getTarget11())
+            .append("target12", getTarget12())
+            .append("target13", getTarget13())
+            .append("target14", getTarget14())
+            .append("target15", getTarget15())
+            .append("target16", getTarget16())
+            .append("target17", getTarget17())
+            .append("target18", getTarget18())
+            .append("target19", getTarget19())
+            .append("target20", getTarget20())
+            .append("target21", getTarget21())
+            .append("target22", getTarget22())
+            .append("target23", getTarget23())
+            .append("target24", getTarget24())
+            .append("target25", getTarget25())
+            .append("target26", getTarget26())
+            .append("target27", getTarget27())
+            .append("target28", getTarget28())
+            .append("target29", getTarget29())
+            .append("target30", getTarget30())
             .toString();
     }
 

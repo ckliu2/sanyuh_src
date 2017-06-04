@@ -14,10 +14,8 @@ public class ProductAction extends CommonActionSupport {
 	private static final long serialVersionUID = 1L;
 	private final Log log;
 	private Product product;
-	private java.io.File fileLogo;
-	private String fileLogoContentType, fileLogoFileName, removeLogo;
+	private ProductType productType;
 	private Long[] selectedProductIds;
-	
 	private java.io.File fileProductPhoto1;
 	private String fileProductPhoto1ContentType, fileProductPhoto1FileName, removeProductPhoto1;
 	private java.io.File fileProductPhoto2;
@@ -78,6 +76,27 @@ public class ProductAction extends CommonActionSupport {
 	private String fileDiagram9ContentType, fileDiagram9FileName, removeDiagram9;
 	private java.io.File fileDiagram10;
 	private String fileDiagram10ContentType, fileDiagram10FileName, removeDiagram10;
+
+	private java.io.File fileLogo1;
+	private String fileLogo1ContentType, fileLogo1FileName, removeLogo1;
+	private java.io.File fileLogo2;
+	private String fileLogo2ContentType, fileLogo2FileName, removeLogo2;
+	private java.io.File fileLogo3;
+	private String fileLogo3ContentType, fileLogo3FileName, removeLogo3;
+	private java.io.File fileLogo4;
+	private String fileLogo4ContentType, fileLogo4FileName, removeLogo4;
+	private java.io.File fileLogo5;
+	private String fileLogo5ContentType, fileLogo5FileName, removeLogo5;
+	private java.io.File fileLogo6;
+	private String fileLogo6ContentType, fileLogo6FileName, removeLogo6;
+	private java.io.File fileLogo7;
+	private String fileLogo7ContentType, fileLogo7FileName, removeLogo7;
+	private java.io.File fileLogo8;
+	private String fileLogo8ContentType, fileLogo8FileName, removeLogo8;
+	private java.io.File fileLogo9;
+	private String fileLogo9ContentType, fileLogo9FileName, removeLogo9;
+	private java.io.File fileLogo10;
+	private String fileLogo10ContentType, fileLogo10FileName, removeLogo10;
 
 	public ProductAction() {
 		log = LogFactory.getLog(com.erp.web.action.ProductAction.class);
@@ -146,1212 +165,970 @@ public class ProductAction extends CommonActionSupport {
 	public boolean inputValidation(Product val) {
 		return true;
 	}
-	
-	public void setFileProductPhoto1(java.io.File val)
-    {
-        fileProductPhoto1 = val;
-    }
-
-    public java.io.File getFileProductPhoto1()
-    {
-        return fileProductPhoto1;
-    }
-
-    public void setFileProductPhoto1ContentType(String val)
-    {
-        fileProductPhoto1ContentType = val;
-    }
-
-    public String getFileProductPhoto1ContentType()
-    {
-        return fileProductPhoto1ContentType;
-    }
-
-    public void setFileProductPhoto1FileName(String val)
-    {
-        fileProductPhoto1FileName = val;
-    }
-
-    public String getFileProductPhoto1FileName()
-    {
-        return fileProductPhoto1FileName;
-    }
-
-    public void setRemoveProductPhoto1(String val)
-    {
-        removeProductPhoto1 = val;
-    }
-
-    public String getRemoveProductPhoto1()
-    {
-        return removeProductPhoto1;
-    }
-
-    public void setFileProductPhoto2(java.io.File val)
-    {
-        fileProductPhoto2 = val;
-    }
-
-    public java.io.File getFileProductPhoto2()
-    {
-        return fileProductPhoto2;
-    }
-
-    public void setFileProductPhoto2ContentType(String val)
-    {
-        fileProductPhoto2ContentType = val;
-    }
-
-    public String getFileProductPhoto2ContentType()
-    {
-        return fileProductPhoto2ContentType;
-    }
-
-    public void setFileProductPhoto2FileName(String val)
-    {
-        fileProductPhoto2FileName = val;
-    }
-
-    public String getFileProductPhoto2FileName()
-    {
-        return fileProductPhoto2FileName;
-    }
-
-    public void setRemoveProductPhoto2(String val)
-    {
-        removeProductPhoto2 = val;
-    }
-
-    public String getRemoveProductPhoto2()
-    {
-        return removeProductPhoto2;
-    }
-
-    public void setFileProductPhoto3(java.io.File val)
-    {
-        fileProductPhoto3 = val;
-    }
-
-    public java.io.File getFileProductPhoto3()
-    {
-        return fileProductPhoto3;
-    }
-
-    public void setFileProductPhoto3ContentType(String val)
-    {
-        fileProductPhoto3ContentType = val;
-    }
-
-    public String getFileProductPhoto3ContentType()
-    {
-        return fileProductPhoto3ContentType;
-    }
-
-    public void setFileProductPhoto3FileName(String val)
-    {
-        fileProductPhoto3FileName = val;
-    }
-
-    public String getFileProductPhoto3FileName()
-    {
-        return fileProductPhoto3FileName;
-    }
-
-    public void setRemoveProductPhoto3(String val)
-    {
-        removeProductPhoto3 = val;
-    }
-
-    public String getRemoveProductPhoto3()
-    {
-        return removeProductPhoto3;
-    }
-
-    public void setFileProductPhoto4(java.io.File val)
-    {
-        fileProductPhoto4 = val;
-    }
-
-    public java.io.File getFileProductPhoto4()
-    {
-        return fileProductPhoto4;
-    }
-
-    public void setFileProductPhoto4ContentType(String val)
-    {
-        fileProductPhoto4ContentType = val;
-    }
-
-    public String getFileProductPhoto4ContentType()
-    {
-        return fileProductPhoto4ContentType;
-    }
-
-    public void setFileProductPhoto4FileName(String val)
-    {
-        fileProductPhoto4FileName = val;
-    }
-
-    public String getFileProductPhoto4FileName()
-    {
-        return fileProductPhoto4FileName;
-    }
-
-    public void setRemoveProductPhoto4(String val)
-    {
-        removeProductPhoto4 = val;
-    }
-
-    public String getRemoveProductPhoto4()
-    {
-        return removeProductPhoto4;
-    }
-
-    public void setFileProductPhoto5(java.io.File val)
-    {
-        fileProductPhoto5 = val;
-    }
-
-    public java.io.File getFileProductPhoto5()
-    {
-        return fileProductPhoto5;
-    }
-
-    public void setFileProductPhoto5ContentType(String val)
-    {
-        fileProductPhoto5ContentType = val;
-    }
-
-    public String getFileProductPhoto5ContentType()
-    {
-        return fileProductPhoto5ContentType;
-    }
-
-    public void setFileProductPhoto5FileName(String val)
-    {
-        fileProductPhoto5FileName = val;
-    }
-
-    public String getFileProductPhoto5FileName()
-    {
-        return fileProductPhoto5FileName;
-    }
-
-    public void setRemoveProductPhoto5(String val)
-    {
-        removeProductPhoto5 = val;
-    }
-
-    public String getRemoveProductPhoto5()
-    {
-        return removeProductPhoto5;
-    }
-
-    public void setFileProductPhoto6(java.io.File val)
-    {
-        fileProductPhoto6 = val;
-    }
-
-    public java.io.File getFileProductPhoto6()
-    {
-        return fileProductPhoto6;
-    }
-
-    public void setFileProductPhoto6ContentType(String val)
-    {
-        fileProductPhoto6ContentType = val;
-    }
-
-    public String getFileProductPhoto6ContentType()
-    {
-        return fileProductPhoto6ContentType;
-    }
-
-    public void setFileProductPhoto6FileName(String val)
-    {
-        fileProductPhoto6FileName = val;
-    }
-
-    public String getFileProductPhoto6FileName()
-    {
-        return fileProductPhoto6FileName;
-    }
-
-    public void setRemoveProductPhoto6(String val)
-    {
-        removeProductPhoto6 = val;
-    }
-
-    public String getRemoveProductPhoto6()
-    {
-        return removeProductPhoto6;
-    }
-
-    public void setFileProductPhoto7(java.io.File val)
-    {
-        fileProductPhoto7 = val;
-    }
-
-    public java.io.File getFileProductPhoto7()
-    {
-        return fileProductPhoto7;
-    }
-
-    public void setFileProductPhoto7ContentType(String val)
-    {
-        fileProductPhoto7ContentType = val;
-    }
-
-    public String getFileProductPhoto7ContentType()
-    {
-        return fileProductPhoto7ContentType;
-    }
-
-    public void setFileProductPhoto7FileName(String val)
-    {
-        fileProductPhoto7FileName = val;
-    }
-
-    public String getFileProductPhoto7FileName()
-    {
-        return fileProductPhoto7FileName;
-    }
-
-    public void setRemoveProductPhoto7(String val)
-    {
-        removeProductPhoto7 = val;
-    }
-
-    public String getRemoveProductPhoto7()
-    {
-        return removeProductPhoto7;
-    }
-
-    public void setFileProductPhoto8(java.io.File val)
-    {
-        fileProductPhoto8 = val;
-    }
-
-    public java.io.File getFileProductPhoto8()
-    {
-        return fileProductPhoto8;
-    }
-
-    public void setFileProductPhoto8ContentType(String val)
-    {
-        fileProductPhoto8ContentType = val;
-    }
-
-    public String getFileProductPhoto8ContentType()
-    {
-        return fileProductPhoto8ContentType;
-    }
-
-    public void setFileProductPhoto8FileName(String val)
-    {
-        fileProductPhoto8FileName = val;
-    }
-
-    public String getFileProductPhoto8FileName()
-    {
-        return fileProductPhoto8FileName;
-    }
-
-    public void setRemoveProductPhoto8(String val)
-    {
-        removeProductPhoto8 = val;
-    }
-
-    public String getRemoveProductPhoto8()
-    {
-        return removeProductPhoto8;
-    }
-
-    public void setFileProductPhoto9(java.io.File val)
-    {
-        fileProductPhoto9 = val;
-    }
-
-    public java.io.File getFileProductPhoto9()
-    {
-        return fileProductPhoto9;
-    }
-
-    public void setFileProductPhoto9ContentType(String val)
-    {
-        fileProductPhoto9ContentType = val;
-    }
-
-    public String getFileProductPhoto9ContentType()
-    {
-        return fileProductPhoto9ContentType;
-    }
-
-    public void setFileProductPhoto9FileName(String val)
-    {
-        fileProductPhoto9FileName = val;
-    }
-
-    public String getFileProductPhoto9FileName()
-    {
-        return fileProductPhoto9FileName;
-    }
-
-    public void setRemoveProductPhoto9(String val)
-    {
-        removeProductPhoto9 = val;
-    }
-
-    public String getRemoveProductPhoto9()
-    {
-        return removeProductPhoto9;
-    }
-
-    public void setFileProductPhoto10(java.io.File val)
-    {
-        fileProductPhoto10 = val;
-    }
-
-    public java.io.File getFileProductPhoto10()
-    {
-        return fileProductPhoto10;
-    }
-
-    public void setFileProductPhoto10ContentType(String val)
-    {
-        fileProductPhoto10ContentType = val;
-    }
-
-    public String getFileProductPhoto10ContentType()
-    {
-        return fileProductPhoto10ContentType;
-    }
-
-    public void setFileProductPhoto10FileName(String val)
-    {
-        fileProductPhoto10FileName = val;
-    }
-
-    public String getFileProductPhoto10FileName()
-    {
-        return fileProductPhoto10FileName;
-    }
-
-    public void setRemoveProductPhoto10(String val)
-    {
-        removeProductPhoto10 = val;
-    }
-
-    public String getRemoveProductPhoto10()
-    {
-        return removeProductPhoto10;
-    }
-
-    public void setFileDownload1(java.io.File val)
-    {
-        fileDownload1 = val;
-    }
-
-    public java.io.File getFileDownload1()
-    {
-        return fileDownload1;
-    }
-
-    public void setFileDownload1ContentType(String val)
-    {
-        fileDownload1ContentType = val;
-    }
-
-    public String getFileDownload1ContentType()
-    {
-        return fileDownload1ContentType;
-    }
-
-    public void setFileDownload1FileName(String val)
-    {
-        fileDownload1FileName = val;
-    }
-
-    public String getFileDownload1FileName()
-    {
-        return fileDownload1FileName;
-    }
-
-    public void setRemoveDownload1(String val)
-    {
-        removeDownload1 = val;
-    }
-
-    public String getRemoveDownload1()
-    {
-        return removeDownload1;
-    }
-
-    public void setFileDownload2(java.io.File val)
-    {
-        fileDownload2 = val;
-    }
-
-    public java.io.File getFileDownload2()
-    {
-        return fileDownload2;
-    }
-
-    public void setFileDownload2ContentType(String val)
-    {
-        fileDownload2ContentType = val;
-    }
-
-    public String getFileDownload2ContentType()
-    {
-        return fileDownload2ContentType;
-    }
-
-    public void setFileDownload2FileName(String val)
-    {
-        fileDownload2FileName = val;
-    }
-
-    public String getFileDownload2FileName()
-    {
-        return fileDownload2FileName;
-    }
-
-    public void setRemoveDownload2(String val)
-    {
-        removeDownload2 = val;
-    }
-
-    public String getRemoveDownload2()
-    {
-        return removeDownload2;
-    }
-
-    public void setFileDownload3(java.io.File val)
-    {
-        fileDownload3 = val;
-    }
-
-    public java.io.File getFileDownload3()
-    {
-        return fileDownload3;
-    }
-
-    public void setFileDownload3ContentType(String val)
-    {
-        fileDownload3ContentType = val;
-    }
-
-    public String getFileDownload3ContentType()
-    {
-        return fileDownload3ContentType;
-    }
-
-    public void setFileDownload3FileName(String val)
-    {
-        fileDownload3FileName = val;
-    }
-
-    public String getFileDownload3FileName()
-    {
-        return fileDownload3FileName;
-    }
-
-    public void setRemoveDownload3(String val)
-    {
-        removeDownload3 = val;
-    }
-
-    public String getRemoveDownload3()
-    {
-        return removeDownload3;
-    }
-
-    public void setFileDownload4(java.io.File val)
-    {
-        fileDownload4 = val;
-    }
-
-    public java.io.File getFileDownload4()
-    {
-        return fileDownload4;
-    }
-
-    public void setFileDownload4ContentType(String val)
-    {
-        fileDownload4ContentType = val;
-    }
-
-    public String getFileDownload4ContentType()
-    {
-        return fileDownload4ContentType;
-    }
-
-    public void setFileDownload4FileName(String val)
-    {
-        fileDownload4FileName = val;
-    }
-
-    public String getFileDownload4FileName()
-    {
-        return fileDownload4FileName;
-    }
-
-    public void setRemoveDownload4(String val)
-    {
-        removeDownload4 = val;
-    }
-
-    public String getRemoveDownload4()
-    {
-        return removeDownload4;
-    }
-
-    public void setFileDownload5(java.io.File val)
-    {
-        fileDownload5 = val;
-    }
-
-    public java.io.File getFileDownload5()
-    {
-        return fileDownload5;
-    }
-
-    public void setFileDownload5ContentType(String val)
-    {
-        fileDownload5ContentType = val;
-    }
-
-    public String getFileDownload5ContentType()
-    {
-        return fileDownload5ContentType;
-    }
-
-    public void setFileDownload5FileName(String val)
-    {
-        fileDownload5FileName = val;
-    }
-
-    public String getFileDownload5FileName()
-    {
-        return fileDownload5FileName;
-    }
-
-    public void setRemoveDownload5(String val)
-    {
-        removeDownload5 = val;
-    }
-
-    public String getRemoveDownload5()
-    {
-        return removeDownload5;
-    }
-
-    public void setFileDownload6(java.io.File val)
-    {
-        fileDownload6 = val;
-    }
-
-    public java.io.File getFileDownload6()
-    {
-        return fileDownload6;
-    }
-
-    public void setFileDownload6ContentType(String val)
-    {
-        fileDownload6ContentType = val;
-    }
-
-    public String getFileDownload6ContentType()
-    {
-        return fileDownload6ContentType;
-    }
-
-    public void setFileDownload6FileName(String val)
-    {
-        fileDownload6FileName = val;
-    }
-
-    public String getFileDownload6FileName()
-    {
-        return fileDownload6FileName;
-    }
-
-    public void setRemoveDownload6(String val)
-    {
-        removeDownload6 = val;
-    }
-
-    public String getRemoveDownload6()
-    {
-        return removeDownload6;
-    }
-
-    public void setFileDownload7(java.io.File val)
-    {
-        fileDownload7 = val;
-    }
-
-    public java.io.File getFileDownload7()
-    {
-        return fileDownload7;
-    }
-
-    public void setFileDownload7ContentType(String val)
-    {
-        fileDownload7ContentType = val;
-    }
-
-    public String getFileDownload7ContentType()
-    {
-        return fileDownload7ContentType;
-    }
-
-    public void setFileDownload7FileName(String val)
-    {
-        fileDownload7FileName = val;
-    }
-
-    public String getFileDownload7FileName()
-    {
-        return fileDownload7FileName;
-    }
-
-    public void setRemoveDownload7(String val)
-    {
-        removeDownload7 = val;
-    }
-
-    public String getRemoveDownload7()
-    {
-        return removeDownload7;
-    }
-
-    public void setFileDownload8(java.io.File val)
-    {
-        fileDownload8 = val;
-    }
-
-    public java.io.File getFileDownload8()
-    {
-        return fileDownload8;
-    }
-
-    public void setFileDownload8ContentType(String val)
-    {
-        fileDownload8ContentType = val;
-    }
-
-    public String getFileDownload8ContentType()
-    {
-        return fileDownload8ContentType;
-    }
-
-    public void setFileDownload8FileName(String val)
-    {
-        fileDownload8FileName = val;
-    }
-
-    public String getFileDownload8FileName()
-    {
-        return fileDownload8FileName;
-    }
-
-    public void setRemoveDownload8(String val)
-    {
-        removeDownload8 = val;
-    }
-
-    public String getRemoveDownload8()
-    {
-        return removeDownload8;
-    }
-
-    public void setFileDownload9(java.io.File val)
-    {
-        fileDownload9 = val;
-    }
-
-    public java.io.File getFileDownload9()
-    {
-        return fileDownload9;
-    }
-
-    public void setFileDownload9ContentType(String val)
-    {
-        fileDownload9ContentType = val;
-    }
-
-    public String getFileDownload9ContentType()
-    {
-        return fileDownload9ContentType;
-    }
-
-    public void setFileDownload9FileName(String val)
-    {
-        fileDownload9FileName = val;
-    }
-
-    public String getFileDownload9FileName()
-    {
-        return fileDownload9FileName;
-    }
-
-    public void setRemoveDownload9(String val)
-    {
-        removeDownload9 = val;
-    }
-
-    public String getRemoveDownload9()
-    {
-        return removeDownload9;
-    }
-
-    public void setFileDownload10(java.io.File val)
-    {
-        fileDownload10 = val;
-    }
-
-    public java.io.File getFileDownload10()
-    {
-        return fileDownload10;
-    }
-
-    public void setFileDownload10ContentType(String val)
-    {
-        fileDownload10ContentType = val;
-    }
-
-    public String getFileDownload10ContentType()
-    {
-        return fileDownload10ContentType;
-    }
-
-    public void setFileDownload10FileName(String val)
-    {
-        fileDownload10FileName = val;
-    }
-
-    public String getFileDownload10FileName()
-    {
-        return fileDownload10FileName;
-    }
-
-    public void setRemoveDownload10(String val)
-    {
-        removeDownload10 = val;
-    }
-
-    public String getRemoveDownload10()
-    {
-        return removeDownload10;
-    }
-
-    public void setFileDiagram1(java.io.File val)
-    {
-        fileDiagram1 = val;
-    }
-
-    public java.io.File getFileDiagram1()
-    {
-        return fileDiagram1;
-    }
-
-    public void setFileDiagram1ContentType(String val)
-    {
-        fileDiagram1ContentType = val;
-    }
-
-    public String getFileDiagram1ContentType()
-    {
-        return fileDiagram1ContentType;
-    }
-
-    public void setFileDiagram1FileName(String val)
-    {
-        fileDiagram1FileName = val;
-    }
-
-    public String getFileDiagram1FileName()
-    {
-        return fileDiagram1FileName;
-    }
-
-    public void setRemoveDiagram1(String val)
-    {
-        removeDiagram1 = val;
-    }
-
-    public String getRemoveDiagram1()
-    {
-        return removeDiagram1;
-    }
-    
-    public void setFileDiagram2(java.io.File val)
-    {
-        fileDiagram2 = val;
-    }
-
-    public java.io.File getFileDiagram2()
-    {
-        return fileDiagram2;
-    }
-
-    public void setFileDiagram2ContentType(String val)
-    {
-        fileDiagram2ContentType = val;
-    }
-
-    public String getFileDiagram2ContentType()
-    {
-        return fileDiagram2ContentType;
-    }
-
-    public void setFileDiagram2FileName(String val)
-    {
-        fileDiagram2FileName = val;
-    }
-
-    public String getFileDiagram2FileName()
-    {
-        return fileDiagram2FileName;
-    }
-
-    public void setRemoveDiagram2(String val)
-    {
-        removeDiagram2 = val;
-    }
-
-    public String getRemoveDiagram2()
-    {
-        return removeDiagram2;
-    }
-
-    public void setFileDiagram3(java.io.File val)
-    {
-        fileDiagram3 = val;
-    }
-
-    public java.io.File getFileDiagram3()
-    {
-        return fileDiagram3;
-    }
-
-    public void setFileDiagram3ContentType(String val)
-    {
-        fileDiagram3ContentType = val;
-    }
-
-    public String getFileDiagram3ContentType()
-    {
-        return fileDiagram3ContentType;
-    }
-
-    public void setFileDiagram3FileName(String val)
-    {
-        fileDiagram3FileName = val;
-    }
-
-    public String getFileDiagram3FileName()
-    {
-        return fileDiagram3FileName;
-    }
-
-    public void setRemoveDiagram3(String val)
-    {
-        removeDiagram3 = val;
-    }
-
-    public String getRemoveDiagram3()
-    {
-        return removeDiagram3;
-    }
-
-    public void setFileDiagram4(java.io.File val)
-    {
-        fileDiagram4 = val;
-    }
-
-    public java.io.File getFileDiagram4()
-    {
-        return fileDiagram4;
-    }
-
-    public void setFileDiagram4ContentType(String val)
-    {
-        fileDiagram4ContentType = val;
-    }
-
-    public String getFileDiagram4ContentType()
-    {
-        return fileDiagram4ContentType;
-    }
-
-    public void setFileDiagram4FileName(String val)
-    {
-        fileDiagram4FileName = val;
-    }
-
-    public String getFileDiagram4FileName()
-    {
-        return fileDiagram4FileName;
-    }
-
-    public void setRemoveDiagram4(String val)
-    {
-        removeDiagram4 = val;
-    }
-
-    public String getRemoveDiagram4()
-    {
-        return removeDiagram4;
-    }
-
-    public void setFileDiagram5(java.io.File val)
-    {
-        fileDiagram5 = val;
-    }
-
-    public java.io.File getFileDiagram5()
-    {
-        return fileDiagram5;
-    }
-
-    public void setFileDiagram5ContentType(String val)
-    {
-        fileDiagram5ContentType = val;
-    }
-
-    public String getFileDiagram5ContentType()
-    {
-        return fileDiagram5ContentType;
-    }
-
-    public void setFileDiagram5FileName(String val)
-    {
-        fileDiagram5FileName = val;
-    }
-
-    public String getFileDiagram5FileName()
-    {
-        return fileDiagram5FileName;
-    }
-
-    public void setRemoveDiagram5(String val)
-    {
-        removeDiagram5 = val;
-    }
-
-    public String getRemoveDiagram5()
-    {
-        return removeDiagram5;
-    }
-
-    public void setFileDiagram6(java.io.File val)
-    {
-        fileDiagram6 = val;
-    }
-
-    public java.io.File getFileDiagram6()
-    {
-        return fileDiagram6;
-    }
-
-    public void setFileDiagram6ContentType(String val)
-    {
-        fileDiagram6ContentType = val;
-    }
-
-    public String getFileDiagram6ContentType()
-    {
-        return fileDiagram6ContentType;
-    }
-
-    public void setFileDiagram6FileName(String val)
-    {
-        fileDiagram6FileName = val;
-    }
-
-    public String getFileDiagram6FileName()
-    {
-        return fileDiagram6FileName;
-    }
-
-    public void setRemoveDiagram6(String val)
-    {
-        removeDiagram6 = val;
-    }
-
-    public String getRemoveDiagram6()
-    {
-        return removeDiagram6;
-    }
-
-    public void setFileDiagram7(java.io.File val)
-    {
-        fileDiagram7 = val;
-    }
-
-    public java.io.File getFileDiagram7()
-    {
-        return fileDiagram7;
-    }
-
-    public void setFileDiagram7ContentType(String val)
-    {
-        fileDiagram7ContentType = val;
-    }
-
-    public String getFileDiagram7ContentType()
-    {
-        return fileDiagram7ContentType;
-    }
-
-    public void setFileDiagram7FileName(String val)
-    {
-        fileDiagram7FileName = val;
-    }
-
-    public String getFileDiagram7FileName()
-    {
-        return fileDiagram7FileName;
-    }
-
-    public void setRemoveDiagram7(String val)
-    {
-        removeDiagram7 = val;
-    }
-
-    public String getRemoveDiagram7()
-    {
-        return removeDiagram7;
-    }
-
-    public void setFileDiagram8(java.io.File val)
-    {
-        fileDiagram8 = val;
-    }
-
-    public java.io.File getFileDiagram8()
-    {
-        return fileDiagram8;
-    }
-
-    public void setFileDiagram8ContentType(String val)
-    {
-        fileDiagram8ContentType = val;
-    }
-
-    public String getFileDiagram8ContentType()
-    {
-        return fileDiagram8ContentType;
-    }
-
-    public void setFileDiagram8FileName(String val)
-    {
-        fileDiagram8FileName = val;
-    }
-
-    public String getFileDiagram8FileName()
-    {
-        return fileDiagram8FileName;
-    }
-
-    public void setRemoveDiagram8(String val)
-    {
-        removeDiagram8 = val;
-    }
-
-    public String getRemoveDiagram8()
-    {
-        return removeDiagram8;
-    }
-
-    public void setFileDiagram9(java.io.File val)
-    {
-        fileDiagram9 = val;
-    }
-
-    public java.io.File getFileDiagram9()
-    {
-        return fileDiagram9;
-    }
-
-    public void setFileDiagram9ContentType(String val)
-    {
-        fileDiagram9ContentType = val;
-    }
-
-    public String getFileDiagram9ContentType()
-    {
-        return fileDiagram9ContentType;
-    }
-
-    public void setFileDiagram9FileName(String val)
-    {
-        fileDiagram9FileName = val;
-    }
-
-    public String getFileDiagram9FileName()
-    {
-        return fileDiagram9FileName;
-    }
-
-    public void setRemoveDiagram9(String val)
-    {
-        removeDiagram9 = val;
-    }
-
-    public String getRemoveDiagram9()
-    {
-        return removeDiagram9;
-    }
-
-    public void setFileDiagram10(java.io.File val)
-    {
-        fileDiagram10 = val;
-    }
-
-    public java.io.File getFileDiagram10()
-    {
-        return fileDiagram10;
-    }
-
-    public void setFileDiagram10ContentType(String val)
-    {
-        fileDiagram10ContentType = val;
-    }
-
-    public String getFileDiagram10ContentType()
-    {
-        return fileDiagram10ContentType;
-    }
-
-    public void setFileDiagram10FileName(String val)
-    {
-        fileDiagram10FileName = val;
-    }
-
-    public String getFileDiagram10FileName()
-    {
-        return fileDiagram10FileName;
-    }
-
-    public void setRemoveDiagram10(String val)
-    {
-        removeDiagram10 = val;
-    }
-
-    public String getRemoveDiagram10()
-    {
-        return removeDiagram10;
-    }
 
+	public void setFileProductPhoto1(java.io.File val) {
+		fileProductPhoto1 = val;
+	}
+
+	public java.io.File getFileProductPhoto1() {
+		return fileProductPhoto1;
+	}
+
+	public void setFileProductPhoto1ContentType(String val) {
+		fileProductPhoto1ContentType = val;
+	}
+
+	public String getFileProductPhoto1ContentType() {
+		return fileProductPhoto1ContentType;
+	}
+
+	public void setFileProductPhoto1FileName(String val) {
+		fileProductPhoto1FileName = val;
+	}
+
+	public String getFileProductPhoto1FileName() {
+		return fileProductPhoto1FileName;
+	}
+
+	public void setRemoveProductPhoto1(String val) {
+		removeProductPhoto1 = val;
+	}
+
+	public String getRemoveProductPhoto1() {
+		return removeProductPhoto1;
+	}
+
+	public void setFileProductPhoto2(java.io.File val) {
+		fileProductPhoto2 = val;
+	}
+
+	public java.io.File getFileProductPhoto2() {
+		return fileProductPhoto2;
+	}
+
+	public void setFileProductPhoto2ContentType(String val) {
+		fileProductPhoto2ContentType = val;
+	}
+
+	public String getFileProductPhoto2ContentType() {
+		return fileProductPhoto2ContentType;
+	}
+
+	public void setFileProductPhoto2FileName(String val) {
+		fileProductPhoto2FileName = val;
+	}
+
+	public String getFileProductPhoto2FileName() {
+		return fileProductPhoto2FileName;
+	}
+
+	public void setRemoveProductPhoto2(String val) {
+		removeProductPhoto2 = val;
+	}
+
+	public String getRemoveProductPhoto2() {
+		return removeProductPhoto2;
+	}
+
+	public void setFileProductPhoto3(java.io.File val) {
+		fileProductPhoto3 = val;
+	}
+
+	public java.io.File getFileProductPhoto3() {
+		return fileProductPhoto3;
+	}
+
+	public void setFileProductPhoto3ContentType(String val) {
+		fileProductPhoto3ContentType = val;
+	}
+
+	public String getFileProductPhoto3ContentType() {
+		return fileProductPhoto3ContentType;
+	}
+
+	public void setFileProductPhoto3FileName(String val) {
+		fileProductPhoto3FileName = val;
+	}
+
+	public String getFileProductPhoto3FileName() {
+		return fileProductPhoto3FileName;
+	}
+
+	public void setRemoveProductPhoto3(String val) {
+		removeProductPhoto3 = val;
+	}
+
+	public String getRemoveProductPhoto3() {
+		return removeProductPhoto3;
+	}
+
+	public void setFileProductPhoto4(java.io.File val) {
+		fileProductPhoto4 = val;
+	}
+
+	public java.io.File getFileProductPhoto4() {
+		return fileProductPhoto4;
+	}
+
+	public void setFileProductPhoto4ContentType(String val) {
+		fileProductPhoto4ContentType = val;
+	}
+
+	public String getFileProductPhoto4ContentType() {
+		return fileProductPhoto4ContentType;
+	}
+
+	public void setFileProductPhoto4FileName(String val) {
+		fileProductPhoto4FileName = val;
+	}
+
+	public String getFileProductPhoto4FileName() {
+		return fileProductPhoto4FileName;
+	}
+
+	public void setRemoveProductPhoto4(String val) {
+		removeProductPhoto4 = val;
+	}
+
+	public String getRemoveProductPhoto4() {
+		return removeProductPhoto4;
+	}
+
+	public void setFileProductPhoto5(java.io.File val) {
+		fileProductPhoto5 = val;
+	}
+
+	public java.io.File getFileProductPhoto5() {
+		return fileProductPhoto5;
+	}
+
+	public void setFileProductPhoto5ContentType(String val) {
+		fileProductPhoto5ContentType = val;
+	}
+
+	public String getFileProductPhoto5ContentType() {
+		return fileProductPhoto5ContentType;
+	}
+
+	public void setFileProductPhoto5FileName(String val) {
+		fileProductPhoto5FileName = val;
+	}
+
+	public String getFileProductPhoto5FileName() {
+		return fileProductPhoto5FileName;
+	}
+
+	public void setRemoveProductPhoto5(String val) {
+		removeProductPhoto5 = val;
+	}
+
+	public String getRemoveProductPhoto5() {
+		return removeProductPhoto5;
+	}
+
+	public void setFileProductPhoto6(java.io.File val) {
+		fileProductPhoto6 = val;
+	}
+
+	public java.io.File getFileProductPhoto6() {
+		return fileProductPhoto6;
+	}
+
+	public void setFileProductPhoto6ContentType(String val) {
+		fileProductPhoto6ContentType = val;
+	}
+
+	public String getFileProductPhoto6ContentType() {
+		return fileProductPhoto6ContentType;
+	}
+
+	public void setFileProductPhoto6FileName(String val) {
+		fileProductPhoto6FileName = val;
+	}
+
+	public String getFileProductPhoto6FileName() {
+		return fileProductPhoto6FileName;
+	}
+
+	public void setRemoveProductPhoto6(String val) {
+		removeProductPhoto6 = val;
+	}
+
+	public String getRemoveProductPhoto6() {
+		return removeProductPhoto6;
+	}
+
+	public void setFileProductPhoto7(java.io.File val) {
+		fileProductPhoto7 = val;
+	}
+
+	public java.io.File getFileProductPhoto7() {
+		return fileProductPhoto7;
+	}
+
+	public void setFileProductPhoto7ContentType(String val) {
+		fileProductPhoto7ContentType = val;
+	}
+
+	public String getFileProductPhoto7ContentType() {
+		return fileProductPhoto7ContentType;
+	}
+
+	public void setFileProductPhoto7FileName(String val) {
+		fileProductPhoto7FileName = val;
+	}
+
+	public String getFileProductPhoto7FileName() {
+		return fileProductPhoto7FileName;
+	}
+
+	public void setRemoveProductPhoto7(String val) {
+		removeProductPhoto7 = val;
+	}
+
+	public String getRemoveProductPhoto7() {
+		return removeProductPhoto7;
+	}
+
+	public void setFileProductPhoto8(java.io.File val) {
+		fileProductPhoto8 = val;
+	}
+
+	public java.io.File getFileProductPhoto8() {
+		return fileProductPhoto8;
+	}
+
+	public void setFileProductPhoto8ContentType(String val) {
+		fileProductPhoto8ContentType = val;
+	}
+
+	public String getFileProductPhoto8ContentType() {
+		return fileProductPhoto8ContentType;
+	}
+
+	public void setFileProductPhoto8FileName(String val) {
+		fileProductPhoto8FileName = val;
+	}
+
+	public String getFileProductPhoto8FileName() {
+		return fileProductPhoto8FileName;
+	}
+
+	public void setRemoveProductPhoto8(String val) {
+		removeProductPhoto8 = val;
+	}
+
+	public String getRemoveProductPhoto8() {
+		return removeProductPhoto8;
+	}
+
+	public void setFileProductPhoto9(java.io.File val) {
+		fileProductPhoto9 = val;
+	}
+
+	public java.io.File getFileProductPhoto9() {
+		return fileProductPhoto9;
+	}
+
+	public void setFileProductPhoto9ContentType(String val) {
+		fileProductPhoto9ContentType = val;
+	}
+
+	public String getFileProductPhoto9ContentType() {
+		return fileProductPhoto9ContentType;
+	}
+
+	public void setFileProductPhoto9FileName(String val) {
+		fileProductPhoto9FileName = val;
+	}
+
+	public String getFileProductPhoto9FileName() {
+		return fileProductPhoto9FileName;
+	}
+
+	public void setRemoveProductPhoto9(String val) {
+		removeProductPhoto9 = val;
+	}
+
+	public String getRemoveProductPhoto9() {
+		return removeProductPhoto9;
+	}
+
+	public void setFileProductPhoto10(java.io.File val) {
+		fileProductPhoto10 = val;
+	}
+
+	public java.io.File getFileProductPhoto10() {
+		return fileProductPhoto10;
+	}
+
+	public void setFileProductPhoto10ContentType(String val) {
+		fileProductPhoto10ContentType = val;
+	}
+
+	public String getFileProductPhoto10ContentType() {
+		return fileProductPhoto10ContentType;
+	}
+
+	public void setFileProductPhoto10FileName(String val) {
+		fileProductPhoto10FileName = val;
+	}
+
+	public String getFileProductPhoto10FileName() {
+		return fileProductPhoto10FileName;
+	}
+
+	public void setRemoveProductPhoto10(String val) {
+		removeProductPhoto10 = val;
+	}
+
+	public String getRemoveProductPhoto10() {
+		return removeProductPhoto10;
+	}
+
+	public void setFileDownload1(java.io.File val) {
+		fileDownload1 = val;
+	}
+
+	public java.io.File getFileDownload1() {
+		return fileDownload1;
+	}
+
+	public void setFileDownload1ContentType(String val) {
+		fileDownload1ContentType = val;
+	}
+
+	public String getFileDownload1ContentType() {
+		return fileDownload1ContentType;
+	}
+
+	public void setFileDownload1FileName(String val) {
+		fileDownload1FileName = val;
+	}
+
+	public String getFileDownload1FileName() {
+		return fileDownload1FileName;
+	}
+
+	public void setRemoveDownload1(String val) {
+		removeDownload1 = val;
+	}
+
+	public String getRemoveDownload1() {
+		return removeDownload1;
+	}
+
+	public void setFileDownload2(java.io.File val) {
+		fileDownload2 = val;
+	}
+
+	public java.io.File getFileDownload2() {
+		return fileDownload2;
+	}
+
+	public void setFileDownload2ContentType(String val) {
+		fileDownload2ContentType = val;
+	}
+
+	public String getFileDownload2ContentType() {
+		return fileDownload2ContentType;
+	}
+
+	public void setFileDownload2FileName(String val) {
+		fileDownload2FileName = val;
+	}
+
+	public String getFileDownload2FileName() {
+		return fileDownload2FileName;
+	}
+
+	public void setRemoveDownload2(String val) {
+		removeDownload2 = val;
+	}
+
+	public String getRemoveDownload2() {
+		return removeDownload2;
+	}
+
+	public void setFileDownload3(java.io.File val) {
+		fileDownload3 = val;
+	}
+
+	public java.io.File getFileDownload3() {
+		return fileDownload3;
+	}
+
+	public void setFileDownload3ContentType(String val) {
+		fileDownload3ContentType = val;
+	}
+
+	public String getFileDownload3ContentType() {
+		return fileDownload3ContentType;
+	}
+
+	public void setFileDownload3FileName(String val) {
+		fileDownload3FileName = val;
+	}
+
+	public String getFileDownload3FileName() {
+		return fileDownload3FileName;
+	}
+
+	public void setRemoveDownload3(String val) {
+		removeDownload3 = val;
+	}
+
+	public String getRemoveDownload3() {
+		return removeDownload3;
+	}
+
+	public void setFileDownload4(java.io.File val) {
+		fileDownload4 = val;
+	}
+
+	public java.io.File getFileDownload4() {
+		return fileDownload4;
+	}
+
+	public void setFileDownload4ContentType(String val) {
+		fileDownload4ContentType = val;
+	}
+
+	public String getFileDownload4ContentType() {
+		return fileDownload4ContentType;
+	}
+
+	public void setFileDownload4FileName(String val) {
+		fileDownload4FileName = val;
+	}
+
+	public String getFileDownload4FileName() {
+		return fileDownload4FileName;
+	}
+
+	public void setRemoveDownload4(String val) {
+		removeDownload4 = val;
+	}
+
+	public String getRemoveDownload4() {
+		return removeDownload4;
+	}
+
+	public void setFileDownload5(java.io.File val) {
+		fileDownload5 = val;
+	}
+
+	public java.io.File getFileDownload5() {
+		return fileDownload5;
+	}
+
+	public void setFileDownload5ContentType(String val) {
+		fileDownload5ContentType = val;
+	}
+
+	public String getFileDownload5ContentType() {
+		return fileDownload5ContentType;
+	}
+
+	public void setFileDownload5FileName(String val) {
+		fileDownload5FileName = val;
+	}
+
+	public String getFileDownload5FileName() {
+		return fileDownload5FileName;
+	}
+
+	public void setRemoveDownload5(String val) {
+		removeDownload5 = val;
+	}
+
+	public String getRemoveDownload5() {
+		return removeDownload5;
+	}
+
+	public void setFileDownload6(java.io.File val) {
+		fileDownload6 = val;
+	}
+
+	public java.io.File getFileDownload6() {
+		return fileDownload6;
+	}
+
+	public void setFileDownload6ContentType(String val) {
+		fileDownload6ContentType = val;
+	}
+
+	public String getFileDownload6ContentType() {
+		return fileDownload6ContentType;
+	}
+
+	public void setFileDownload6FileName(String val) {
+		fileDownload6FileName = val;
+	}
+
+	public String getFileDownload6FileName() {
+		return fileDownload6FileName;
+	}
+
+	public void setRemoveDownload6(String val) {
+		removeDownload6 = val;
+	}
+
+	public String getRemoveDownload6() {
+		return removeDownload6;
+	}
+
+	public void setFileDownload7(java.io.File val) {
+		fileDownload7 = val;
+	}
+
+	public java.io.File getFileDownload7() {
+		return fileDownload7;
+	}
+
+	public void setFileDownload7ContentType(String val) {
+		fileDownload7ContentType = val;
+	}
+
+	public String getFileDownload7ContentType() {
+		return fileDownload7ContentType;
+	}
+
+	public void setFileDownload7FileName(String val) {
+		fileDownload7FileName = val;
+	}
+
+	public String getFileDownload7FileName() {
+		return fileDownload7FileName;
+	}
+
+	public void setRemoveDownload7(String val) {
+		removeDownload7 = val;
+	}
+
+	public String getRemoveDownload7() {
+		return removeDownload7;
+	}
+
+	public void setFileDownload8(java.io.File val) {
+		fileDownload8 = val;
+	}
+
+	public java.io.File getFileDownload8() {
+		return fileDownload8;
+	}
+
+	public void setFileDownload8ContentType(String val) {
+		fileDownload8ContentType = val;
+	}
+
+	public String getFileDownload8ContentType() {
+		return fileDownload8ContentType;
+	}
+
+	public void setFileDownload8FileName(String val) {
+		fileDownload8FileName = val;
+	}
+
+	public String getFileDownload8FileName() {
+		return fileDownload8FileName;
+	}
+
+	public void setRemoveDownload8(String val) {
+		removeDownload8 = val;
+	}
+
+	public String getRemoveDownload8() {
+		return removeDownload8;
+	}
+
+	public void setFileDownload9(java.io.File val) {
+		fileDownload9 = val;
+	}
+
+	public java.io.File getFileDownload9() {
+		return fileDownload9;
+	}
+
+	public void setFileDownload9ContentType(String val) {
+		fileDownload9ContentType = val;
+	}
+
+	public String getFileDownload9ContentType() {
+		return fileDownload9ContentType;
+	}
+
+	public void setFileDownload9FileName(String val) {
+		fileDownload9FileName = val;
+	}
+
+	public String getFileDownload9FileName() {
+		return fileDownload9FileName;
+	}
+
+	public void setRemoveDownload9(String val) {
+		removeDownload9 = val;
+	}
+
+	public String getRemoveDownload9() {
+		return removeDownload9;
+	}
+
+	public void setFileDownload10(java.io.File val) {
+		fileDownload10 = val;
+	}
+
+	public java.io.File getFileDownload10() {
+		return fileDownload10;
+	}
+
+	public void setFileDownload10ContentType(String val) {
+		fileDownload10ContentType = val;
+	}
+
+	public String getFileDownload10ContentType() {
+		return fileDownload10ContentType;
+	}
+
+	public void setFileDownload10FileName(String val) {
+		fileDownload10FileName = val;
+	}
+
+	public String getFileDownload10FileName() {
+		return fileDownload10FileName;
+	}
+
+	public void setRemoveDownload10(String val) {
+		removeDownload10 = val;
+	}
+
+	public String getRemoveDownload10() {
+		return removeDownload10;
+	}
+
+	public void setFileDiagram1(java.io.File val) {
+		fileDiagram1 = val;
+	}
+
+	public java.io.File getFileDiagram1() {
+		return fileDiagram1;
+	}
+
+	public void setFileDiagram1ContentType(String val) {
+		fileDiagram1ContentType = val;
+	}
+
+	public String getFileDiagram1ContentType() {
+		return fileDiagram1ContentType;
+	}
+
+	public void setFileDiagram1FileName(String val) {
+		fileDiagram1FileName = val;
+	}
+
+	public String getFileDiagram1FileName() {
+		return fileDiagram1FileName;
+	}
+
+	public void setRemoveDiagram1(String val) {
+		removeDiagram1 = val;
+	}
+
+	public String getRemoveDiagram1() {
+		return removeDiagram1;
+	}
+
+	public void setFileDiagram2(java.io.File val) {
+		fileDiagram2 = val;
+	}
+
+	public java.io.File getFileDiagram2() {
+		return fileDiagram2;
+	}
+
+	public void setFileDiagram2ContentType(String val) {
+		fileDiagram2ContentType = val;
+	}
+
+	public String getFileDiagram2ContentType() {
+		return fileDiagram2ContentType;
+	}
+
+	public void setFileDiagram2FileName(String val) {
+		fileDiagram2FileName = val;
+	}
+
+	public String getFileDiagram2FileName() {
+		return fileDiagram2FileName;
+	}
+
+	public void setRemoveDiagram2(String val) {
+		removeDiagram2 = val;
+	}
+
+	public String getRemoveDiagram2() {
+		return removeDiagram2;
+	}
+
+	public void setFileDiagram3(java.io.File val) {
+		fileDiagram3 = val;
+	}
+
+	public java.io.File getFileDiagram3() {
+		return fileDiagram3;
+	}
+
+	public void setFileDiagram3ContentType(String val) {
+		fileDiagram3ContentType = val;
+	}
+
+	public String getFileDiagram3ContentType() {
+		return fileDiagram3ContentType;
+	}
+
+	public void setFileDiagram3FileName(String val) {
+		fileDiagram3FileName = val;
+	}
+
+	public String getFileDiagram3FileName() {
+		return fileDiagram3FileName;
+	}
+
+	public void setRemoveDiagram3(String val) {
+		removeDiagram3 = val;
+	}
+
+	public String getRemoveDiagram3() {
+		return removeDiagram3;
+	}
+
+	public void setFileDiagram4(java.io.File val) {
+		fileDiagram4 = val;
+	}
+
+	public java.io.File getFileDiagram4() {
+		return fileDiagram4;
+	}
+
+	public void setFileDiagram4ContentType(String val) {
+		fileDiagram4ContentType = val;
+	}
+
+	public String getFileDiagram4ContentType() {
+		return fileDiagram4ContentType;
+	}
+
+	public void setFileDiagram4FileName(String val) {
+		fileDiagram4FileName = val;
+	}
+
+	public String getFileDiagram4FileName() {
+		return fileDiagram4FileName;
+	}
+
+	public void setRemoveDiagram4(String val) {
+		removeDiagram4 = val;
+	}
+
+	public String getRemoveDiagram4() {
+		return removeDiagram4;
+	}
+
+	public void setFileDiagram5(java.io.File val) {
+		fileDiagram5 = val;
+	}
+
+	public java.io.File getFileDiagram5() {
+		return fileDiagram5;
+	}
+
+	public void setFileDiagram5ContentType(String val) {
+		fileDiagram5ContentType = val;
+	}
+
+	public String getFileDiagram5ContentType() {
+		return fileDiagram5ContentType;
+	}
+
+	public void setFileDiagram5FileName(String val) {
+		fileDiagram5FileName = val;
+	}
+
+	public String getFileDiagram5FileName() {
+		return fileDiagram5FileName;
+	}
+
+	public void setRemoveDiagram5(String val) {
+		removeDiagram5 = val;
+	}
+
+	public String getRemoveDiagram5() {
+		return removeDiagram5;
+	}
+
+	public void setFileDiagram6(java.io.File val) {
+		fileDiagram6 = val;
+	}
+
+	public java.io.File getFileDiagram6() {
+		return fileDiagram6;
+	}
+
+	public void setFileDiagram6ContentType(String val) {
+		fileDiagram6ContentType = val;
+	}
+
+	public String getFileDiagram6ContentType() {
+		return fileDiagram6ContentType;
+	}
+
+	public void setFileDiagram6FileName(String val) {
+		fileDiagram6FileName = val;
+	}
+
+	public String getFileDiagram6FileName() {
+		return fileDiagram6FileName;
+	}
+
+	public void setRemoveDiagram6(String val) {
+		removeDiagram6 = val;
+	}
+
+	public String getRemoveDiagram6() {
+		return removeDiagram6;
+	}
+
+	public void setFileDiagram7(java.io.File val) {
+		fileDiagram7 = val;
+	}
+
+	public java.io.File getFileDiagram7() {
+		return fileDiagram7;
+	}
+
+	public void setFileDiagram7ContentType(String val) {
+		fileDiagram7ContentType = val;
+	}
+
+	public String getFileDiagram7ContentType() {
+		return fileDiagram7ContentType;
+	}
+
+	public void setFileDiagram7FileName(String val) {
+		fileDiagram7FileName = val;
+	}
+
+	public String getFileDiagram7FileName() {
+		return fileDiagram7FileName;
+	}
+
+	public void setRemoveDiagram7(String val) {
+		removeDiagram7 = val;
+	}
+
+	public String getRemoveDiagram7() {
+		return removeDiagram7;
+	}
+
+	public void setFileDiagram8(java.io.File val) {
+		fileDiagram8 = val;
+	}
+
+	public java.io.File getFileDiagram8() {
+		return fileDiagram8;
+	}
+
+	public void setFileDiagram8ContentType(String val) {
+		fileDiagram8ContentType = val;
+	}
+
+	public String getFileDiagram8ContentType() {
+		return fileDiagram8ContentType;
+	}
+
+	public void setFileDiagram8FileName(String val) {
+		fileDiagram8FileName = val;
+	}
+
+	public String getFileDiagram8FileName() {
+		return fileDiagram8FileName;
+	}
+
+	public void setRemoveDiagram8(String val) {
+		removeDiagram8 = val;
+	}
+
+	public String getRemoveDiagram8() {
+		return removeDiagram8;
+	}
+
+	public void setFileDiagram9(java.io.File val) {
+		fileDiagram9 = val;
+	}
+
+	public java.io.File getFileDiagram9() {
+		return fileDiagram9;
+	}
+
+	public void setFileDiagram9ContentType(String val) {
+		fileDiagram9ContentType = val;
+	}
+
+	public String getFileDiagram9ContentType() {
+		return fileDiagram9ContentType;
+	}
+
+	public void setFileDiagram9FileName(String val) {
+		fileDiagram9FileName = val;
+	}
+
+	public String getFileDiagram9FileName() {
+		return fileDiagram9FileName;
+	}
+
+	public void setRemoveDiagram9(String val) {
+		removeDiagram9 = val;
+	}
+
+	public String getRemoveDiagram9() {
+		return removeDiagram9;
+	}
+
+	public void setFileDiagram10(java.io.File val) {
+		fileDiagram10 = val;
+	}
+
+	public java.io.File getFileDiagram10() {
+		return fileDiagram10;
+	}
+
+	public void setFileDiagram10ContentType(String val) {
+		fileDiagram10ContentType = val;
+	}
+
+	public String getFileDiagram10ContentType() {
+		return fileDiagram10ContentType;
+	}
+
+	public void setFileDiagram10FileName(String val) {
+		fileDiagram10FileName = val;
+	}
+
+	public String getFileDiagram10FileName() {
+		return fileDiagram10FileName;
+	}
+
+	public void setRemoveDiagram10(String val) {
+		removeDiagram10 = val;
+	}
+
+	public String getRemoveDiagram10() {
+		return removeDiagram10;
+	}
 
 	public String save() {
 		log.info("entering 'save' method");
 		getGenericManager().saveProduct(product);
-		saveFileToLocal(fileLogoFileName, fileLogo, getTextWithArgs("product.uploadLogo.dir"), product.getId());
 
 		saveFileToLocal(fileProductPhoto1FileName, fileProductPhoto1, getTextWithArgs("product.uploadProductPhoto1.dir"), product.getId());
 		saveFileToLocal(fileProductPhoto2FileName, fileProductPhoto2, getTextWithArgs("product.uploadProductPhoto2.dir"), product.getId());
@@ -1384,6 +1161,17 @@ public class ProductAction extends CommonActionSupport {
 		saveFileToLocal(fileDiagram9FileName, fileDiagram9, getTextWithArgs("product.uploadDiagram9.dir"), product.getId());
 		saveFileToLocal(fileDiagram10FileName, fileDiagram10, getTextWithArgs("product.uploadDiagram10.dir"), product.getId());
 
+		saveFileToLocal(fileLogo1FileName, fileLogo1, getTextWithArgs("product.uploadLogo1.dir"), product.getId());
+		saveFileToLocal(fileLogo2FileName, fileLogo2, getTextWithArgs("product.uploadLogo2.dir"), product.getId());
+		saveFileToLocal(fileLogo3FileName, fileLogo3, getTextWithArgs("product.uploadLogo3.dir"), product.getId());
+		saveFileToLocal(fileLogo4FileName, fileLogo4, getTextWithArgs("product.uploadLogo4.dir"), product.getId());
+		saveFileToLocal(fileLogo5FileName, fileLogo5, getTextWithArgs("product.uploadLogo5.dir"), product.getId());
+		saveFileToLocal(fileLogo6FileName, fileLogo6, getTextWithArgs("product.uploadLogo6.dir"), product.getId());
+		saveFileToLocal(fileLogo7FileName, fileLogo7, getTextWithArgs("product.uploadLogo7.dir"), product.getId());
+		saveFileToLocal(fileLogo8FileName, fileLogo8, getTextWithArgs("product.uploadLogo8.dir"), product.getId());
+		saveFileToLocal(fileLogo9FileName, fileLogo9, getTextWithArgs("product.uploadLogo9.dir"), product.getId());
+		saveFileToLocal(fileLogo10FileName, fileLogo10, getTextWithArgs("product.uploadLogo10.dir"), product.getId());
+
 		return SUCCESS;
 	}
 
@@ -1399,14 +1187,96 @@ public class ProductAction extends CommonActionSupport {
 	protected void formToBean() {
 		log.info("enter formToBean()");
 		product.setProductType(getGenericManager().getProductTypeById(product.getProductTypeId()));
-		if (getRemoveLogo() != null && getRemoveLogo().length() > 0) {
-			product.setLogo(computeUploadedFile(fileLogoFileName, fileLogo));
-			removeUploadedFile(getTextWithArgs("product.uploadLogo.dir"), product.getLogoId(), product.getLogoFileName());
+
+		if (getRemoveLogo1() != null && getRemoveLogo1().length() > 0) {
+			product.setLogo1(computeUploadedFile(fileLogo1FileName, fileLogo1));
+			removeUploadedFile(getTextWithArgs("product.uploadLogo1.dir"), product.getLogo1Id(), product.getLogo1FileName());
 		} else {
-			if (product.getLogoId() != null)
-				product.setLogo(getGenericManager().getUploadedFileById(product.getLogoId()));
+			if (product.getLogo1Id() != null)
+				product.setLogo1(getGenericManager().getUploadedFileById(product.getLogo1Id()));
 			else
-				product.setLogo(computeUploadedFile(fileLogoFileName, fileLogo));
+				product.setLogo1(computeUploadedFile(fileLogo1FileName, fileLogo1));
+		}
+		if (getRemoveLogo2() != null && getRemoveLogo2().length() > 0) {
+			product.setLogo2(computeUploadedFile(fileLogo2FileName, fileLogo2));
+			removeUploadedFile(getTextWithArgs("product.uploadLogo2.dir"), product.getLogo2Id(), product.getLogo2FileName());
+		} else {
+			if (product.getLogo2Id() != null)
+				product.setLogo2(getGenericManager().getUploadedFileById(product.getLogo2Id()));
+			else
+				product.setLogo2(computeUploadedFile(fileLogo2FileName, fileLogo2));
+		}
+		if (getRemoveLogo3() != null && getRemoveLogo3().length() > 0) {
+			product.setLogo3(computeUploadedFile(fileLogo3FileName, fileLogo3));
+			removeUploadedFile(getTextWithArgs("product.uploadLogo3.dir"), product.getLogo3Id(), product.getLogo3FileName());
+		} else {
+			if (product.getLogo3Id() != null)
+				product.setLogo3(getGenericManager().getUploadedFileById(product.getLogo3Id()));
+			else
+				product.setLogo3(computeUploadedFile(fileLogo3FileName, fileLogo3));
+		}
+		if (getRemoveLogo4() != null && getRemoveLogo4().length() > 0) {
+			product.setLogo4(computeUploadedFile(fileLogo4FileName, fileLogo4));
+			removeUploadedFile(getTextWithArgs("product.uploadLogo4.dir"), product.getLogo4Id(), product.getLogo4FileName());
+		} else {
+			if (product.getLogo4Id() != null)
+				product.setLogo4(getGenericManager().getUploadedFileById(product.getLogo4Id()));
+			else
+				product.setLogo4(computeUploadedFile(fileLogo4FileName, fileLogo4));
+		}
+		if (getRemoveLogo5() != null && getRemoveLogo5().length() > 0) {
+			product.setLogo5(computeUploadedFile(fileLogo5FileName, fileLogo5));
+			removeUploadedFile(getTextWithArgs("product.uploadLogo5.dir"), product.getLogo5Id(), product.getLogo5FileName());
+		} else {
+			if (product.getLogo5Id() != null)
+				product.setLogo5(getGenericManager().getUploadedFileById(product.getLogo5Id()));
+			else
+				product.setLogo5(computeUploadedFile(fileLogo5FileName, fileLogo5));
+		}
+		if (getRemoveLogo6() != null && getRemoveLogo6().length() > 0) {
+			product.setLogo6(computeUploadedFile(fileLogo6FileName, fileLogo6));
+			removeUploadedFile(getTextWithArgs("product.uploadLogo6.dir"), product.getLogo6Id(), product.getLogo6FileName());
+		} else {
+			if (product.getLogo6Id() != null)
+				product.setLogo6(getGenericManager().getUploadedFileById(product.getLogo6Id()));
+			else
+				product.setLogo6(computeUploadedFile(fileLogo6FileName, fileLogo6));
+		}
+		if (getRemoveLogo7() != null && getRemoveLogo7().length() > 0) {
+			product.setLogo7(computeUploadedFile(fileLogo7FileName, fileLogo7));
+			removeUploadedFile(getTextWithArgs("product.uploadLogo7.dir"), product.getLogo7Id(), product.getLogo7FileName());
+		} else {
+			if (product.getLogo7Id() != null)
+				product.setLogo7(getGenericManager().getUploadedFileById(product.getLogo7Id()));
+			else
+				product.setLogo7(computeUploadedFile(fileLogo7FileName, fileLogo7));
+		}
+		if (getRemoveLogo8() != null && getRemoveLogo8().length() > 0) {
+			product.setLogo8(computeUploadedFile(fileLogo8FileName, fileLogo8));
+			removeUploadedFile(getTextWithArgs("product.uploadLogo8.dir"), product.getLogo8Id(), product.getLogo8FileName());
+		} else {
+			if (product.getLogo8Id() != null)
+				product.setLogo8(getGenericManager().getUploadedFileById(product.getLogo8Id()));
+			else
+				product.setLogo8(computeUploadedFile(fileLogo8FileName, fileLogo8));
+		}
+		if (getRemoveLogo9() != null && getRemoveLogo9().length() > 0) {
+			product.setLogo9(computeUploadedFile(fileLogo9FileName, fileLogo9));
+			removeUploadedFile(getTextWithArgs("product.uploadLogo9.dir"), product.getLogo9Id(), product.getLogo9FileName());
+		} else {
+			if (product.getLogo9Id() != null)
+				product.setLogo9(getGenericManager().getUploadedFileById(product.getLogo9Id()));
+			else
+				product.setLogo9(computeUploadedFile(fileLogo9FileName, fileLogo9));
+		}
+		if (getRemoveLogo10() != null && getRemoveLogo10().length() > 0) {
+			product.setLogo10(computeUploadedFile(fileLogo10FileName, fileLogo10));
+			removeUploadedFile(getTextWithArgs("product.uploadLogo10.dir"), product.getLogo10Id(), product.getLogo10FileName());
+		} else {
+			if (product.getLogo10Id() != null)
+				product.setLogo10(getGenericManager().getUploadedFileById(product.getLogo10Id()));
+			else
+				product.setLogo10(computeUploadedFile(fileLogo10FileName, fileLogo10));
 		}
 
 		if (getRemoveProductPhoto1() != null && getRemoveProductPhoto1().length() > 0) {
@@ -1679,46 +1549,51 @@ public class ProductAction extends CommonActionSupport {
 			else
 				product.setDiagram10(computeUploadedFile(fileDiagram10FileName, fileDiagram10));
 		}
+
+		product.setTarget1(getAppPropertyById(product.getTarget1Id()));
+		product.setTarget2(getAppPropertyById(product.getTarget2Id()));
+		product.setTarget3(getAppPropertyById(product.getTarget3Id()));
+		product.setTarget4(getAppPropertyById(product.getTarget4Id()));
+		product.setTarget5(getAppPropertyById(product.getTarget5Id()));
+		product.setTarget6(getAppPropertyById(product.getTarget6Id()));
+		product.setTarget7(getAppPropertyById(product.getTarget7Id()));
+		product.setTarget8(getAppPropertyById(product.getTarget8Id()));
+		product.setTarget9(getAppPropertyById(product.getTarget9Id()));
+		product.setTarget10(getAppPropertyById(product.getTarget10Id()));
+		product.setTarget11(getAppPropertyById(product.getTarget11Id()));
+		product.setTarget12(getAppPropertyById(product.getTarget12Id()));
+		product.setTarget13(getAppPropertyById(product.getTarget13Id()));
+		product.setTarget14(getAppPropertyById(product.getTarget14Id()));
+		product.setTarget15(getAppPropertyById(product.getTarget15Id()));
+		product.setTarget16(getAppPropertyById(product.getTarget16Id()));
+		product.setTarget17(getAppPropertyById(product.getTarget17Id()));
+		product.setTarget18(getAppPropertyById(product.getTarget18Id()));
+		product.setTarget19(getAppPropertyById(product.getTarget19Id()));
+		product.setTarget20(getAppPropertyById(product.getTarget20Id()));
+		product.setTarget21(getAppPropertyById(product.getTarget21Id()));
+		product.setTarget22(getAppPropertyById(product.getTarget22Id()));
+		product.setTarget23(getAppPropertyById(product.getTarget23Id()));
+		product.setTarget24(getAppPropertyById(product.getTarget24Id()));
+		product.setTarget25(getAppPropertyById(product.getTarget25Id()));
+		product.setTarget26(getAppPropertyById(product.getTarget26Id()));
+		product.setTarget27(getAppPropertyById(product.getTarget27Id()));
+		product.setTarget28(getAppPropertyById(product.getTarget28Id()));
+		product.setTarget29(getAppPropertyById(product.getTarget29Id()));
+		product.setTarget30(getAppPropertyById(product.getTarget30Id()));
 	}
 
 	public List<ProductType> getProductTypeList() {
 		return getGenericManager().getProductTypeList(); // TODO
 	}
 
-	public void setFileLogo(java.io.File val) {
-		fileLogo = val;
-	}
-
-	public java.io.File getFileLogo() {
-		return fileLogo;
-	}
-
-	public void setFileLogoContentType(String val) {
-		fileLogoContentType = val;
-	}
-
-	public String getFileLogoContentType() {
-		return fileLogoContentType;
-	}
-
-	public void setFileLogoFileName(String val) {
-		fileLogoFileName = val;
-	}
-
-	public String getFileLogoFileName() {
-		return fileLogoFileName;
-	}
-
-	public void setRemoveLogo(String val) {
-		removeLogo = val;
-	}
-
-	public String getRemoveLogo() {
-		return removeLogo;
-	}
-
 	public List<Product> getProductList() {
-		return getGenericManager().getProductList();
+		try{
+			productType = getGenericManager().getProductTypeById(productType.getId());
+		}catch(Exception e){
+			
+		}
+		
+		return getGenericManager().getProductList(productType);
 	}
 
 	public void setSelectedProductIds(Long[] val) {
@@ -1728,4 +1603,333 @@ public class ProductAction extends CommonActionSupport {
 	public Long[] getSelectedProductIds() {
 		return selectedProductIds;
 	}
+
+	public void setFileLogo1(java.io.File val) {
+		fileLogo1 = val;
+	}
+
+	public java.io.File getFileLogo1() {
+		return fileLogo1;
+	}
+
+	public void setFileLogo1ContentType(String val) {
+		fileLogo1ContentType = val;
+	}
+
+	public String getFileLogo1ContentType() {
+		return fileLogo1ContentType;
+	}
+
+	public void setFileLogo1FileName(String val) {
+		fileLogo1FileName = val;
+	}
+
+	public String getFileLogo1FileName() {
+		return fileLogo1FileName;
+	}
+
+	public void setRemoveLogo1(String val) {
+		removeLogo1 = val;
+	}
+
+	public String getRemoveLogo1() {
+		return removeLogo1;
+	}
+
+	public void setFileLogo2(java.io.File val) {
+		fileLogo2 = val;
+	}
+
+	public java.io.File getFileLogo2() {
+		return fileLogo2;
+	}
+
+	public void setFileLogo2ContentType(String val) {
+		fileLogo2ContentType = val;
+	}
+
+	public String getFileLogo2ContentType() {
+		return fileLogo2ContentType;
+	}
+
+	public void setFileLogo2FileName(String val) {
+		fileLogo2FileName = val;
+	}
+
+	public String getFileLogo2FileName() {
+		return fileLogo2FileName;
+	}
+
+	public void setRemoveLogo2(String val) {
+		removeLogo2 = val;
+	}
+
+	public String getRemoveLogo2() {
+		return removeLogo2;
+	}
+
+	public void setFileLogo3(java.io.File val) {
+		fileLogo3 = val;
+	}
+
+	public java.io.File getFileLogo3() {
+		return fileLogo3;
+	}
+
+	public void setFileLogo3ContentType(String val) {
+		fileLogo3ContentType = val;
+	}
+
+	public String getFileLogo3ContentType() {
+		return fileLogo3ContentType;
+	}
+
+	public void setFileLogo3FileName(String val) {
+		fileLogo3FileName = val;
+	}
+
+	public String getFileLogo3FileName() {
+		return fileLogo3FileName;
+	}
+
+	public void setRemoveLogo3(String val) {
+		removeLogo3 = val;
+	}
+
+	public String getRemoveLogo3() {
+		return removeLogo3;
+	}
+
+	public void setFileLogo4(java.io.File val) {
+		fileLogo4 = val;
+	}
+
+	public java.io.File getFileLogo4() {
+		return fileLogo4;
+	}
+
+	public void setFileLogo4ContentType(String val) {
+		fileLogo4ContentType = val;
+	}
+
+	public String getFileLogo4ContentType() {
+		return fileLogo4ContentType;
+	}
+
+	public void setFileLogo4FileName(String val) {
+		fileLogo4FileName = val;
+	}
+
+	public String getFileLogo4FileName() {
+		return fileLogo4FileName;
+	}
+
+	public void setRemoveLogo4(String val) {
+		removeLogo4 = val;
+	}
+
+	public String getRemoveLogo4() {
+		return removeLogo4;
+	}
+
+	public void setFileLogo5(java.io.File val) {
+		fileLogo5 = val;
+	}
+
+	public java.io.File getFileLogo5() {
+		return fileLogo5;
+	}
+
+	public void setFileLogo5ContentType(String val) {
+		fileLogo5ContentType = val;
+	}
+
+	public String getFileLogo5ContentType() {
+		return fileLogo5ContentType;
+	}
+
+	public void setFileLogo5FileName(String val) {
+		fileLogo5FileName = val;
+	}
+
+	public String getFileLogo5FileName() {
+		return fileLogo5FileName;
+	}
+
+	public void setRemoveLogo5(String val) {
+		removeLogo5 = val;
+	}
+
+	public String getRemoveLogo5() {
+		return removeLogo5;
+	}
+
+	public void setFileLogo6(java.io.File val) {
+		fileLogo6 = val;
+	}
+
+	public java.io.File getFileLogo6() {
+		return fileLogo6;
+	}
+
+	public void setFileLogo6ContentType(String val) {
+		fileLogo6ContentType = val;
+	}
+
+	public String getFileLogo6ContentType() {
+		return fileLogo6ContentType;
+	}
+
+	public void setFileLogo6FileName(String val) {
+		fileLogo6FileName = val;
+	}
+
+	public String getFileLogo6FileName() {
+		return fileLogo6FileName;
+	}
+
+	public void setRemoveLogo6(String val) {
+		removeLogo6 = val;
+	}
+
+	public String getRemoveLogo6() {
+		return removeLogo6;
+	}
+
+	public void setFileLogo7(java.io.File val) {
+		fileLogo7 = val;
+	}
+
+	public java.io.File getFileLogo7() {
+		return fileLogo7;
+	}
+
+	public void setFileLogo7ContentType(String val) {
+		fileLogo7ContentType = val;
+	}
+
+	public String getFileLogo7ContentType() {
+		return fileLogo7ContentType;
+	}
+
+	public void setFileLogo7FileName(String val) {
+		fileLogo7FileName = val;
+	}
+
+	public String getFileLogo7FileName() {
+		return fileLogo7FileName;
+	}
+
+	public void setRemoveLogo7(String val) {
+		removeLogo7 = val;
+	}
+
+	public String getRemoveLogo7() {
+		return removeLogo7;
+	}
+
+	public void setFileLogo8(java.io.File val) {
+		fileLogo8 = val;
+	}
+
+	public java.io.File getFileLogo8() {
+		return fileLogo8;
+	}
+
+	public void setFileLogo8ContentType(String val) {
+		fileLogo8ContentType = val;
+	}
+
+	public String getFileLogo8ContentType() {
+		return fileLogo8ContentType;
+	}
+
+	public void setFileLogo8FileName(String val) {
+		fileLogo8FileName = val;
+	}
+
+	public String getFileLogo8FileName() {
+		return fileLogo8FileName;
+	}
+
+	public void setRemoveLogo8(String val) {
+		removeLogo8 = val;
+	}
+
+	public String getRemoveLogo8() {
+		return removeLogo8;
+	}
+
+	public void setFileLogo9(java.io.File val) {
+		fileLogo9 = val;
+	}
+
+	public java.io.File getFileLogo9() {
+		return fileLogo9;
+	}
+
+	public void setFileLogo9ContentType(String val) {
+		fileLogo9ContentType = val;
+	}
+
+	public String getFileLogo9ContentType() {
+		return fileLogo9ContentType;
+	}
+
+	public void setFileLogo9FileName(String val) {
+		fileLogo9FileName = val;
+	}
+
+	public String getFileLogo9FileName() {
+		return fileLogo9FileName;
+	}
+
+	public void setRemoveLogo9(String val) {
+		removeLogo9 = val;
+	}
+
+	public String getRemoveLogo9() {
+		return removeLogo9;
+	}
+
+	public void setFileLogo10(java.io.File val) {
+		fileLogo10 = val;
+	}
+
+	public java.io.File getFileLogo10() {
+		return fileLogo10;
+	}
+
+	public void setFileLogo10ContentType(String val) {
+		fileLogo10ContentType = val;
+	}
+
+	public String getFileLogo10ContentType() {
+		return fileLogo10ContentType;
+	}
+
+	public void setFileLogo10FileName(String val) {
+		fileLogo10FileName = val;
+	}
+
+	public String getFileLogo10FileName() {
+		return fileLogo10FileName;
+	}
+
+	public void setRemoveLogo10(String val) {
+		removeLogo10 = val;
+	}
+
+	public String getRemoveLogo10() {
+		return removeLogo10;
+	}
+
+	public ProductType getProductType() {
+		return productType;
+	}
+
+	public void setProductType(ProductType productType) {
+		this.productType = productType;
+	}
+
 }

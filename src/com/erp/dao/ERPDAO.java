@@ -28,6 +28,6 @@ public interface ERPDAO extends CommonDAO
 
     public abstract Product findProductById(Long id);
 
-    public abstract List<Product> findAllProduct();
+    public abstract List<Product> findAllProduct(ProductType type);
 }
 

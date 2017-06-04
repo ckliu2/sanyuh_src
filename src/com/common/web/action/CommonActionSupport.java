@@ -428,5 +428,9 @@ public abstract class CommonActionSupport extends BaseActionSupport {
 		return getAppPropertyList("quotedprice.discount");
 	}
 	
+	public List getHrefTarget() {
+		return getAppPropertyList("href.target");
+	}
+	
 	
 }

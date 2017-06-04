@@ -10,7 +10,7 @@ import com.common.dao.hibernate.CommonDAOHibernate;
  WebWork Application Generator V 1.0
 
     Copyright 2006 Chih-Shyang Chang
-    Created Date: Wed May 24 22:56:29 CST 2017
+    Created Date: Fri Jun 02 22:23:01 CST 2017
 */
 
 public class ProductTypeDAOHibernate extends CommonDAOHibernate implements ProductTypeDAO

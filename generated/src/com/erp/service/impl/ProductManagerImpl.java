@@ -10,7 +10,7 @@ import com.common.service.impl.CommonManagerImpl;
  WebWork Application Generator V 1.0
 
     Copyright 2006 Chih-Shyang Chang
-    Created Date: Wed May 24 22:56:29 CST 2017
+    Created Date: Fri Jun 02 22:23:01 CST 2017
 */
 
 public class ProductManagerImpl extends CommonManagerImpl implements ProductManager
@@ -59,9 +59,54 @@ public class ProductManagerImpl extends CommonManagerImpl implements ProductMana
         return getGenericDAO().findProductTypeList();
     }
 
-    public List<UploadedFile> getLogoList()
+    public List<UploadedFile> getLogo1List()
     {
-        return getGenericDAO().findLogoList();
+        return getGenericDAO().findLogo1List();
+    }
+
+    public List<UploadedFile> getLogo2List()
+    {
+        return getGenericDAO().findLogo2List();
+    }
+
+    public List<UploadedFile> getLogo3List()
+    {
+        return getGenericDAO().findLogo3List();
+    }
+
+    public List<UploadedFile> getLogo4List()
+    {
+        return getGenericDAO().findLogo4List();
+    }
+
+    public List<UploadedFile> getLogo5List()
+    {
+        return getGenericDAO().findLogo5List();
+    }
+
+    public List<UploadedFile> getLogo6List()
+    {
+        return getGenericDAO().findLogo6List();
+    }
+
+    public List<UploadedFile> getLogo7List()
+    {
+        return getGenericDAO().findLogo7List();
+    }
+
+    public List<UploadedFile> getLogo8List()
+    {
+        return getGenericDAO().findLogo8List();
+    }
+
+    public List<UploadedFile> getLogo9List()
+    {
+        return getGenericDAO().findLogo9List();
+    }
+
+    public List<UploadedFile> getLogo10List()
+    {
+        return getGenericDAO().findLogo10List();
     }
 
     public List<UploadedFile> getProductPhoto1List()

@@ -3,6 +3,18 @@ package com.erp.dao.hibernate;
 import com.erp.value.*;
 import com.erp.dao.ERPDAO;
 import java.util.*;
+
+import org.hibernate.Criteria;
+import org.hibernate.FetchMode;
+import org.hibernate.Query;
+import org.hibernate.criterion.Criterion;
+import org.hibernate.criterion.Disjunction;
+import org.hibernate.criterion.Expression;
+import org.hibernate.criterion.LogicalExpression;
+import org.hibernate.criterion.Order;
+import org.hibernate.criterion.ProjectionList;
+import org.hibernate.criterion.Projections;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.orm.ObjectRetrievalFailureException;
 import com.common.dao.hibernate.CommonDAOHibernate;
 
@@ -43,7 +55,7 @@ public class ERPDAOHibernate extends CommonDAOHibernate implements ERPDAO
 
     public List<ProductType> findAllProductType()
     {
-        return getHibernateTemplate().find("from ProductType");
+        return getHibernateTemplate().find("from ProductType order by seqNo asc");
     }
     
     //Product
@@ -74,9 +86,14 @@ public class ERPDAOHibernate extends CommonDAOHibernate implements ERPDAO
             return obj;
     }
 
-    public List<Product> findAllProduct()
+    public List<Product> findAllProduct(ProductType type)
     {
-        return getHibernateTemplate().find("from Product");
+    	Criteria c = getHibernateSession().createCriteria(Product.class);			
+		if (type != null) {
+			c.add(Expression.eq("productType", type));
+		}
+		c.addOrder(Order.asc("no"));
+		return c.list();
     }
 }
 
