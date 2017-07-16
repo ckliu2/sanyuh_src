@@ -18,82 +18,96 @@ import org.hibernate.criterion.Restrictions;
 import org.springframework.orm.ObjectRetrievalFailureException;
 import com.common.dao.hibernate.CommonDAOHibernate;
 
-public class ERPDAOHibernate extends CommonDAOHibernate implements ERPDAO
-{
+public class ERPDAOHibernate extends CommonDAOHibernate implements ERPDAO {
 
-    public ERPDAOHibernate()
-    {
-    }
+	public ERPDAOHibernate() {
+	}
 
-    //ProductType
-    public void saveProductType(ProductType val)
-    {
-        getHibernateTemplate().saveOrUpdate(val);
-    }
+	// ProductType
+	public void saveProductType(ProductType val) {
+		getHibernateTemplate().saveOrUpdate(val);
+	}
 
-    public void removeProductType(ProductType val)
-    {
-        getHibernateTemplate().delete(val);
-    }
+	public void removeProductType(ProductType val) {
+		getHibernateTemplate().delete(val);
+	}
 
-    public void removeProductType(Long id)
-    {
-        ProductType obj = findProductTypeById(id);
-        getHibernateTemplate().delete(obj);
-    }
+	public void removeProductType(Long id) {
+		ProductType obj = findProductTypeById(id);
+		getHibernateTemplate().delete(obj);
+	}
 
-    public ProductType findProductTypeById(Long id)
-    {
-        if (id == null)
-            return null;
-        ProductType obj = (ProductType)getHibernateTemplate().get(com.erp.value.ProductType.class, id);
-        if (obj == null)
-            throw new ObjectRetrievalFailureException(com.erp.value.ProductType.class, id);
-        else
-            return obj;
-    }
+	public ProductType findProductTypeById(Long id) {
+		if (id == null)
+			return null;
+		ProductType obj = (ProductType) getHibernateTemplate().get(com.erp.value.ProductType.class, id);
+		if (obj == null)
+			throw new ObjectRetrievalFailureException(com.erp.value.ProductType.class, id);
+		else
+			return obj;
+	}
 
-    public List<ProductType> findAllProductType()
-    {
-        return getHibernateTemplate().find("from ProductType order by seqNo asc");
-    }
-    
-    //Product
-    public void saveProduct(Product val)
-    {
-        getHibernateTemplate().saveOrUpdate(val);
-    }
+	public List<ProductType> findAllProductType() {
+		return getHibernateTemplate().find("from ProductType order by seqNo asc");
+	}
 
-    public void removeProduct(Product val)
-    {
-        getHibernateTemplate().delete(val);
-    }
+	// Product
+	public void saveProduct(Product val) {
+		getHibernateTemplate().saveOrUpdate(val);
+	}
 
-    public void removeProduct(Long id)
-    {
-        Product obj = findProductById(id);
-        getHibernateTemplate().delete(obj);
-    }
+	public void removeProduct(Product val) {
+		getHibernateTemplate().delete(val);
+	}
 
-    public Product findProductById(Long id)
-    {
-        if (id == null)
-            return null;
-        Product obj = (Product)getHibernateTemplate().get(com.erp.value.Product.class, id);
-        if (obj == null)
-            throw new ObjectRetrievalFailureException(com.erp.value.Product.class, id);
-        else
-            return obj;
-    }
+	public void removeProduct(Long id) {
+		Product obj = findProductById(id);
+		getHibernateTemplate().delete(obj);
+	}
 
-    public List<Product> findAllProduct(ProductType type)
-    {
-    	Criteria c = getHibernateSession().createCriteria(Product.class);			
+	public Product findProductById(Long id) {
+		if (id == null)
+			return null;
+		Product obj = (Product) getHibernateTemplate().get(com.erp.value.Product.class, id);
+		if (obj == null)
+			throw new ObjectRetrievalFailureException(com.erp.value.Product.class, id);
+		else
+			return obj;
+	}
+
+	public List<Product> findAllProduct(ProductType type) {
+		List<Product> al = new ArrayList<Product>();
+		Criteria c = getHibernateSession().createCriteria(Product.class);
 		if (type != null) {
-			c.add(Expression.eq("productType", type));
+			List ls = c.list();
+			for (int i = 0; i < ls.size(); i++) {
+				Product product = (Product) ls.get(i);
+				boolean r = product.getTypes().contains(type);
+				//System.out.println(product.getNo() + "--" + type.getName() + "--" + r);
+				if (r) {
+					al.add(product);
+				}				
+			}
+			return al;
+		} else {
+			c.addOrder(Order.asc("seqNo"));
+			return c.list();
 		}
-		c.addOrder(Order.asc("no"));
-		return c.list();
-    }
-}
 
+	}
+
+	public Long[] getIdsFromProductTypeList(List tlist) {
+		ArrayList<Long> al = new ArrayList<Long>();
+		if (tlist != null) {
+			for (int i = 0; i < tlist.size(); i++) {
+				ProductType t = (ProductType) tlist.get(i);
+				if (t != null)
+					al.add(t.getId());
+			}
+		}
+		Long lng[] = new Long[al.size()];
+		al.toArray(lng);
+
+		return lng;
+	}
+}

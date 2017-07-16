@@ -19,6 +19,8 @@ public interface ERPManager extends CommonManager
 
     public abstract List<ProductType> getProductTypeList();
     
+    public abstract Long[] getIdsFromProductTypeList(List<ProductType> lst);
+    
     //Product
     public abstract void saveProduct(Product val);
 

@@ -8,7 +8,7 @@ import com.common.dao.CommonDAO;
  WebWork Application Generator V 1.0
 
     Copyright 2006 Chih-Shyang Chang
-    Created Date: Fri Jun 02 22:23:01 CST 2017
+    Created Date: Sun Jul 16 20:37:51 CST 2017
 */
 
 public interface ProductDAO extends CommonDAO 
@@ -33,6 +33,12 @@ public interface ProductDAO extends CommonDAO
     public abstract List<UploadedFile> findLogo8List();
     public abstract List<UploadedFile> findLogo9List();
     public abstract List<UploadedFile> findLogo10List();
+    public abstract List<UploadedFile> findLogo11List();
+    public abstract List<UploadedFile> findLogo12List();
+    public abstract List<UploadedFile> findLogo13List();
+    public abstract List<UploadedFile> findLogo14List();
+    public abstract List<UploadedFile> findLogo15List();
+    public abstract List<UploadedFile> findLogo16List();
     public abstract List<UploadedFile> findProductPhoto1List();
     public abstract List<UploadedFile> findProductPhoto2List();
     public abstract List<UploadedFile> findProductPhoto3List();
@@ -63,5 +69,9 @@ public interface ProductDAO extends CommonDAO
     public abstract List<UploadedFile> findDiagram8List();
     public abstract List<UploadedFile> findDiagram9List();
     public abstract List<UploadedFile> findDiagram10List();
+    public abstract Long[] getIdsFromProductTypeList(List<ProductType> lst);
+
+    public abstract List<ProductType> getProductTypeListByIds(Long[] ids);
+
 }
 

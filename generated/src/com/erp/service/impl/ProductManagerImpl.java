@@ -10,7 +10,7 @@ import com.common.service.impl.CommonManagerImpl;
  WebWork Application Generator V 1.0
 
     Copyright 2006 Chih-Shyang Chang
-    Created Date: Fri Jun 02 22:23:01 CST 2017
+    Created Date: Sun Jul 16 20:37:51 CST 2017
 */
 
 public class ProductManagerImpl extends CommonManagerImpl implements ProductManager
@@ -107,6 +107,36 @@ public class ProductManagerImpl extends CommonManagerImpl implements ProductMana
     public List<UploadedFile> getLogo10List()
     {
         return getGenericDAO().findLogo10List();
+    }
+
+    public List<UploadedFile> getLogo11List()
+    {
+        return getGenericDAO().findLogo11List();
+    }
+
+    public List<UploadedFile> getLogo12List()
+    {
+        return getGenericDAO().findLogo12List();
+    }
+
+    public List<UploadedFile> getLogo13List()
+    {
+        return getGenericDAO().findLogo13List();
+    }
+
+    public List<UploadedFile> getLogo14List()
+    {
+        return getGenericDAO().findLogo14List();
+    }
+
+    public List<UploadedFile> getLogo15List()
+    {
+        return getGenericDAO().findLogo15List();
+    }
+
+    public List<UploadedFile> getLogo16List()
+    {
+        return getGenericDAO().findLogo16List();
     }
 
     public List<UploadedFile> getProductPhoto1List()
@@ -257,6 +287,16 @@ public class ProductManagerImpl extends CommonManagerImpl implements ProductMana
     public List<UploadedFile> getDiagram10List()
     {
         return getGenericDAO().findDiagram10List();
+    }
+
+    public Long[] getIdsFromProductTypeList(List<ProductType> lst)
+    {
+        return getGenericDAO().getIdsFromProductTypeList(lst);
+    }
+
+    public List<ProductType> getProductTypeListByIds(Long[] ids)
+    {
+        return getGenericDAO().getProductTypeListByIds(ids);
     }
 
 }

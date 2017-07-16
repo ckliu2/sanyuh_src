@@ -52,11 +52,8 @@ public class ProductType extends BaseObject implements Serializable {
         this.seqNo = seqNo;
     }
 
-    public String toString() {
-        return new ToStringBuilder(this)
-            .append("name", getName())
-            .append("seqNo", getSeqNo())
-            .toString();
+    public String toString() {    	
+    	return getName();    
     }
 
     public String getCaption_() {

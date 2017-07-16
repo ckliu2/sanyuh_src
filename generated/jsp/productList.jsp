@@ -28,8 +28,10 @@
     </display:column>
     <display:column property="no" sortable="true" titleKey="product.no" style="text-align:left" />
     <display:column property="name" sortable="true" titleKey="product.name" style="text-align:left" />
+    <display:column property="description" sortable="true" titleKey="product.description" style="text-align:left" />
     <display:column property="overview" sortable="true" titleKey="product.overview" style="text-align:left" />
     <display:column property="specification" sortable="true" titleKey="product.specification" style="text-align:left" />
+    <display:column property="seqNo" sortable="true" titleKey="product.seqNo" />
     <display:column property="link1" sortable="true" titleKey="product.link1" style="text-align:left" />
     <display:column property="linkName1" sortable="true" titleKey="product.linkName1" style="text-align:left" />
     <display:column property="link2" sortable="true" titleKey="product.link2" style="text-align:left" />
@@ -102,6 +104,12 @@
     <display:column property="logo8.caption_" sortable="true" titleKey="product.logo8" style="text-align:left"/>
     <display:column property="logo9.caption_" sortable="true" titleKey="product.logo9" style="text-align:left"/>
     <display:column property="logo10.caption_" sortable="true" titleKey="product.logo10" style="text-align:left"/>
+    <display:column property="logo11.caption_" sortable="true" titleKey="product.logo11" style="text-align:left"/>
+    <display:column property="logo12.caption_" sortable="true" titleKey="product.logo12" style="text-align:left"/>
+    <display:column property="logo13.caption_" sortable="true" titleKey="product.logo13" style="text-align:left"/>
+    <display:column property="logo14.caption_" sortable="true" titleKey="product.logo14" style="text-align:left"/>
+    <display:column property="logo15.caption_" sortable="true" titleKey="product.logo15" style="text-align:left"/>
+    <display:column property="logo16.caption_" sortable="true" titleKey="product.logo16" style="text-align:left"/>
     <display:column property="productPhoto1.caption_" sortable="true" titleKey="product.productPhoto1" style="text-align:left"/>
     <display:column property="productPhoto2.caption_" sortable="true" titleKey="product.productPhoto2" style="text-align:left"/>
     <display:column property="productPhoto3.caption_" sortable="true" titleKey="product.productPhoto3" style="text-align:left"/>
@@ -162,6 +170,7 @@
     <display:column property="target28.caption_" sortable="true" titleKey="product.target28" style="text-align:left"/>
     <display:column property="target29.caption_" sortable="true" titleKey="product.target29" style="text-align:left"/>
     <display:column property="target30.caption_" sortable="true" titleKey="product.target30" style="text-align:left"/>
+    <display:column property="types" sortable="true" titleKey="product.types" style="text-align:left" />
     <display:column titleKey="common.action">
         <ww:if test="recordEditable == true">
             <a href="editProduct.html?product.id=<c:out value="${row.id}"/>"><fmt:message key="common.edit"/></a>&nbsp;&nbsp;

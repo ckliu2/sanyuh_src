@@ -13,7 +13,7 @@ import com.base.value.Function;
  WebWork Application Generator V 1.0
 
     Copyright 2006 Chih-Shyang Chang
-    Created Date: Fri Jun 02 22:23:01 CST 2017
+    Created Date: Sun Jul 16 20:37:52 CST 2017
 */
 
 public class ProductAction extends CommonActionSupport
@@ -42,6 +42,18 @@ public class ProductAction extends CommonActionSupport
     private String fileLogo9ContentType, fileLogo9FileName, removeLogo9;
     private java.io.File fileLogo10;
     private String fileLogo10ContentType, fileLogo10FileName, removeLogo10;
+    private java.io.File fileLogo11;
+    private String fileLogo11ContentType, fileLogo11FileName, removeLogo11;
+    private java.io.File fileLogo12;
+    private String fileLogo12ContentType, fileLogo12FileName, removeLogo12;
+    private java.io.File fileLogo13;
+    private String fileLogo13ContentType, fileLogo13FileName, removeLogo13;
+    private java.io.File fileLogo14;
+    private String fileLogo14ContentType, fileLogo14FileName, removeLogo14;
+    private java.io.File fileLogo15;
+    private String fileLogo15ContentType, fileLogo15FileName, removeLogo15;
+    private java.io.File fileLogo16;
+    private String fileLogo16ContentType, fileLogo16FileName, removeLogo16;
     private java.io.File fileProductPhoto1;
     private String fileProductPhoto1ContentType, fileProductPhoto1FileName, removeProductPhoto1;
     private java.io.File fileProductPhoto2;
@@ -102,6 +114,7 @@ public class ProductAction extends CommonActionSupport
     private String fileDiagram9ContentType, fileDiagram9FileName, removeDiagram9;
     private java.io.File fileDiagram10;
     private String fileDiagram10ContentType, fileDiagram10FileName, removeDiagram10;
+    private Long[] typesIds;
     private Long[] selectedProductIds;
 
     public ProductAction()
@@ -197,6 +210,12 @@ public class ProductAction extends CommonActionSupport
         saveFileToLocal(fileLogo8FileName, fileLogo8, getTextWithArgs("product.uploadLogo8.dir"), product.getId());
         saveFileToLocal(fileLogo9FileName, fileLogo9, getTextWithArgs("product.uploadLogo9.dir"), product.getId());
         saveFileToLocal(fileLogo10FileName, fileLogo10, getTextWithArgs("product.uploadLogo10.dir"), product.getId());
+        saveFileToLocal(fileLogo11FileName, fileLogo11, getTextWithArgs("product.uploadLogo11.dir"), product.getId());
+        saveFileToLocal(fileLogo12FileName, fileLogo12, getTextWithArgs("product.uploadLogo12.dir"), product.getId());
+        saveFileToLocal(fileLogo13FileName, fileLogo13, getTextWithArgs("product.uploadLogo13.dir"), product.getId());
+        saveFileToLocal(fileLogo14FileName, fileLogo14, getTextWithArgs("product.uploadLogo14.dir"), product.getId());
+        saveFileToLocal(fileLogo15FileName, fileLogo15, getTextWithArgs("product.uploadLogo15.dir"), product.getId());
+        saveFileToLocal(fileLogo16FileName, fileLogo16, getTextWithArgs("product.uploadLogo16.dir"), product.getId());
         saveFileToLocal(fileProductPhoto1FileName, fileProductPhoto1, getTextWithArgs("product.uploadProductPhoto1.dir"), product.getId());
         saveFileToLocal(fileProductPhoto2FileName, fileProductPhoto2, getTextWithArgs("product.uploadProductPhoto2.dir"), product.getId());
         saveFileToLocal(fileProductPhoto3FileName, fileProductPhoto3, getTextWithArgs("product.uploadProductPhoto3.dir"), product.getId());
@@ -238,6 +257,7 @@ public class ProductAction extends CommonActionSupport
     protected void beanToForm()
     {
         log.info("enter beanToForm()");
+        typesIds = getGenericManager().getIdsFromProductTypeList(product.getTypes());
         log.info("exit beanToForm()");
     }
 
@@ -334,6 +354,60 @@ public class ProductAction extends CommonActionSupport
                 product.setLogo10(getGenericManager().getUploadedFileById(product.getLogo10Id())); 
             else
                 product.setLogo10(computeUploadedFile(fileLogo10FileName, fileLogo10)); 
+        }
+        if (getRemoveLogo11() != null && getRemoveLogo11().length() > 0) {
+            product.setLogo11(computeUploadedFile(fileLogo11FileName, fileLogo11)); 
+            removeUploadedFile(getTextWithArgs("product.uploadLogo11.dir"), product.getLogo11Id(), product.getLogo11FileName());
+        } else {
+            if (product.getLogo11Id() != null)
+                product.setLogo11(getGenericManager().getUploadedFileById(product.getLogo11Id())); 
+            else
+                product.setLogo11(computeUploadedFile(fileLogo11FileName, fileLogo11)); 
+        }
+        if (getRemoveLogo12() != null && getRemoveLogo12().length() > 0) {
+            product.setLogo12(computeUploadedFile(fileLogo12FileName, fileLogo12)); 
+            removeUploadedFile(getTextWithArgs("product.uploadLogo12.dir"), product.getLogo12Id(), product.getLogo12FileName());
+        } else {
+            if (product.getLogo12Id() != null)
+                product.setLogo12(getGenericManager().getUploadedFileById(product.getLogo12Id())); 
+            else
+                product.setLogo12(computeUploadedFile(fileLogo12FileName, fileLogo12)); 
+        }
+        if (getRemoveLogo13() != null && getRemoveLogo13().length() > 0) {
+            product.setLogo13(computeUploadedFile(fileLogo13FileName, fileLogo13)); 
+            removeUploadedFile(getTextWithArgs("product.uploadLogo13.dir"), product.getLogo13Id(), product.getLogo13FileName());
+        } else {
+            if (product.getLogo13Id() != null)
+                product.setLogo13(getGenericManager().getUploadedFileById(product.getLogo13Id())); 
+            else
+                product.setLogo13(computeUploadedFile(fileLogo13FileName, fileLogo13)); 
+        }
+        if (getRemoveLogo14() != null && getRemoveLogo14().length() > 0) {
+            product.setLogo14(computeUploadedFile(fileLogo14FileName, fileLogo14)); 
+            removeUploadedFile(getTextWithArgs("product.uploadLogo14.dir"), product.getLogo14Id(), product.getLogo14FileName());
+        } else {
+            if (product.getLogo14Id() != null)
+                product.setLogo14(getGenericManager().getUploadedFileById(product.getLogo14Id())); 
+            else
+                product.setLogo14(computeUploadedFile(fileLogo14FileName, fileLogo14)); 
+        }
+        if (getRemoveLogo15() != null && getRemoveLogo15().length() > 0) {
+            product.setLogo15(computeUploadedFile(fileLogo15FileName, fileLogo15)); 
+            removeUploadedFile(getTextWithArgs("product.uploadLogo15.dir"), product.getLogo15Id(), product.getLogo15FileName());
+        } else {
+            if (product.getLogo15Id() != null)
+                product.setLogo15(getGenericManager().getUploadedFileById(product.getLogo15Id())); 
+            else
+                product.setLogo15(computeUploadedFile(fileLogo15FileName, fileLogo15)); 
+        }
+        if (getRemoveLogo16() != null && getRemoveLogo16().length() > 0) {
+            product.setLogo16(computeUploadedFile(fileLogo16FileName, fileLogo16)); 
+            removeUploadedFile(getTextWithArgs("product.uploadLogo16.dir"), product.getLogo16Id(), product.getLogo16FileName());
+        } else {
+            if (product.getLogo16Id() != null)
+                product.setLogo16(getGenericManager().getUploadedFileById(product.getLogo16Id())); 
+            else
+                product.setLogo16(computeUploadedFile(fileLogo16FileName, fileLogo16)); 
         }
         if (getRemoveProductPhoto1() != null && getRemoveProductPhoto1().length() > 0) {
             product.setProductPhoto1(computeUploadedFile(fileProductPhoto1FileName, fileProductPhoto1)); 
@@ -635,6 +709,7 @@ public class ProductAction extends CommonActionSupport
         product.setTarget28(getAppPropertyById(product.getTarget28Id())); 
         product.setTarget29(getAppPropertyById(product.getTarget29Id())); 
         product.setTarget30(getAppPropertyById(product.getTarget30Id())); 
+        product.setTypes(getGenericManager().getProductTypeListByIds(typesIds)); 
         log.info("exit formToBean()");
     }
     public List<ProductType> getProductTypeList()
@@ -1040,6 +1115,246 @@ public class ProductAction extends CommonActionSupport
     public String getRemoveLogo10()
     {
         return removeLogo10;
+    }
+
+    public void setFileLogo11(java.io.File val)
+    {
+        fileLogo11 = val;
+    }
+
+    public java.io.File getFileLogo11()
+    {
+        return fileLogo11;
+    }
+
+    public void setFileLogo11ContentType(String val)
+    {
+        fileLogo11ContentType = val;
+    }
+
+    public String getFileLogo11ContentType()
+    {
+        return fileLogo11ContentType;
+    }
+
+    public void setFileLogo11FileName(String val)
+    {
+        fileLogo11FileName = val;
+    }
+
+    public String getFileLogo11FileName()
+    {
+        return fileLogo11FileName;
+    }
+
+    public void setRemoveLogo11(String val)
+    {
+        removeLogo11 = val;
+    }
+
+    public String getRemoveLogo11()
+    {
+        return removeLogo11;
+    }
+
+    public void setFileLogo12(java.io.File val)
+    {
+        fileLogo12 = val;
+    }
+
+    public java.io.File getFileLogo12()
+    {
+        return fileLogo12;
+    }
+
+    public void setFileLogo12ContentType(String val)
+    {
+        fileLogo12ContentType = val;
+    }
+
+    public String getFileLogo12ContentType()
+    {
+        return fileLogo12ContentType;
+    }
+
+    public void setFileLogo12FileName(String val)
+    {
+        fileLogo12FileName = val;
+    }
+
+    public String getFileLogo12FileName()
+    {
+        return fileLogo12FileName;
+    }
+
+    public void setRemoveLogo12(String val)
+    {
+        removeLogo12 = val;
+    }
+
+    public String getRemoveLogo12()
+    {
+        return removeLogo12;
+    }
+
+    public void setFileLogo13(java.io.File val)
+    {
+        fileLogo13 = val;
+    }
+
+    public java.io.File getFileLogo13()
+    {
+        return fileLogo13;
+    }
+
+    public void setFileLogo13ContentType(String val)
+    {
+        fileLogo13ContentType = val;
+    }
+
+    public String getFileLogo13ContentType()
+    {
+        return fileLogo13ContentType;
+    }
+
+    public void setFileLogo13FileName(String val)
+    {
+        fileLogo13FileName = val;
+    }
+
+    public String getFileLogo13FileName()
+    {
+        return fileLogo13FileName;
+    }
+
+    public void setRemoveLogo13(String val)
+    {
+        removeLogo13 = val;
+    }
+
+    public String getRemoveLogo13()
+    {
+        return removeLogo13;
+    }
+
+    public void setFileLogo14(java.io.File val)
+    {
+        fileLogo14 = val;
+    }
+
+    public java.io.File getFileLogo14()
+    {
+        return fileLogo14;
+    }
+
+    public void setFileLogo14ContentType(String val)
+    {
+        fileLogo14ContentType = val;
+    }
+
+    public String getFileLogo14ContentType()
+    {
+        return fileLogo14ContentType;
+    }
+
+    public void setFileLogo14FileName(String val)
+    {
+        fileLogo14FileName = val;
+    }
+
+    public String getFileLogo14FileName()
+    {
+        return fileLogo14FileName;
+    }
+
+    public void setRemoveLogo14(String val)
+    {
+        removeLogo14 = val;
+    }
+
+    public String getRemoveLogo14()
+    {
+        return removeLogo14;
+    }
+
+    public void setFileLogo15(java.io.File val)
+    {
+        fileLogo15 = val;
+    }
+
+    public java.io.File getFileLogo15()
+    {
+        return fileLogo15;
+    }
+
+    public void setFileLogo15ContentType(String val)
+    {
+        fileLogo15ContentType = val;
+    }
+
+    public String getFileLogo15ContentType()
+    {
+        return fileLogo15ContentType;
+    }
+
+    public void setFileLogo15FileName(String val)
+    {
+        fileLogo15FileName = val;
+    }
+
+    public String getFileLogo15FileName()
+    {
+        return fileLogo15FileName;
+    }
+
+    public void setRemoveLogo15(String val)
+    {
+        removeLogo15 = val;
+    }
+
+    public String getRemoveLogo15()
+    {
+        return removeLogo15;
+    }
+
+    public void setFileLogo16(java.io.File val)
+    {
+        fileLogo16 = val;
+    }
+
+    public java.io.File getFileLogo16()
+    {
+        return fileLogo16;
+    }
+
+    public void setFileLogo16ContentType(String val)
+    {
+        fileLogo16ContentType = val;
+    }
+
+    public String getFileLogo16ContentType()
+    {
+        return fileLogo16ContentType;
+    }
+
+    public void setFileLogo16FileName(String val)
+    {
+        fileLogo16FileName = val;
+    }
+
+    public String getFileLogo16FileName()
+    {
+        return fileLogo16FileName;
+    }
+
+    public void setRemoveLogo16(String val)
+    {
+        removeLogo16 = val;
+    }
+
+    public String getRemoveLogo16()
+    {
+        return removeLogo16;
     }
 
     public void setFileProductPhoto1(java.io.File val)
@@ -2390,6 +2705,21 @@ public class ProductAction extends CommonActionSupport
     public List<AppProperty> getTarget30List()
     {
         return super.getAppPropertyList("product.target30");
+    }
+
+    public List<List> getTypesList()
+    {
+        return getGenericManager().getTypesList(); // TODO
+    }
+
+    public void setTypesIds(Long[] val)
+    {
+        typesIds = val;
+    }
+
+    public Long[] getTypesIds()
+    {
+        return typesIds;
     }
 
     public List<Product> getProductList()

@@ -8,7 +8,7 @@ import com.common.service.CommonManager;
  WebWork Application Generator V 1.0
 
     Copyright 2006 Chih-Shyang Chang
-    Created Date: Fri Jun 02 22:23:01 CST 2017
+    Created Date: Sun Jul 16 20:37:51 CST 2017
 */
 
 public interface ProductManager extends CommonManager 
@@ -33,6 +33,12 @@ public interface ProductManager extends CommonManager
     public abstract List<UploadedFile> getLogo8List();
     public abstract List<UploadedFile> getLogo9List();
     public abstract List<UploadedFile> getLogo10List();
+    public abstract List<UploadedFile> getLogo11List();
+    public abstract List<UploadedFile> getLogo12List();
+    public abstract List<UploadedFile> getLogo13List();
+    public abstract List<UploadedFile> getLogo14List();
+    public abstract List<UploadedFile> getLogo15List();
+    public abstract List<UploadedFile> getLogo16List();
     public abstract List<UploadedFile> getProductPhoto1List();
     public abstract List<UploadedFile> getProductPhoto2List();
     public abstract List<UploadedFile> getProductPhoto3List();
@@ -63,5 +69,9 @@ public interface ProductManager extends CommonManager
     public abstract List<UploadedFile> getDiagram8List();
     public abstract List<UploadedFile> getDiagram9List();
     public abstract List<UploadedFile> getDiagram10List();
+    public abstract Long[] getIdsFromProductTypeList(List<ProductType> lst);
+
+    public abstract List<ProductType> getProductTypeListByIds(Long[] ids);
+
 }
 

@@ -10,7 +10,7 @@ import com.common.dao.hibernate.CommonDAOHibernate;
  WebWork Application Generator V 1.0
 
     Copyright 2006 Chih-Shyang Chang
-    Created Date: Fri Jun 02 22:23:01 CST 2017
+    Created Date: Sun Jul 16 20:37:51 CST 2017
 */
 
 public class ProductDAOHibernate extends CommonDAOHibernate implements ProductDAO
@@ -102,6 +102,36 @@ public class ProductDAOHibernate extends CommonDAOHibernate implements ProductDA
     }
 
     public List<UploadedFile> findLogo10List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findLogo11List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findLogo12List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findLogo13List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findLogo14List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findLogo15List()
+    {
+        return new ArrayList<UploadedFile>(); // TODO
+    }
+
+    public List<UploadedFile> findLogo16List()
     {
         return new ArrayList<UploadedFile>(); // TODO
     }
@@ -256,5 +286,33 @@ public class ProductDAOHibernate extends CommonDAOHibernate implements ProductDA
         return new ArrayList<UploadedFile>(); // TODO
     }
 
+    public Long[] getIdsFromProductTypeList(List tlist)
+    {
+        ArrayList<Long> al = new ArrayList<Long>();
+        if (tlist != null) {
+            for (int i = 0; i < tlist.size(); i++) {
+                ProductType t = (ProductType) tlist.get(i);
+                if (t != null)
+                    al.add(t.getId());
+            }
+        }
+        Long lng[] = new Long[al.size()];
+        al.toArray(lng);
+        
+        return lng;
+    }
+
+    public List getProductTypeListByIds(Long[] ids)
+    {
+        ArrayList<ProductType> al = new ArrayList<ProductType>();
+        if (ids != null) {
+            for (int i = 0; i < ids.length; i++) {
+                ProductType t = (ProductType) findProductTypeById(ids[i]);
+                if (t != null)
+                    al.add(t);
+            }
+        }
+        return al;
+    }
 }
 

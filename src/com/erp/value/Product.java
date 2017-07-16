@@ -30,9 +30,7 @@ public class Product extends BaseObject implements Serializable {
 	/** nullable persistent field */
 	private String specification;
 
-	/** nullable persistent field */
-	private com.erp.value.ProductType productType;
-	private Long productTypeId;
+
 
 	/** nullable persistent field */
 	private UploadedFile logo1;
@@ -84,6 +82,37 @@ public class Product extends BaseObject implements Serializable {
 	private String logo10FileName;
 	private Long logo10Id;
 
+	/** nullable persistent field */
+    private UploadedFile logo11;
+    private String logo11FileName;
+    private Long logo11Id;
+
+    /** nullable persistent field */
+    private UploadedFile logo12;
+    private String logo12FileName;
+    private Long logo12Id;
+
+    /** nullable persistent field */
+    private UploadedFile logo13;
+    private String logo13FileName;
+    private Long logo13Id;
+
+    /** nullable persistent field */
+    private UploadedFile logo14;
+    private String logo14FileName;
+    private Long logo14Id;
+
+    /** nullable persistent field */
+    private UploadedFile logo15;
+    private String logo15FileName;
+    private Long logo15Id;
+
+    /** nullable persistent field */
+    private UploadedFile logo16;
+    private String logo16FileName;
+    private Long logo16Id;
+
+    
 	/** nullable persistent field */
 	private UploadedFile productPhoto1;
 	private String productPhoto1FileName;
@@ -536,6 +565,10 @@ public class Product extends BaseObject implements Serializable {
 
 	/** nullable persistent field */
 	private Boolean disabled;
+	
+	int seqNo; 
+	
+	List types;
 
 	List<UploadedFile> productPhotos,logos,downloads,diagrams;
 	
@@ -585,23 +618,6 @@ public class Product extends BaseObject implements Serializable {
 		this.specification = specification;
 	}
 
-	public com.erp.value.ProductType getProductType() {
-		return this.productType;
-	}
-
-	public void setProductType(com.erp.value.ProductType productType) {
-		this.productType = productType;
-	}
-
-	public Long getProductTypeId() {
-		if (this.productType != null && this.productType.getId() != null)
-			return productType.getId();
-		return this.productTypeId;
-	}
-
-	public void setProductTypeId(Long id) {
-		this.productTypeId = id;
-	}
 
 	public UploadedFile getProductPhoto1() {
 		return this.productPhoto1;
@@ -2670,6 +2686,163 @@ public class Product extends BaseObject implements Serializable {
 	public void setLogo10Id(Long id) {
 		this.logo10Id = id;
 	}
+	
+	public UploadedFile getLogo11() {
+        return this.logo11;
+    }
+
+    public void setLogo11(UploadedFile logo11) {
+        this.logo11 = logo11;
+    }
+
+    public String getLogo11FileName() {
+        return this.logo11FileName;
+    }
+
+    public void setLogo11FileName(String val) {
+        this.logo11FileName = val;
+    }
+
+    public Long getLogo11Id() {
+        if (this.logo11 != null && this.logo11.getId() != null)
+            return logo11.getId();
+        return this.logo11Id;
+    }
+
+    public void setLogo11Id(Long id) {
+        this.logo11Id = id;
+    }
+
+    public UploadedFile getLogo12() {
+        return this.logo12;
+    }
+
+    public void setLogo12(UploadedFile logo12) {
+        this.logo12 = logo12;
+    }
+
+    public String getLogo12FileName() {
+        return this.logo12FileName;
+    }
+
+    public void setLogo12FileName(String val) {
+        this.logo12FileName = val;
+    }
+
+    public Long getLogo12Id() {
+        if (this.logo12 != null && this.logo12.getId() != null)
+            return logo12.getId();
+        return this.logo12Id;
+    }
+
+    public void setLogo12Id(Long id) {
+        this.logo12Id = id;
+    }
+
+    public UploadedFile getLogo13() {
+        return this.logo13;
+    }
+
+    public void setLogo13(UploadedFile logo13) {
+        this.logo13 = logo13;
+    }
+
+    public String getLogo13FileName() {
+        return this.logo13FileName;
+    }
+
+    public void setLogo13FileName(String val) {
+        this.logo13FileName = val;
+    }
+
+    public Long getLogo13Id() {
+        if (this.logo13 != null && this.logo13.getId() != null)
+            return logo13.getId();
+        return this.logo13Id;
+    }
+
+    public void setLogo13Id(Long id) {
+        this.logo13Id = id;
+    }
+
+    public UploadedFile getLogo14() {
+        return this.logo14;
+    }
+
+    public void setLogo14(UploadedFile logo14) {
+        this.logo14 = logo14;
+    }
+
+    public String getLogo14FileName() {
+        return this.logo14FileName;
+    }
+
+    public void setLogo14FileName(String val) {
+        this.logo14FileName = val;
+    }
+
+    public Long getLogo14Id() {
+        if (this.logo14 != null && this.logo14.getId() != null)
+            return logo14.getId();
+        return this.logo14Id;
+    }
+
+    public void setLogo14Id(Long id) {
+        this.logo14Id = id;
+    }
+
+    public UploadedFile getLogo15() {
+        return this.logo15;
+    }
+
+    public void setLogo15(UploadedFile logo15) {
+        this.logo15 = logo15;
+    }
+
+    public String getLogo15FileName() {
+        return this.logo15FileName;
+    }
+
+    public void setLogo15FileName(String val) {
+        this.logo15FileName = val;
+    }
+
+    public Long getLogo15Id() {
+        if (this.logo15 != null && this.logo15.getId() != null)
+            return logo15.getId();
+        return this.logo15Id;
+    }
+
+    public void setLogo15Id(Long id) {
+        this.logo15Id = id;
+    }
+
+    public UploadedFile getLogo16() {
+        return this.logo16;
+    }
+
+    public void setLogo16(UploadedFile logo16) {
+        this.logo16 = logo16;
+    }
+
+    public String getLogo16FileName() {
+        return this.logo16FileName;
+    }
+
+    public void setLogo16FileName(String val) {
+        this.logo16FileName = val;
+    }
+
+    public Long getLogo16Id() {
+        if (this.logo16 != null && this.logo16.getId() != null)
+            return logo16.getId();
+        return this.logo16Id;
+    }
+
+    public void setLogo16Id(Long id) {
+        this.logo16Id = id;
+    }
+
 
 	public String getDescription() {
 		return description;
@@ -2679,6 +2852,22 @@ public class Product extends BaseObject implements Serializable {
 		this.description = description;
 	}
 
+	public int getSeqNo() {
+		return seqNo;
+	}
+
+	public void setSeqNo(int seqNo) {
+		this.seqNo = seqNo;
+	}
+	
+	public List getTypes() {
+		return types;
+	}
+
+	public void setTypes(List types) {
+		this.types = types;
+	}
+	
 	public Product() {
 	}
 
@@ -2749,6 +2938,24 @@ public class Product extends BaseObject implements Serializable {
 		if (logo10 != null) {
 			al.add(logo10);
 		}
+		if (logo11 != null) {
+			al.add(logo11);
+		}
+		if (logo12 != null) {
+			al.add(logo12);
+		}
+		if (logo13 != null) {
+			al.add(logo13);
+		}
+		if (logo14 != null) {
+			al.add(logo14);
+		}
+		if (logo15 != null) {
+			al.add(logo15);
+		}
+		if (logo16 != null) {
+			al.add(logo16);
+		}		
 		return al;
 	}
 	
@@ -2828,8 +3035,7 @@ public class Product extends BaseObject implements Serializable {
 				.append("no", getNo())
 				.append("name", getName())
 				.append("overview", getOverview())
-				.append("specification", getSpecification())
-				.append("productType", getProductType())
+				.append("specification", getSpecification())				
 				.append("productPhoto1", getProductPhoto1())
 				.append("productPhoto2", getProductPhoto2())
 				.append("productPhoto3", getProductPhoto3())

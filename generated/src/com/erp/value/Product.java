@@ -3,6 +3,7 @@ package com.erp.value;
 import com.base.value.AppProperty;
 import com.base.value.UploadedFile;
 import java.io.Serializable;
+import java.util.List;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
 import com.base.value.BaseObject;
@@ -18,10 +19,16 @@ public class Product extends BaseObject implements Serializable {
     private String name;
 
     /** nullable persistent field */
+    private String description;
+
+    /** nullable persistent field */
     private String overview;
 
     /** nullable persistent field */
     private String specification;
+
+    /** persistent field */
+    private Integer seqNo;
 
     /** nullable persistent field */
     private String link1;
@@ -259,6 +266,36 @@ public class Product extends BaseObject implements Serializable {
     private UploadedFile logo10;
     private String logo10FileName;
     private Long logo10Id;
+
+    /** nullable persistent field */
+    private UploadedFile logo11;
+    private String logo11FileName;
+    private Long logo11Id;
+
+    /** nullable persistent field */
+    private UploadedFile logo12;
+    private String logo12FileName;
+    private Long logo12Id;
+
+    /** nullable persistent field */
+    private UploadedFile logo13;
+    private String logo13FileName;
+    private Long logo13Id;
+
+    /** nullable persistent field */
+    private UploadedFile logo14;
+    private String logo14FileName;
+    private Long logo14Id;
+
+    /** nullable persistent field */
+    private UploadedFile logo15;
+    private String logo15FileName;
+    private Long logo15Id;
+
+    /** nullable persistent field */
+    private UploadedFile logo16;
+    private String logo16FileName;
+    private Long logo16Id;
 
     /** nullable persistent field */
     private UploadedFile productPhoto1;
@@ -530,12 +567,17 @@ public class Product extends BaseObject implements Serializable {
     private AppProperty target30;
     private Long target30Id;
 
+    /** nullable persistent field */
+    private List types;
+
     /** full constructor */
-    public Product(String no, String name, String overview, String specification, String link1, String linkName1, String link2, String linkName2, String link3, String linkName3, String link4, String linkName4, String link5, String linkName5, String link6, String linkName6, String link7, String linkName7, String link8, String linkName8, String link9, String linkName9, String link10, String linkName10, String link11, String linkName11, String link12, String linkName12, String link13, String linkName13, String link14, String linkName14, String link15, String linkName15, String link16, String linkName16, String link17, String linkName17, String link18, String linkName18, String link19, String linkName19, String link20, String linkName20, String link21, String linkName21, String link22, String linkName22, String link23, String linkName23, String link24, String linkName24, String link25, String linkName25, String link26, String linkName26, String link27, String linkName27, String link28, String linkName28, String link29, String linkName29, String link30, String linkName30, Boolean disabled, com.erp.value.ProductType productType, UploadedFile logo1, UploadedFile logo2, UploadedFile logo3, UploadedFile logo4, UploadedFile logo5, UploadedFile logo6, UploadedFile logo7, UploadedFile logo8, UploadedFile logo9, UploadedFile logo10, UploadedFile productPhoto1, UploadedFile productPhoto2, UploadedFile productPhoto3, UploadedFile productPhoto4, UploadedFile productPhoto5, UploadedFile productPhoto6, UploadedFile productPhoto7, UploadedFile productPhoto8, UploadedFile productPhoto9, UploadedFile productPhoto10, UploadedFile download1, UploadedFile download2, UploadedFile download3, UploadedFile download4, UploadedFile download5, UploadedFile download6, UploadedFile download7, UploadedFile download8, UploadedFile download9, UploadedFile download10, UploadedFile diagram1, UploadedFile diagram2, UploadedFile diagram3, UploadedFile diagram4, UploadedFile diagram5, UploadedFile diagram6, UploadedFile diagram7, UploadedFile diagram8, UploadedFile diagram9, UploadedFile diagram10, AppProperty target1, AppProperty target2, AppProperty target3, AppProperty target4, AppProperty target5, AppProperty target6, AppProperty target7, AppProperty target8, AppProperty target9, AppProperty target10, AppProperty target11, AppProperty target12, AppProperty target13, AppProperty target14, AppProperty target15, AppProperty target16, AppProperty target17, AppProperty target18, AppProperty target19, AppProperty target20, AppProperty target21, AppProperty target22, AppProperty target23, AppProperty target24, AppProperty target25, AppProperty target26, AppProperty target27, AppProperty target28, AppProperty target29, AppProperty target30) {
+    public Product(String no, String name, String description, String overview, String specification, Integer seqNo, String link1, String linkName1, String link2, String linkName2, String link3, String linkName3, String link4, String linkName4, String link5, String linkName5, String link6, String linkName6, String link7, String linkName7, String link8, String linkName8, String link9, String linkName9, String link10, String linkName10, String link11, String linkName11, String link12, String linkName12, String link13, String linkName13, String link14, String linkName14, String link15, String linkName15, String link16, String linkName16, String link17, String linkName17, String link18, String linkName18, String link19, String linkName19, String link20, String linkName20, String link21, String linkName21, String link22, String linkName22, String link23, String linkName23, String link24, String linkName24, String link25, String linkName25, String link26, String linkName26, String link27, String linkName27, String link28, String linkName28, String link29, String linkName29, String link30, String linkName30, Boolean disabled, com.erp.value.ProductType productType, UploadedFile logo1, UploadedFile logo2, UploadedFile logo3, UploadedFile logo4, UploadedFile logo5, UploadedFile logo6, UploadedFile logo7, UploadedFile logo8, UploadedFile logo9, UploadedFile logo10, UploadedFile logo11, UploadedFile logo12, UploadedFile logo13, UploadedFile logo14, UploadedFile logo15, UploadedFile logo16, UploadedFile productPhoto1, UploadedFile productPhoto2, UploadedFile productPhoto3, UploadedFile productPhoto4, UploadedFile productPhoto5, UploadedFile productPhoto6, UploadedFile productPhoto7, UploadedFile productPhoto8, UploadedFile productPhoto9, UploadedFile productPhoto10, UploadedFile download1, UploadedFile download2, UploadedFile download3, UploadedFile download4, UploadedFile download5, UploadedFile download6, UploadedFile download7, UploadedFile download8, UploadedFile download9, UploadedFile download10, UploadedFile diagram1, UploadedFile diagram2, UploadedFile diagram3, UploadedFile diagram4, UploadedFile diagram5, UploadedFile diagram6, UploadedFile diagram7, UploadedFile diagram8, UploadedFile diagram9, UploadedFile diagram10, AppProperty target1, AppProperty target2, AppProperty target3, AppProperty target4, AppProperty target5, AppProperty target6, AppProperty target7, AppProperty target8, AppProperty target9, AppProperty target10, AppProperty target11, AppProperty target12, AppProperty target13, AppProperty target14, AppProperty target15, AppProperty target16, AppProperty target17, AppProperty target18, AppProperty target19, AppProperty target20, AppProperty target21, AppProperty target22, AppProperty target23, AppProperty target24, AppProperty target25, AppProperty target26, AppProperty target27, AppProperty target28, AppProperty target29, AppProperty target30, List types) {
         this.no = no;
         this.name = name;
+        this.description = description;
         this.overview = overview;
         this.specification = specification;
+        this.seqNo = seqNo;
         this.link1 = link1;
         this.linkName1 = linkName1;
         this.link2 = link2;
@@ -608,6 +650,12 @@ public class Product extends BaseObject implements Serializable {
         this.logo8 = logo8;
         this.logo9 = logo9;
         this.logo10 = logo10;
+        this.logo11 = logo11;
+        this.logo12 = logo12;
+        this.logo13 = logo13;
+        this.logo14 = logo14;
+        this.logo15 = logo15;
+        this.logo16 = logo16;
         this.productPhoto1 = productPhoto1;
         this.productPhoto2 = productPhoto2;
         this.productPhoto3 = productPhoto3;
@@ -668,6 +716,7 @@ public class Product extends BaseObject implements Serializable {
         this.target28 = target28;
         this.target29 = target29;
         this.target30 = target30;
+        this.types = types;
     }
 
     /** default constructor */
@@ -675,9 +724,10 @@ public class Product extends BaseObject implements Serializable {
     }
 
     /** minimal constructor */
-    public Product(String no, String name) {
+    public Product(String no, String name, Integer seqNo) {
         this.no = no;
         this.name = name;
+        this.seqNo = seqNo;
     }
 
     public String getNo() {
@@ -696,6 +746,14 @@ public class Product extends BaseObject implements Serializable {
         this.name = name;
     }
 
+    public String getDescription() {
+        return this.description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     public String getOverview() {
         return this.overview;
     }
@@ -710,6 +768,14 @@ public class Product extends BaseObject implements Serializable {
 
     public void setSpecification(String specification) {
         this.specification = specification;
+    }
+
+    public Integer getSeqNo() {
+        return this.seqNo;
+    }
+
+    public void setSeqNo(Integer seqNo) {
+        this.seqNo = seqNo;
     }
 
     public String getLink1() {
@@ -1476,6 +1542,162 @@ public class Product extends BaseObject implements Serializable {
 
     public void setLogo10Id(Long id) {
         this.logo10Id = id;
+    }
+
+    public UploadedFile getLogo11() {
+        return this.logo11;
+    }
+
+    public void setLogo11(UploadedFile logo11) {
+        this.logo11 = logo11;
+    }
+
+    public String getLogo11FileName() {
+        return this.logo11FileName;
+    }
+
+    public void setLogo11FileName(String val) {
+        this.logo11FileName = val;
+    }
+
+    public Long getLogo11Id() {
+        if (this.logo11 != null && this.logo11.getId() != null)
+            return logo11.getId();
+        return this.logo11Id;
+    }
+
+    public void setLogo11Id(Long id) {
+        this.logo11Id = id;
+    }
+
+    public UploadedFile getLogo12() {
+        return this.logo12;
+    }
+
+    public void setLogo12(UploadedFile logo12) {
+        this.logo12 = logo12;
+    }
+
+    public String getLogo12FileName() {
+        return this.logo12FileName;
+    }
+
+    public void setLogo12FileName(String val) {
+        this.logo12FileName = val;
+    }
+
+    public Long getLogo12Id() {
+        if (this.logo12 != null && this.logo12.getId() != null)
+            return logo12.getId();
+        return this.logo12Id;
+    }
+
+    public void setLogo12Id(Long id) {
+        this.logo12Id = id;
+    }
+
+    public UploadedFile getLogo13() {
+        return this.logo13;
+    }
+
+    public void setLogo13(UploadedFile logo13) {
+        this.logo13 = logo13;
+    }
+
+    public String getLogo13FileName() {
+        return this.logo13FileName;
+    }
+
+    public void setLogo13FileName(String val) {
+        this.logo13FileName = val;
+    }
+
+    public Long getLogo13Id() {
+        if (this.logo13 != null && this.logo13.getId() != null)
+            return logo13.getId();
+        return this.logo13Id;
+    }
+
+    public void setLogo13Id(Long id) {
+        this.logo13Id = id;
+    }
+
+    public UploadedFile getLogo14() {
+        return this.logo14;
+    }
+
+    public void setLogo14(UploadedFile logo14) {
+        this.logo14 = logo14;
+    }
+
+    public String getLogo14FileName() {
+        return this.logo14FileName;
+    }
+
+    public void setLogo14FileName(String val) {
+        this.logo14FileName = val;
+    }
+
+    public Long getLogo14Id() {
+        if (this.logo14 != null && this.logo14.getId() != null)
+            return logo14.getId();
+        return this.logo14Id;
+    }
+
+    public void setLogo14Id(Long id) {
+        this.logo14Id = id;
+    }
+
+    public UploadedFile getLogo15() {
+        return this.logo15;
+    }
+
+    public void setLogo15(UploadedFile logo15) {
+        this.logo15 = logo15;
+    }
+
+    public String getLogo15FileName() {
+        return this.logo15FileName;
+    }
+
+    public void setLogo15FileName(String val) {
+        this.logo15FileName = val;
+    }
+
+    public Long getLogo15Id() {
+        if (this.logo15 != null && this.logo15.getId() != null)
+            return logo15.getId();
+        return this.logo15Id;
+    }
+
+    public void setLogo15Id(Long id) {
+        this.logo15Id = id;
+    }
+
+    public UploadedFile getLogo16() {
+        return this.logo16;
+    }
+
+    public void setLogo16(UploadedFile logo16) {
+        this.logo16 = logo16;
+    }
+
+    public String getLogo16FileName() {
+        return this.logo16FileName;
+    }
+
+    public void setLogo16FileName(String val) {
+        this.logo16FileName = val;
+    }
+
+    public Long getLogo16Id() {
+        if (this.logo16 != null && this.logo16.getId() != null)
+            return logo16.getId();
+        return this.logo16Id;
+    }
+
+    public void setLogo16Id(Long id) {
+        this.logo16Id = id;
     }
 
     public UploadedFile getProductPhoto1() {
@@ -2798,12 +3020,22 @@ public class Product extends BaseObject implements Serializable {
         this.target30Id = id;
     }
 
+    public List getTypes() {
+        return this.types;
+    }
+
+    public void setTypes(List types) {
+        this.types = types;
+    }
+
     public String toString() {
         return new ToStringBuilder(this)
             .append("no", getNo())
             .append("name", getName())
+            .append("description", getDescription())
             .append("overview", getOverview())
             .append("specification", getSpecification())
+            .append("seqNo", getSeqNo())
             .append("link1", getLink1())
             .append("linkName1", getLinkName1())
             .append("link2", getLink2())
@@ -2876,6 +3108,12 @@ public class Product extends BaseObject implements Serializable {
             .append("logo8", getLogo8())
             .append("logo9", getLogo9())
             .append("logo10", getLogo10())
+            .append("logo11", getLogo11())
+            .append("logo12", getLogo12())
+            .append("logo13", getLogo13())
+            .append("logo14", getLogo14())
+            .append("logo15", getLogo15())
+            .append("logo16", getLogo16())
             .append("productPhoto1", getProductPhoto1())
             .append("productPhoto2", getProductPhoto2())
             .append("productPhoto3", getProductPhoto3())
@@ -2936,6 +3174,7 @@ public class Product extends BaseObject implements Serializable {
             .append("target28", getTarget28())
             .append("target29", getTarget29())
             .append("target30", getTarget30())
+            .append("types", getTypes())
             .toString();
     }
 

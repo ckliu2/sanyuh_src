@@ -14,4 +14,14 @@
             <message key="errors.required"></message>
         </field-validator>
     </field>
+    <field name="product.seqNo">
+        <field-validator type="required">
+            <message key="errors.required"></message>
+        </field-validator>
+    </field>
+    <field name="product.seqNo">
+        <field-validator type="int">
+            <message key="errors.numericRequired"></message>
+        </field-validator>
+    </field>
 </validators>

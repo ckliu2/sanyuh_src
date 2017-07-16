@@ -19,6 +19,8 @@ public interface ERPDAO extends CommonDAO
 
     public abstract List<ProductType> findAllProductType();
     
+    public abstract Long[] getIdsFromProductTypeList(List<ProductType> lst);
+    
     //Product
     public abstract void saveProduct(Product val);
 
