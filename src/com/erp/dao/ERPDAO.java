@@ -31,5 +31,24 @@ public interface ERPDAO extends CommonDAO
     public abstract Product findProductById(Long id);
 
     public abstract List<Product> findAllProduct(ProductType type);
+    
+    public abstract List<Product> findAllProduct(String keyword);
+    
+    //Carousel
+    public abstract void saveCarousel(Carousel val);
+
+    public abstract void removeCarousel(Carousel val);
+
+    public abstract void removeCarousel(Long id);
+
+    public abstract Carousel findCarouselById(Long id);
+
+    public abstract List<Carousel> findAllCarousel();
+    
+    //Web
+    public abstract void saveWeb(Web val);
+    
+    public abstract Web findWebById(Long id);
+    
 }
 

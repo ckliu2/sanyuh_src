@@ -17,8 +17,9 @@ public class IndexAction extends CommonActionSupport
     private static final long serialVersionUID = 1L;
     private final Log log;
     private ProductType productType;
-	Product product;
-
+	Product product;    
+	String keyword;
+	Web web;
 
     public IndexAction()
     {
@@ -47,7 +48,23 @@ public class IndexAction extends CommonActionSupport
 	public void setProduct(Product product) {
 		this.product = product;
 	}
+	
+	public String getKeyword() {
+		return keyword;
+	}
 
+	public void setKeyword(String keyword) {
+		this.keyword = keyword;
+	}
+	
+	public Web getWeb() {
+		return web;
+	}
+
+	public void setWeb(Web web) {
+		this.web = web;
+	}
+	
     public void setGenericManager(ERPManager m)
     {
         super.setGenericManager(m);
@@ -57,7 +74,6 @@ public class IndexAction extends CommonActionSupport
     {
         return (ERPManager) super.getGenericManager();
     }
-
    
     public String list()
     {
@@ -88,7 +104,21 @@ public class IndexAction extends CommonActionSupport
         return product;
     }
     
-
-   
+    public List<Product> getProductSearch()
+    {    	    	
+    	System.out.println("getProductSearch keyword="+keyword);
+        return getGenericManager().getProductList(keyword);
+    }
     
+    public List<Carousel> getCarouselList()
+    {
+        return getGenericManager().getCarouselList();
+    }
+   
+    public Web getWebById(Long id)
+    {
+    	System.out.println("getWebById id="+id);
+    	//System.out.println("getWebById web.id="+web.getId());
+        return getGenericManager().getWebById(id);
+    }
 }

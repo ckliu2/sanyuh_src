@@ -31,5 +31,23 @@ public interface ERPManager extends CommonManager
     public abstract Product getProductById(Long id);
 
     public abstract List<Product> getProductList(ProductType type);
+    
+    public abstract List<Product> getProductList(String keyword);
+    
+    //Carousel
+    public abstract void saveCarousel(Carousel val);
+
+    public abstract void removeCarousel(Carousel val);
+
+    public abstract void removeCarousel(Long id);
+
+    public abstract Carousel getCarouselById(Long id);
+
+    public abstract List<Carousel> getCarouselList();
+    
+    //Web
+    public abstract void saveWeb(Web val);
+
+    public abstract Web getWebById(Long id);
 }
 

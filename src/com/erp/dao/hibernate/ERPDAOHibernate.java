@@ -88,6 +88,9 @@ public class ERPDAOHibernate extends CommonDAOHibernate implements ERPDAO {
 					al.add(product);
 				}				
 			}
+			
+			Collections.sort(al, new ProductComparator());		
+			
 			return al;
 		} else {
 			c.addOrder(Order.asc("seqNo"));
@@ -110,4 +113,68 @@ public class ERPDAOHibernate extends CommonDAOHibernate implements ERPDAO {
 
 		return lng;
 	}
+	
+	public List<Product> findAllProduct(String keyword) {		
+		Criteria c = getHibernateSession().createCriteria(Product.class);
+		Disjunction disjunction = Restrictions.disjunction();
+		Criterion c1 = Restrictions.like("no", "%" + keyword + "%");
+		Criterion c2 = Restrictions.like("overview", "%" + keyword + "%");		
+		disjunction.add(c1);
+		disjunction.add(c2);
+		c.add(disjunction);
+		return c.list();
+	}
+	
+	
+	//Carousel
+	public void saveCarousel(Carousel val)
+    {
+        getHibernateTemplate().saveOrUpdate(val);
+    }
+
+    public void removeCarousel(Carousel val)
+    {
+        getHibernateTemplate().delete(val);
+    }
+
+    public void removeCarousel(Long id)
+    {
+        Carousel obj = findCarouselById(id);
+        getHibernateTemplate().delete(obj);
+    }
+
+    public Carousel findCarouselById(Long id)
+    {
+        if (id == null)
+            return null;
+        Carousel obj = (Carousel)getHibernateTemplate().get(com.erp.value.Carousel.class, id);
+        if (obj == null)
+            throw new ObjectRetrievalFailureException(com.erp.value.Carousel.class, id);
+        else
+            return obj;
+    }
+
+    public List<Carousel> findAllCarousel()
+    {
+        return getHibernateTemplate().find("from Carousel order by seqNo asc");
+    }
+    
+    //Web
+    public void saveWeb(Web val)
+    {
+        getHibernateTemplate().saveOrUpdate(val);
+    }
+    
+    public Web findWebById(Long id)
+    {
+        if (id == null)
+            return null;
+        Web obj = (Web)getHibernateTemplate().get(com.erp.value.Web.class, id);
+        if (obj == null)
+            throw new ObjectRetrievalFailureException(com.erp.value.Web.class, id);
+        else
+            return obj;
+    }
+	
+	
 }

@@ -81,5 +81,48 @@ public class ERPManagerImpl extends CommonManagerImpl implements ERPManager
     {
         return getGenericDAO().findAllProduct(type);
     }
+    
+    public List<Product> getProductList(String keyword)
+    {
+        return getGenericDAO().findAllProduct(keyword);
+    }
+    
+    //Carousel
+    public void saveCarousel(Carousel val)
+    {
+        getGenericDAO().saveCarousel(val);
+    }
+
+    public void removeCarousel(Carousel val)
+    {
+        getGenericDAO().removeCarousel(val);
+    }
+
+    public void removeCarousel(Long id)
+    {
+        getGenericDAO().removeCarousel(id);
+    }
+
+    public Carousel getCarouselById(Long id)
+    {
+         return getGenericDAO().findCarouselById(id);
+    }
+
+    public List<Carousel> getCarouselList()
+    {
+        return getGenericDAO().findAllCarousel();
+    }
+    
+    //Web
+    public void saveWeb(Web val)
+    {
+        getGenericDAO().saveWeb(val);
+    }
+    
+    public Web getWebById(Long id)
+    {
+         return getGenericDAO().findWebById(id);
+    }
+    
 }
 

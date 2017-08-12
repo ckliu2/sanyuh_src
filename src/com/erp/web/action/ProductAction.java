@@ -1656,13 +1656,18 @@ public class ProductAction extends CommonActionSupport {
 		product.setTarget30(getAppPropertyById(product.getTarget30Id()));
 
 		// Types
-		ArrayList<ProductType> ls = new ArrayList<ProductType>();
-		System.out.println("typesIds.length="+typesIds.length);
-		for (int i = 0; i < typesIds.length; i++) {
-			productType = getGenericManager().getProductTypeById(typesIds[i]);
-			ls.add(productType);
+		try{
+			List<ProductType> ls = new ArrayList<ProductType>();
+			System.out.println("typesIds.length="+typesIds.length);
+			for (int i = 0; i < typesIds.length; i++) {
+				productType = getGenericManager().getProductTypeById(typesIds[i]);
+				ls.add(productType);
+			}
+			product.setTypes(ls);
+		}catch(Exception e){
+			System.out.println(e.toString());
 		}
-		product.setTypes(ls);
+		
 
 	}
 
