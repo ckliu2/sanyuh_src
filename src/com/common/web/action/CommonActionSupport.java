@@ -432,5 +432,10 @@ public abstract class CommonActionSupport extends BaseActionSupport {
 		return getAppPropertyList("href.target");
 	}
 	
+	public List getCarouselTypes() {
+		return getAppPropertyList("carousel.type");
+	}
+	
+	
 	
 }

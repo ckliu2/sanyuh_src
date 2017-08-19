@@ -3,7 +3,7 @@ package com.erp.service;
 import com.erp.value.*;
 import java.util.*;
 import com.common.service.CommonManager;
-
+import com.base.value.*;
 
 
 public interface ERPManager extends CommonManager 
@@ -43,7 +43,7 @@ public interface ERPManager extends CommonManager
 
     public abstract Carousel getCarouselById(Long id);
 
-    public abstract List<Carousel> getCarouselList();
+    public abstract List<Carousel> getCarouselList(AppProperty type);
     
     //Web
     public abstract void saveWeb(Web val);

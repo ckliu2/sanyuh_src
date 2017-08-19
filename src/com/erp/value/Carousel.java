@@ -27,6 +27,9 @@ public class Carousel extends BaseObject implements Serializable {
     private UploadedFile photo;
     private String photoFileName;
     private Long photoId;
+    
+    private AppProperty type;
+    private Long typeId;
 
     /** full constructor */
     public Carousel(Integer seqNo, String name, String content, String url) {
@@ -110,6 +113,25 @@ public class Carousel extends BaseObject implements Serializable {
     public void setPhotoId(Long id) {
         this.photoId = id;
     }
+    
+    public AppProperty getType() {
+        return this.type;
+    }
+
+    public void setType(AppProperty type) {
+        this.type = type;
+    }
+
+    public Long getTypeId() {
+        if (this.type != null && this.type.getId() != null)
+            return type.getId();
+        return this.typeId;
+    }
+
+    public void setTypeId(Long id) {
+        this.typeId = id;
+    }
+
 
     public String toString() {
         return new ToStringBuilder(this)

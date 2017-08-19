@@ -2,6 +2,8 @@ package com.erp.dao;
 
 import com.erp.value.*;
 import java.util.*;
+
+import com.base.value.AppProperty;
 import com.common.dao.CommonDAO;
 
 
@@ -43,7 +45,7 @@ public interface ERPDAO extends CommonDAO
 
     public abstract Carousel findCarouselById(Long id);
 
-    public abstract List<Carousel> findAllCarousel();
+    public abstract List<Carousel> findAllCarousel(AppProperty type);
     
     //Web
     public abstract void saveWeb(Web val);

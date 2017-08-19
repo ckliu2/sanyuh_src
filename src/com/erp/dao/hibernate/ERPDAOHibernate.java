@@ -16,6 +16,8 @@ import org.hibernate.criterion.ProjectionList;
 import org.hibernate.criterion.Projections;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.orm.ObjectRetrievalFailureException;
+
+import com.base.value.AppProperty;
 import com.common.dao.hibernate.CommonDAOHibernate;
 
 public class ERPDAOHibernate extends CommonDAOHibernate implements ERPDAO {
@@ -154,9 +156,15 @@ public class ERPDAOHibernate extends CommonDAOHibernate implements ERPDAO {
             return obj;
     }
 
-    public List<Carousel> findAllCarousel()
+    public List<Carousel> findAllCarousel(AppProperty type)
     {
-        return getHibernateTemplate().find("from Carousel order by seqNo asc");
+        Criteria c = getHibernateSession().createCriteria(Carousel.class);				
+		if (type != null) {
+			c.add(Expression.eq("type", type));
+		}
+		c.addOrder(Order.asc("type"));
+		c.addOrder(Order.asc("seqNo"));
+		return c.list();
     }
     
     //Web

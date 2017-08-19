@@ -7,6 +7,7 @@ import org.apache.commons.logging.LogFactory;
 import java.util.*;
 import com.common.web.action.CommonActionSupport;
 import com.base.util.Tools;
+import com.base.value.AppProperty;
 import com.base.value.Function;
 
 
@@ -121,6 +122,7 @@ public class CarouselAction extends CommonActionSupport
             else
                 carousel.setPhoto(computeUploadedFile(filePhotoFileName, filePhoto)); 
         }
+        carousel.setType(getAppPropertyById(carousel.getTypeId())); 
         log.info("exit formToBean()");
     }
     
@@ -164,10 +166,13 @@ public class CarouselAction extends CommonActionSupport
         return removePhoto;
     }
     
-    public List<Carousel> getCarouselList()
+    public List<Carousel> getList()
     {
-        return getGenericManager().getCarouselList();
+    	AppProperty type = null;
+        return getGenericManager().getCarouselList(type);
     }
+    
+       
 
     public void setSelectedCarouselIds(Long[] val)
     {

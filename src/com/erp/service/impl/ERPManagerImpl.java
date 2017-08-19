@@ -4,6 +4,8 @@ import com.erp.service.ERPManager;
 import com.erp.dao.ERPDAO;
 import com.erp.value.*;
 import java.util.*;
+
+import com.base.value.AppProperty;
 import com.common.service.impl.CommonManagerImpl;
 
 
@@ -108,9 +110,9 @@ public class ERPManagerImpl extends CommonManagerImpl implements ERPManager
          return getGenericDAO().findCarouselById(id);
     }
 
-    public List<Carousel> getCarouselList()
+    public List<Carousel> getCarouselList(AppProperty type)
     {
-        return getGenericDAO().findAllCarousel();
+        return getGenericDAO().findAllCarousel(type);
     }
     
     //Web
